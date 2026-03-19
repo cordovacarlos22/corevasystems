@@ -17,7 +17,7 @@ export default async function Home({ params }) {
 
   return (
     <>
-      <Navbar dict={dict} />
+      <Navbar dict={dict} lang={lang} />
       <main className="min-h-screen bg-white text-slate-900 antialiased selection:bg-primary/20">
         <HeroSection dict={dict} lang={lang} />
         <TrustedBySection dict={dict} />

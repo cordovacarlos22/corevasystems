@@ -29,12 +29,13 @@ export default function HeroSection({ dict, lang }) {
         <div className="mb-24 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href={`/${lang}/book`}
-            className="gradient-soft w-full rounded-2xl px-10 py-5 text-lg font-bold text-white shadow-2xl shadow-primary/20 transition-transform hover:scale-[1.02] sm:w-auto text-center"
+            className="gradient-soft w-full rounded-2xl px-10 py-5 text-center text-lg font-bold text-white shadow-2xl shadow-primary/20 transition-transform hover:scale-[1.02] sm:w-auto"
           >
             {hero.primaryCta}
           </Link>
+
           <Link
-            href={`/${lang}#services`}
+            href={`/${lang}#process`}
             className="w-full rounded-2xl border border-slate-200 bg-white px-10 py-5 text-center text-lg font-bold text-slate-900 transition-colors hover:bg-slate-50 sm:w-auto"
           >
             {hero.secondaryCta}
@@ -48,14 +49,18 @@ export default function HeroSection({ dict, lang }) {
               {hero.stats.delivered}
             </span>
           </div>
+
           <div className="flex flex-col items-center">
             <span className="text-2xl font-bold text-slate-900">100%</span>
             <span className="mt-1 text-sm font-semibold uppercase tracking-widest text-slate-400">
               {hero.stats.success}
             </span>
           </div>
+
           <div className="flex flex-col items-center">
-            <span className="text-2xl font-bold text-slate-900">Bilingual</span>
+            <span className="text-2xl font-bold text-slate-900">
+              {lang === "es" ? "Bilingüe" : "Bilingual"}
+            </span>
             <span className="mt-1 text-sm font-semibold uppercase tracking-widest text-slate-400">
               {hero.stats.support}
             </span>
