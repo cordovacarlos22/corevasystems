@@ -1,59 +1,24 @@
-const packages = [
-  {
-    title: "Website Foundation",
-    subtitle: "FOR NEW OPERATIONS",
-    features: [
-      "Custom Landing Page",
-      "Lead Capture System",
-      "SEO & Performance Ready",
-    ],
-    buttonText: "Get Started",
-    featured: false,
-  },
-  {
-    title: "Full Automation System",
-    subtitle: "THE COMPLETE SOLUTION",
-    features: [
-      "Advanced Conversion Website",
-      "CRM & Email Workflows",
-      "Custom Data Dashboards",
-      "30-Day Implementation Support",
-    ],
-    buttonText: "Book a Call Now",
-    featured: true,
-    badge: "MOST PROMINENT",
-  },
-  {
-    title: "Ongoing Optimization",
-    subtitle: "MONTHLY SUPPORT PLAN",
-    features: [
-      "System Monitoring & Updates",
-      "Strategy & Growth Calls",
-      "Conversion Rate A/B Testing",
-    ],
-    buttonText: "Start Scaling",
-    featured: false,
-  },
-];
+export default function PackagesSection({ dict }) {
+  const packagesData = dict?.packages;
+  const items = packagesData?.items || [];
 
-export default function PackagesSection() {
   return (
     <section className="bg-slate-50/50 py-40" id="packages">
       <div className="mx-auto max-w-7xl px-8">
         <div className="mb-24 text-center">
           <div className="mb-6 inline-block rounded-full bg-primary/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-            SERVICE TIERS
+            {packagesData?.badge}
           </div>
           <h2 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Choose your growth level
+            {packagesData?.title}
           </h2>
           <p className="mt-6 font-medium text-slate-500">
-            High-ticket systems for businesses ready for the next level.
+            {packagesData?.subtitle}
           </p>
         </div>
 
         <div className="grid items-center gap-8 lg:grid-cols-3">
-          {packages.map((pkg, index) => (
+          {items.map((pkg, index) => (
             <div
               key={pkg.title}
               className={[

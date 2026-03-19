@@ -1,27 +1,54 @@
-export default function Footer() {
+import Link from "next/link";
+
+export default function Footer({ dict, lang = "en" }) {
+  const footer = dict?.footer || {
+    brand: "Coreva Systems",
+    description:
+      "We build systems that generate predictable growth. Automation + websites designed to scale your business.",
+    columns: {
+      services: "Services",
+      resources: "Resources",
+      contact: "Contact",
+      legal: "Legal",
+    },
+    links: {
+      websites: "Websites",
+      automation: "Automation",
+      seo: "SEO Systems",
+      faq: "FAQ",
+      caseStudies: "Case Studies",
+      emailUs: "Email Us",
+      contactForm: "Contact Form",
+      privacy: "Privacy",
+      terms: "Terms",
+    },
+    copyright: "© 2024 COREVA SYSTEMS. ALL RIGHTS RESERVED.",
+    tagline: "Engineered for Performance. Built for Growth.",
+  };
+
   return (
     <footer className="bg-dark-navy py-24 text-white">
       <div className="mx-auto max-w-7xl px-8">
         <div className="mb-20 grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-24">
           <div className="lg:col-span-5">
             <h4 className="text-gradient mb-6 text-3xl font-bold">
-              Coreva Systems
+              {footer.brand}
             </h4>
 
             <p className="mb-8 max-w-md text-lg leading-relaxed text-slate-400">
-              We build systems that generate predictable growth. Automation +
-              websites designed to scale your business.
+              {footer.description}
             </p>
 
             <div className="flex gap-4">
-              <a
-                href="#"
+              <Link
+                href={`/${lang}`}
                 className="flex size-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-primary"
               >
                 <span className="text-xl">🌐</span>
-              </a>
+              </Link>
+
               <a
-                href="#"
+                href="mailto:hello@corevasystems.com"
                 className="flex size-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-primary"
               >
                 <span className="text-xl">@</span>
@@ -32,51 +59,63 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-12 md:grid-cols-4 lg:col-span-7">
             <div>
               <h5 className="mb-8 text-[11px] font-bold uppercase tracking-[0.2em] text-white">
-                Services
+                {footer.columns.services}
               </h5>
               <ul className="space-y-4 text-sm font-medium text-slate-400">
                 <li>
-                  <a href="#" className="transition-colors hover:text-primary">
-                    Websites
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="transition-colors hover:text-primary">
-                    Automation
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="transition-colors hover:text-primary">
-                    SEO Systems
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h5 className="mb-8 text-[11px] font-bold uppercase tracking-[0.2em] text-white">
-                Resources
-              </h5>
-              <ul className="space-y-4 text-sm font-medium text-slate-400">
-                <li>
-                  <a href="#faq" className="transition-colors hover:text-primary">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#results"
+                  <Link
+                    href={`/${lang}#services`}
                     className="transition-colors hover:text-primary"
                   >
-                    Case Studies
-                  </a>
+                    {footer.links.websites}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}#services`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.automation}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}#services`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.seo}
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div>
               <h5 className="mb-8 text-[11px] font-bold uppercase tracking-[0.2em] text-white">
-                Contact
+                {footer.columns.resources}
+              </h5>
+              <ul className="space-y-4 text-sm font-medium text-slate-400">
+                <li>
+                  <Link
+                    href={`/${lang}#faq`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.faq}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}#results`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.caseStudies}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 className="mb-8 text-[11px] font-bold uppercase tracking-[0.2em] text-white">
+                {footer.columns.contact}
               </h5>
               <ul className="space-y-4 text-sm font-medium text-slate-400">
                 <li>
@@ -84,34 +123,40 @@ export default function Footer() {
                     href="mailto:hello@corevasystems.com"
                     className="transition-colors hover:text-primary"
                   >
-                    Email Us
+                    {footer.links.emailUs}
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
+                  <Link
+                    href={`/${lang}#contact`}
                     className="transition-colors hover:text-primary"
                   >
-                    Contact Form
-                  </a>
+                    {footer.links.contactForm}
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div>
               <h5 className="mb-8 text-[11px] font-bold uppercase tracking-[0.2em] text-white">
-                Legal
+                {footer.columns.legal}
               </h5>
               <ul className="space-y-4 text-sm font-medium text-slate-400">
                 <li>
-                  <a href="#" className="transition-colors hover:text-primary">
-                    Privacy
-                  </a>
+                  <Link
+                    href={`/${lang}/privacy`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.privacy}
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="transition-colors hover:text-primary">
-                    Terms
-                  </a>
+                  <Link
+                    href={`/${lang}/terms`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.terms}
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -120,10 +165,10 @@ export default function Footer() {
 
         <div className="flex flex-col items-center border-t border-white/5 pt-16">
           <div className="mb-4 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
-            © 2026 COREVA SYSTEMS. ALL RIGHTS RESERVED.
+            {footer.copyright}
           </div>
           <div className="text-xs font-medium text-slate-600">
-            Engineered for Performance. Built for Growth.
+            {footer.tagline}
           </div>
         </div>
       </div>

@@ -1,7 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function FounderSection() {
+export default function FounderSection({ dict }) {
+  const founder = dict?.founder || {
+    badge: "MEET THE FOUNDER",
+    name: "Carlos Cordova",
+    role: "Founder & Systems Architect",
+    quote:
+      "We build systems that help businesses grow, automate operations, and scale efficiently. My goal is to free founders from the day-to-day grind so they can focus on their vision.",
+    highlights: {
+      automation: "Enterprise Automation",
+      bilingual: "Bilingual Operations",
+    },
+    cta: "Work directly with Carlos",
+    linkedin: "Connect on LinkedIn",
+  };
   return (
     <section className="bg-white py-40">
       <div className="mx-auto max-w-7xl px-8">
@@ -19,14 +32,14 @@ export default function FounderSection() {
 
           <div className="flex flex-col">
             <div className="mb-8 inline-block w-fit rounded-full bg-primary/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-              MEET THE FOUNDER
+              {founder.badge}
             </div>
 
             <h2 className="mb-2 text-5xl font-black tracking-tight">
-              Carlos Cordova
+              {founder.name}
             </h2>
             <p className="mb-12 text-xl font-bold text-primary">
-              Founder & Systems Architect
+              {founder.role}
             </p>
 
             <div className="relative mb-12">
@@ -34,9 +47,7 @@ export default function FounderSection() {
                 "
               </span>
               <p className="text-2xl font-medium italic leading-relaxed text-slate-700">
-                We build systems that help businesses grow, automate operations,
-                and scale efficiently. My goal is to free founders from the
-                day-to-day grind so they can focus on their vision.
+                {founder.quote}
               </p>
             </div>
 
@@ -46,7 +57,7 @@ export default function FounderSection() {
                   <span className="text-xl">⚡</span>
                 </div>
                 <span className="text-sm font-semibold text-slate-600">
-                  Enterprise Automation
+                  {founder.highlights.automation}
                 </span>
               </div>
 
@@ -55,7 +66,7 @@ export default function FounderSection() {
                   <span className="text-xl">🌎</span>
                 </div>
                 <span className="text-sm font-semibold text-slate-600">
-                  Bilingual Operations
+                  {founder.highlights.bilingual}
                 </span>
               </div>
             </div>
@@ -65,10 +76,10 @@ export default function FounderSection() {
                 href="#contact"
                 className="group flex items-center gap-3 text-lg font-extrabold text-slate-900 transition-colors hover:text-primary"
               >
-                Work directly with Carlos
+                {founder.cta}
                 <span className="transition-transform group-hover:translate-x-1">
                   →
-       e        </span>
+                </span>
               </Link>
 
               <Link
@@ -77,7 +88,7 @@ export default function FounderSection() {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 text-sm font-semibold text-slate-500 transition-colors hover:text-primary"
               >
-                Connect on LinkedIn
+                {founder.linkedin}
                 <span className="transition-transform group-hover:translate-x-1">
                   →
                 </span>
