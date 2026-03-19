@@ -191,6 +191,13 @@ const en = {
     copyright: "© 2026 COREVA SYSTEMS. ALL RIGHTS RESERVED.",
     tagline: "Engineered for Performance. Built for Growth.",
   },
+  toast: {
+    loadingTitle: "Sending message...",
+    successTitle: "Message sent",
+    successDescription: "We’ll get back to you soon.",
+    errorTitle: "Something went wrong",
+    errorDescription: "Please try again.",
+  },
 };
 
 export default en;

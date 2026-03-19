@@ -26,7 +26,7 @@ export default async function Home({ params }) {
         <PackagesSection dict={dict} />
         <ResultsSection dict={dict} />
         <FounderSection dict={dict} />
-        <ContactSection dict={dict} />
+        <ContactSection dict={dict} lang={lang} />
         <FinalCTA dict={dict} />
       </main>
       <Footer dict={dict} lang={lang} />

@@ -193,6 +193,13 @@ const es = {
     copyright: "© 2026 COREVA SYSTEMS. TODOS LOS DERECHOS RESERVADOS.",
     tagline: "Diseñado para rendimiento. Construido para crecer.",
   },
+  toast: {
+    loadingTitle: "Enviando mensaje...",
+    successTitle: "Mensaje enviado",
+    successDescription: "Te responderemos pronto.",
+    errorTitle: "Algo salió mal",
+    errorDescription: "Inténtalo de nuevo.",
+  },
 };
 
 export default es;
