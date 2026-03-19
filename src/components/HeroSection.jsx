@@ -1,4 +1,6 @@
-export default function HeroSection({ dict }) {
+import Link from "next/link";
+
+export default function HeroSection({ dict, lang }) {
   const hero = dict?.hero;
 
   return (
@@ -25,12 +27,18 @@ export default function HeroSection({ dict }) {
         </div>
 
         <div className="mb-24 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <button className="gradient-soft w-full rounded-2xl px-10 py-5 text-lg font-bold text-white shadow-2xl shadow-primary/20 transition-transform hover:scale-[1.02] sm:w-auto">
+          <Link
+            href={`/${lang}/book`}
+            className="gradient-soft w-full rounded-2xl px-10 py-5 text-lg font-bold text-white shadow-2xl shadow-primary/20 transition-transform hover:scale-[1.02] sm:w-auto text-center"
+          >
             {hero.primaryCta}
-          </button>
-          <button className="w-full rounded-2xl border border-slate-200 bg-white px-10 py-5 text-lg font-bold text-slate-900 transition-colors hover:bg-slate-50 sm:w-auto">
+          </Link>
+          <Link
+            href={`/${lang}#services`}
+            className="w-full rounded-2xl border border-slate-200 bg-white px-10 py-5 text-center text-lg font-bold text-slate-900 transition-colors hover:bg-slate-50 sm:w-auto"
+          >
             {hero.secondaryCta}
-          </button>
+          </Link>
         </div>
 
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 border-t border-slate-50 py-12 md:grid-cols-3">

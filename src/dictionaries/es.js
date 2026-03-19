@@ -200,6 +200,9 @@ const es = {
     errorTitle: "Algo salió mal",
     errorDescription: "Inténtalo de nuevo.",
   },
+  cta: {
+    book: "Agendar llamada"
+  }
 };
 
 export default es;
