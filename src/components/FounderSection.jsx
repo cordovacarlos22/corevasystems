@@ -22,7 +22,7 @@ export default function FounderSection({ dict }) {
           <div className="group relative">
             <div className="gradient-soft absolute -inset-10 rounded-full opacity-15 blur-[100px]"></div>
             <Image
-              src="/images/founder.jpg"
+              src="/images/founder.webp"
               alt="Carlos Cordova"
               width={500}
               height={600}

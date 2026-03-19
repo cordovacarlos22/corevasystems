@@ -101,20 +101,32 @@ const en = {
     button: "Book a Free Call",
   },
   services: {
+    badge: "What we do",
+    title: "Systems designed to grow your business",
+    subtitle: "We combine AI, modern websites, and automation to help service businesses scale smarter.",
     items: [
       {
-        title: "Websites",
-        description:
-          "Conversion-focused digital experiences that tell your brand story and capture high-intent leads 24/7. Built on high-performance frameworks.",
-        icon: "🌐",
+        title: "AI Solutions",
+        description: "Deploy intelligent systems that help your business respond faster and work smarter.",
+        meta: "Agents • Assistants • Smart workflows",
+        image: "/images/coreva-ai.webp",
+        alt: "AI robot illustration"
       },
       {
-        title: "Automation",
-        description:
-          "Intelligent workflows that handle repetitive tasks, sync your data, and scale your operations without adding overhead or headcount.",
-        icon: "⚙️",
+        title: "Websites that convert",
+        description: "Modern websites designed to build trust, capture leads, and grow your business.",
+        meta: "Fast • Responsive • Conversion-focused",
+        image: "/images/coreva-websites.webp",
+        alt: "Website monitor illustration"
       },
-    ],
+      {
+        title: "Automation that scales",
+        description: "Streamline repetitive tasks, connect your tools, and save time every week.",
+        meta: "Workflows • Integrations • Efficiency",
+        image: "/images/coreva-automation.webp",
+        alt: "Automation flow illustration"
+      }
+    ]
   },
   process: {
     badge: "WORKFLOW",

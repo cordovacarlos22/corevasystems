@@ -101,21 +101,38 @@ const es = {
     button: "Agendar llamada gratis",
   },
   services: {
+    badge: "Qué hacemos",
+    title: "Sistemas diseñados para hacer crecer tu negocio",
+    subtitle:
+      "Combinamos IA, sitios web modernos y automatización para ayudarte a escalar de forma inteligente.",
     items: [
       {
-        title: "Sitios web",
+        title: "Soluciones con IA",
         description:
-          "Experiencias digitales enfocadas en conversión que cuentan la historia de tu marca y capturan leads de alta intención 24/7. Construidas con frameworks de alto rendimiento.",
-        icon: "🌐",
+          "Implementa sistemas inteligentes que te ayudan a responder más rápido y trabajar mejor.",
+        meta: "Agentes • Asistentes • IA",
+        image: "/images/coreva-ai.webp",
+        alt: "Ilustración de robot IA",
       },
       {
-        title: "Automatización",
+        title: "Páginas que convierten",
         description:
-          "Flujos inteligentes que manejan tareas repetitivas, sincronizan tus datos y escalan tus operaciones sin aumentar carga operativa ni personal.",
-        icon: "⚙️",
+          "Sitios web modernos diseñados para generar confianza y convertir visitantes en clientes.",
+        meta: "Rápido • Responsive • Conversión",
+        image: "/images/coreva-websites.webp",
+        alt: "Ilustración de sitio web",
+      },
+      {
+        title: "Automatización escalable",
+        description:
+          "Optimiza procesos, conecta tus herramientas y ahorra tiempo cada semana.",
+        meta: "Workflows • Integraciones • Eficiencia",
+        image: "/images/coreva-automation.webp",
+        alt: "Ilustración de automatización",
       },
     ],
   },
+
 
   process: {
     badge: "FLUJO DE TRABAJO",

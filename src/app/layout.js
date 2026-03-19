@@ -7,9 +7,54 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Coreva Systems | High-Performance Business Automation",
+  metadataBase: new URL("https://www.corevasystems.com"),
+
+  title: {
+    default: "Coreva Systems | AI, Websites & Automation",
+    template: "%s | Coreva Systems",
+  },
+
   description:
-    "Websites, automation, and scalable systems designed to generate leads, save time, and turn manual chaos into digital precision.",
+    "We build AI systems, high-converting websites, and automation solutions that help businesses grow faster, save time, and scale efficiently.",
+
+  keywords: [
+    "AI solutions",
+    "business automation",
+    "web design agency",
+    "high converting websites",
+    "lead generation systems",
+    "automation workflows",
+    "Coreva Systems",
+  ],
+
+  openGraph: {
+    title: "Coreva Systems | AI, Websites & Automation",
+    description:
+      "AI systems, modern websites, and automation designed to grow your business.",
+    url: "https://www.corevasystems.com",
+    siteName: "Coreva Systems",
+    images: [
+      {
+        url: "/images/coreva-thumbnail.webp",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Coreva Systems | AI, Websites & Automation",
+    description:
+      "We build systems that help businesses grow, automate, and scale.",
+    images: ["/images/coreva-thumbnail.webp"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
