@@ -1,6 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function ServicesOverview({ dict }) {
+// Matches the fixed order of dict.services.items in both en.js and es.js:
+// [0] AI Solutions, [1] Websites that convert, [2] Automation that scales.
+const SERVICE_SLUGS = [
+  "services/ai-solutions",
+  "services/websites",
+  "services/automation",
+];
+
+export default function ServicesOverview({ dict, lang = "en" }) {
   const services = dict?.services || {
     badge: "What we do",
     title: "Systems designed to grow your business",
@@ -60,7 +69,7 @@ export default function ServicesOverview({ dict }) {
         </div>
 
         <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
-          {services.items.map((item) => (
+          {services.items.map((item, index) => (
             <article
               key={item.title}
               className="group relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]"
@@ -91,6 +100,16 @@ export default function ServicesOverview({ dict }) {
                 <div className="mt-6 inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700">
                   {item.meta}
                 </div>
+              )}
+
+              {SERVICE_SLUGS[index] && (
+                <Link
+                  href={`/${lang}/${SERVICE_SLUGS[index]}`}
+                  className="mt-6 flex items-center gap-2 text-sm font-bold text-primary transition-transform hover:translate-x-1"
+                >
+                  {lang === "es" ? "Saber más" : "Learn more"}
+                  <span>→</span>
+                </Link>
               )}
             </article>
           ))}

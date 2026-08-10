@@ -12,11 +12,14 @@ export default function Footer({ dict, lang = "en" }) {
       legal: "Legal",
     },
     links: {
+      aiSolutions: "AI Solutions",
       websites: "Websites",
       automation: "Automation",
       seo: "SEO Systems",
       faq: "FAQ",
       caseStudies: "Case Studies",
+      pricing: "Pricing",
+      blog: "Blog",
       emailUs: "Email Us",
       contactForm: "Contact Form",
       privacy: "Privacy",
@@ -64,7 +67,15 @@ export default function Footer({ dict, lang = "en" }) {
               <ul className="space-y-4 text-sm font-medium text-slate-400">
                 <li>
                   <Link
-                    href={`/${lang}#services`}
+                    href={`/${lang}/services/ai-solutions`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.aiSolutions}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}/services/websites`}
                     className="transition-colors hover:text-primary"
                   >
                     {footer.links.websites}
@@ -72,7 +83,7 @@ export default function Footer({ dict, lang = "en" }) {
                 </li>
                 <li>
                   <Link
-                    href={`/${lang}#services`}
+                    href={`/${lang}/services/automation`}
                     className="transition-colors hover:text-primary"
                   >
                     {footer.links.automation}
@@ -108,6 +119,22 @@ export default function Footer({ dict, lang = "en" }) {
                     className="transition-colors hover:text-primary"
                   >
                     {footer.links.caseStudies}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}/pricing`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.pricing}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}/blog`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.blog}
                   </Link>
                 </li>
               </ul>

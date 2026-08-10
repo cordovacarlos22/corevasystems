@@ -1,4 +1,10 @@
-export default function ResultsSection({ dict }) {
+import Link from "next/link";
+
+// Matches the fixed order of dict.results.items in both en.js and es.js:
+// [0] Clínica Arias (healthcare), [1] Cali Construction, [2] internal stack (no page).
+const CASE_STUDY_SLUGS = ["industries/healthcare", "industries/construction"];
+
+export default function ResultsSection({ dict, lang = "en" }) {
   const results = dict?.results || {
     badge: "CASE STUDIES",
     title: "Proven Market Results",
@@ -40,7 +46,7 @@ export default function ResultsSection({ dict }) {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-3">
-          {results.items.map((item) => (
+          {results.items.map((item, index) => (
             <div
               key={item.title}
               className="hover-lift rounded-[2.5rem] border border-slate-100 bg-slate-50/50 p-12"
@@ -55,6 +61,16 @@ export default function ResultsSection({ dict }) {
               <p className="font-medium leading-relaxed text-slate-500">
                 {item.description}
               </p>
+
+              {CASE_STUDY_SLUGS[index] && (
+                <Link
+                  href={`/${lang}/${CASE_STUDY_SLUGS[index]}`}
+                  className="mt-6 flex items-center gap-2 text-sm font-bold text-primary transition-transform hover:translate-x-1"
+                >
+                  {lang === "es" ? "Ver más" : "See more"}
+                  <span>→</span>
+                </Link>
+              )}
             </div>
           ))}
         </div>

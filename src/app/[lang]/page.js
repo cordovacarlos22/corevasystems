@@ -85,10 +85,10 @@ export default async function Home({ params }) {
       <main className="min-h-screen bg-white text-slate-900 antialiased selection:bg-primary/20">
         <HeroSection dict={dict} lang={lang} />
         <TrustedBySection dict={dict} />
-        <ServicesOverview dict={dict} />
+        <ServicesOverview dict={dict} lang={lang} />
         <ProcessSection dict={dict} />
         <PackagesSection dict={dict} />
-        <ResultsSection dict={dict} />
+        <ResultsSection dict={dict} lang={lang} />
         <FounderSection dict={dict} lang={lang} />
         <FAQSection dict={dict} lang={lang} />
         <ContactSection dict={dict} lang={lang} />

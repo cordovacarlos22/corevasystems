@@ -3,7 +3,17 @@ const BASE_URL = "https://www.corevasystems.com";
 const LOCALES = ["en", "es"];
 
 // Paths relative to /{locale}, "" = the locale root itself
-const ROUTES = ["", "/book"];
+const ROUTES = [
+  "",
+  "/book",
+  "/services/ai-solutions",
+  "/services/websites",
+  "/services/automation",
+  "/pricing",
+  "/industries/healthcare",
+  "/industries/construction",
+  "/blog",
+];
 
 function languageAlternates(path) {
   return Object.fromEntries(

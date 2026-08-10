@@ -33,15 +33,15 @@ export const metadata = {
   metadataBase: new URL("https://www.corevasystems.com"),
 
   title: {
-    default: "Coreva Systems | AI, Websites & Automation",
+    default: "AI Automation & High-Converting Websites | Coreva Systems",
     template: "%s | Coreva Systems",
   },
 
   description:
-    "We build AI systems, high-converting websites, and automation solutions that help businesses grow faster, save time, and scale efficiently.",
+    "Coreva Systems builds AI systems, high-converting websites, and automation for US & LATAM service businesses. Book a free strategy session today.",
 
   openGraph: {
-    title: "Coreva Systems | AI, Websites & Automation",
+    title: "AI Automation & High-Converting Websites | Coreva Systems",
     description:
       "AI systems, modern websites, and automation designed to grow your business.",
     url: "https://www.corevasystems.com",
@@ -59,7 +59,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Coreva Systems | AI, Websites & Automation",
+    title: "AI Automation & High-Converting Websites | Coreva Systems",
     description:
       "We build systems that help businesses grow, automate, and scale.",
     images: ["/images/coreva-thumbnail.webp"],

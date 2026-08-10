@@ -1,8 +1,8 @@
 const en = {
   seo: {
-    title: "AI Systems, Websites & Automation | Coreva Systems",
+    title: "AI Automation & High-Converting Websites | Coreva Systems",
     description:
-      "Coreva Systems builds AI systems, high-converting websites, and automation solutions that help US & LATAM service businesses grow faster, save time, and scale efficiently.",
+      "Coreva Systems builds AI systems, high-converting websites, and automation for US & LATAM service businesses. Book a free strategy session today.",
   },
   hero: {
     badge: "NOW ACCEPTING NEW PROJECTS FOR Q4",
@@ -195,11 +195,14 @@ const en = {
       legal: "Legal",
     },
     links: {
+      aiSolutions: "AI Solutions",
       websites: "Websites",
       automation: "Automation",
       seo: "SEO Systems",
       faq: "FAQ",
       caseStudies: "Case Studies",
+      pricing: "Pricing",
+      blog: "Blog",
       emailUs: "Email Us",
       contactForm: "Contact Form",
       privacy: "Privacy",
@@ -244,6 +247,228 @@ const en = {
           "Book a free strategy session through the \"Schedule Strategy Session\" button. We'll talk through your current operations and figure out the highest-impact place to start.",
       },
     ],
+  },
+  pages: {
+    aiSolutions: {
+      seo: {
+        title: "AI Agents & AI Systems for Service Businesses | Coreva",
+        description:
+          "Deploy AI agents and intelligent workflows that help your service business respond faster and work smarter. See how Coreva builds AI systems that scale.",
+      },
+      eyebrow: "AI SOLUTIONS",
+      h1: "AI Agents & AI Systems for Service Businesses",
+      subtitle:
+        "Intelligent systems that respond to customers, qualify leads, and handle repetitive work — so your team can focus on the parts of the job that actually need a human.",
+      features: [
+        {
+          title: "AI Agents",
+          description:
+            "Respond to inbound inquiries, qualify leads, and answer common questions around the clock — without adding headcount.",
+        },
+        {
+          title: "AI Assistants",
+          description:
+            "Internal tools that help your team draft, summarize, and search faster across the systems you already use.",
+        },
+        {
+          title: "Smart Workflows",
+          description:
+            "AI-assisted steps woven into your existing automation so decisions get made faster, not just tasks get triggered.",
+        },
+      ],
+      ctaTitle: "Ready to see what AI can automate in your business?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll map where an AI agent or assistant would save your team the most time.",
+    },
+    websites: {
+      seo: {
+        title: "High-Converting Websites for Service Businesses | Coreva",
+        description:
+          "Modern, fast, conversion-focused websites built to build trust and capture leads for service businesses. See Coreva's website design process.",
+      },
+      eyebrow: "WEBSITES THAT CONVERT",
+      h1: "High-Converting Websites for Service Businesses",
+      subtitle:
+        "A website that only looks good isn't doing its job. We build fast, responsive sites engineered to turn visitors into booked calls.",
+      features: [
+        {
+          title: "Fast",
+          description:
+            "Built on modern frameworks and optimized images so pages load quickly on every device.",
+        },
+        {
+          title: "Responsive",
+          description:
+            "Designed mobile-first, since most of your prospects will see it on a phone before anything else.",
+        },
+        {
+          title: "Conversion-focused",
+          description:
+            "Every section is built around one goal: getting a visitor to book a call or fill out a form.",
+        },
+      ],
+      ctaTitle: "Want a website that actually converts?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll walk through what a high-converting site would look like for your business.",
+    },
+    automation: {
+      seo: {
+        title: "Business Automation Systems & Workflows | Coreva Systems",
+        description:
+          "Streamline repetitive tasks, connect your tools, and save hours every week with custom automation workflows built by Coreva. Book a free call.",
+      },
+      eyebrow: "AUTOMATION THAT SCALES",
+      h1: "Business Automation Systems & Workflows",
+      subtitle:
+        "Streamline repetitive tasks, connect the tools you already use, and get hours back every week — without hiring for busywork.",
+      features: [
+        {
+          title: "Workflows",
+          description:
+            "Custom automations that move information between your CRM, inbox, calendar, and invoicing without manual re-entry.",
+        },
+        {
+          title: "Integrations",
+          description:
+            "We connect the tools you already run your business on instead of asking you to switch platforms.",
+        },
+        {
+          title: "Efficiency",
+          description:
+            "Less time on repetitive admin work means more time on the parts of the business that actually grow revenue.",
+        },
+      ],
+      ctaTitle: "Ready to automate the busywork?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll map your current process to find the highest-impact automation to build first.",
+    },
+    pricing: {
+      seo: {
+        title: "How Much Does Business Automation Cost? FAQ | Coreva",
+        description:
+          "Answers to common questions about AI systems, website, and automation pricing, timelines, and process, straight from Coreva Systems. No sales pitch.",
+      },
+      eyebrow: "PRICING & FAQ",
+      h1: "How Much Does Business Automation Cost?",
+      subtitle:
+        "Straight answers on pricing, timelines, and what a project with Coreva actually looks like — no sales pitch.",
+      whatIsIt: {
+        question: "What is a business automation system?",
+        answer:
+          "A business automation system connects the tools you already use — your CRM, calendar, invoicing, email — so information moves between them automatically instead of being copied by hand. In practice that means things like a new lead getting logged, tagged, and followed up with automatically, or an invoice getting generated the moment a job is marked complete.",
+      },
+      pricingIntro:
+        "Every project we build is scoped to the business, so we don't publish a single price list — a landing page and a full automation system aren't the same investment. Here's how our three tiers break down by what's included:",
+      tiers: [
+        {
+          name: "Website Foundation",
+          audience: "For new operations",
+          includes: [
+            "Custom landing page",
+            "Lead capture system",
+            "SEO & performance ready",
+          ],
+        },
+        {
+          name: "Full Automation System",
+          audience: "The complete solution",
+          includes: [
+            "Advanced conversion website",
+            "CRM & email workflows",
+            "Custom data dashboards",
+            "30-day implementation support",
+          ],
+        },
+        {
+          name: "Ongoing Optimization",
+          audience: "Monthly support plan",
+          includes: [
+            "System monitoring & updates",
+            "Strategy & growth calls",
+            "Conversion rate A/B testing",
+          ],
+        },
+      ],
+      pricingNote:
+        "Exact pricing depends on scope, integrations, and timeline — you'll get a clear number on your free strategy session, before any commitment.",
+      ctaTitle: "Want a real number for your project?",
+      ctaSubtitle:
+        "Book a free strategy session — we'll scope your project and give you a straight answer on cost and timeline.",
+    },
+    healthcare: {
+      seo: {
+        title: "Automation & Websites for Medical Clinics | Coreva Systems",
+        description:
+          "Patient scheduling automation, reminders, and high-converting websites built for clinics and healthcare practices. See Coreva's results.",
+      },
+      eyebrow: "FOR HEALTHCARE & CLINICS",
+      h1: "Automation & Websites for Medical Clinics",
+      subtitle:
+        "Patient scheduling automation, appointment reminders, and websites that make it easy for new patients to book — built for clinics and healthcare practices.",
+      caseStudy: {
+        title: "Clínica Arias",
+        metric: "40%",
+        label: "Increase in bookings",
+        description:
+          "We integrated scheduling and automated reminders that slashed no-shows almost instantly — freeing up front-desk staff from manual follow-up calls.",
+      },
+      useCases: [
+        "Online appointment scheduling connected to your calendar",
+        "Automated SMS/email reminders to reduce no-shows",
+        "A website built to convert visitors into booked appointments",
+      ],
+      ctaTitle: "Ready to reduce no-shows at your practice?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll map where scheduling automation would save your front desk the most time.",
+    },
+    construction: {
+      seo: {
+        title: "Automation & Websites for Construction Companies | Coreva",
+        description:
+          "Automated invoicing, project tracking, and lead-generating websites built for construction and field-service businesses. See Coreva's work.",
+      },
+      eyebrow: "FOR CONSTRUCTION & FIELD SERVICE",
+      h1: "Automation & Websites for Construction Companies",
+      subtitle:
+        "Automated invoicing, project tracking, and lead-generating websites built for construction and field-service businesses juggling complex operations.",
+      caseStudy: {
+        title: "Cali Construction",
+        metric: "25h+",
+        label: "Weekly admin savings",
+        description:
+          "We built an automated invoicing and project tracking system for complex field operations — cutting hours of manual paperwork every week.",
+      },
+      useCases: [
+        "Automated invoicing tied to project milestones",
+        "Project tracking systems built for field operations",
+        "A lead-generating website that builds trust with new clients",
+      ],
+      ctaTitle: "Ready to get hours back every week?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll map where automation would save your team the most admin time.",
+    },
+    blog: {
+      seo: {
+        title: "AI & Automation Guides for Service Businesses | Coreva",
+        description:
+          "Practical, no-hype guides on AI systems, automation, and websites for growing service businesses, from the team at Coreva Systems. New guides monthly.",
+      },
+      eyebrow: "GUIDES & RESOURCES",
+      h1: "AI & Automation Guides for Service Businesses",
+      subtitle:
+        "Practical, no-hype guides on AI systems, automation, and websites for growing service businesses.",
+      comingSoonTitle: "New guides are on the way",
+      comingSoonBody:
+        "We're building out this resource hub with practical guides — starting with what a business automation system actually is, what automation realistically costs, and how AI agents differ from traditional automation. Check back soon, or book a strategy session if you'd rather get answers now.",
+      upcomingTopics: [
+        "What Is a Business Automation System?",
+        "How Much Does It Cost to Automate a Small Business?",
+        "How to Automate Business Operations: A Practical Guide",
+        "AI Agents vs. Automation: What's the Difference?",
+      ],
+      ctaTitle: "Have a question the guides don't cover yet?",
+      ctaSubtitle: "Book a free strategy session and ask us directly.",
+    },
   },
   toast: {
     loadingTitle: "Sending message...",
