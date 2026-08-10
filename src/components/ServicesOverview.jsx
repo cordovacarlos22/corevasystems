@@ -75,7 +75,7 @@ export default function ServicesOverview({ dict }) {
                   width={360}
                   height={260}
                   className="relative mx-auto h-44 w-auto object-contain"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 45vw, (max-width: 1280px) 30vw, 220px"
                 />
               </div>
 

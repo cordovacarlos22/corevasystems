@@ -1,8 +1,13 @@
 const es = {
+  seo: {
+    title: "Sistemas de IA, Sitios Web y Automatización | Coreva Systems",
+    description:
+      "Coreva Systems construye sistemas de IA, sitios web de alta conversión y soluciones de automatización que ayudan a negocios de servicios en EE. UU. y LATAM a crecer más rápido, ahorrar tiempo y escalar eficientemente.",
+  },
   hero: {
     badge: "ACEPTANDO NUEVOS PROYECTOS PARA Q4",
-    titleLine1: "Construimos sistemas que",
-    titleHighlight: "hacen crecer tu negocio",
+    titleLine1: "Sistemas de IA, sitios web y",
+    titleHighlight: "automatización que hacen crecer tu negocio",
     description:
       "Sitios web, automatización y sistemas escalables diseñados para generar clientes potenciales, ahorrar tiempo y convertir el caos manual en precisión digital.",
     subtext:
@@ -209,6 +214,43 @@ const es = {
     },
     copyright: "© 2026 COREVA SYSTEMS. TODOS LOS DERECHOS RESERVADOS.",
     tagline: "Diseñado para rendimiento. Construido para crecer.",
+  },
+  faq: {
+    badge: "PREGUNTAS FRECUENTES",
+    title: "Preguntas frecuentes",
+    subtitle: "Todo lo que necesitas saber antes de agendar una sesión estratégica.",
+    items: [
+      {
+        question: "¿Qué servicios ofrece Coreva Systems?",
+        answer:
+          "Construimos tres cosas: sistemas de IA (agentes, asistentes y flujos de trabajo inteligentes), sitios web de alta conversión y automatización que conecta tus herramientas y elimina tareas repetitivas. La mayoría de los clientes combinan dos o tres de estos en un solo sistema.",
+      },
+      {
+        question: "¿Con quién trabajan?",
+        answer:
+          "Trabajamos con negocios de servicios en EE. UU. y LATAM — desde clínicas de salud hasta empresas de construcción — que quieren reemplazar procesos manuales y desconectados por un sistema que escala.",
+      },
+      {
+        question: "¿Cuál es su proceso para construir un nuevo sistema?",
+        answer:
+          "Seguimos un proceso de 3 pasos: Analizar (mapeamos tus operaciones actuales para encontrar oportunidades de alto impacto), Construir (diseñamos y desarrollamos el sitio web y los sistemas de automatización específicos para tu negocio) y Escalar (lanzamos y damos soporte continuo para un crecimiento predecible a largo plazo).",
+      },
+      {
+        question: "¿Ofrecen soporte después del lanzamiento?",
+        answer:
+          "Sí. Nuestro Sistema Completo de Automatización incluye 30 días de soporte de implementación después del lanzamiento, y nuestro plan de Optimización Continua cubre monitoreo mensual del sistema, actualizaciones y llamadas de estrategia para clientes que quieren soporte continuo.",
+      },
+      {
+        question: "¿Trabajan en inglés y español?",
+        answer:
+          "Sí — Coreva Systems opera de forma bilingüe, y este sitio está disponible tanto en inglés como en español. Nuestro equipo puede llevar sesiones estratégicas y comunicación del proyecto en cualquiera de los dos idiomas.",
+      },
+      {
+        question: "¿Cómo empiezo?",
+        answer:
+          "Agenda una sesión estratégica gratuita a través del botón \"Agendar sesión estratégica\". Hablaremos sobre tus operaciones actuales y definiremos el punto de mayor impacto para comenzar.",
+      },
+    ],
   },
   toast: {
     loadingTitle: "Enviando mensaje...",

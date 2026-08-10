@@ -9,6 +9,26 @@ const inter = Inter({
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Coreva Systems",
+  url: "https://www.corevasystems.com",
+  logo: "https://www.corevasystems.com/images/coreva-thumbnail.webp",
+  image: "https://www.corevasystems.com/images/coreva-thumbnail.webp",
+  description:
+    "Coreva Systems builds AI systems, high-converting websites, and automation solutions that help service businesses grow, save time, and scale efficiently.",
+  email: "hello@corevasystems.com",
+  areaServed: ["US", "LATAM"],
+  knowsLanguage: ["en", "es"],
+  sameAs: ["https://www.linkedin.com/in/carloscordovadev/"],
+  founder: {
+    "@type": "Person",
+    name: "Carlos Cordova",
+    jobTitle: "Founder & Systems Architect",
+  },
+};
+
 export const metadata = {
   metadataBase: new URL("https://www.corevasystems.com"),
 
@@ -19,16 +39,6 @@ export const metadata = {
 
   description:
     "We build AI systems, high-converting websites, and automation solutions that help businesses grow faster, save time, and scale efficiently.",
-
-  keywords: [
-    "AI solutions",
-    "business automation",
-    "web design agency",
-    "high converting websites",
-    "lead generation systems",
-    "automation workflows",
-    "Coreva Systems",
-  ],
 
   openGraph: {
     title: "Coreva Systems | AI, Websites & Automation",
@@ -64,6 +74,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Script
+          id="organization-jsonld"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         {children}
         <Toaster position="top-right" />
 

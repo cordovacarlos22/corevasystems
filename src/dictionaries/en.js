@@ -1,8 +1,13 @@
 const en = {
+  seo: {
+    title: "AI Systems, Websites & Automation | Coreva Systems",
+    description:
+      "Coreva Systems builds AI systems, high-converting websites, and automation solutions that help US & LATAM service businesses grow faster, save time, and scale efficiently.",
+  },
   hero: {
     badge: "NOW ACCEPTING NEW PROJECTS FOR Q4",
-    titleLine1: "We Build Systems That",
-    titleHighlight: "Grow Your Business",
+    titleLine1: "AI Systems, Websites &",
+    titleHighlight: "Automation That Grow Your Business",
     description:
       "Websites, automation, and scalable systems designed to generate leads, save time, and turn manual chaos into digital precision.",
     subtext:
@@ -202,6 +207,43 @@ const en = {
     },
     copyright: "© 2026 COREVA SYSTEMS. ALL RIGHTS RESERVED.",
     tagline: "Engineered for Performance. Built for Growth.",
+  },
+  faq: {
+    badge: "FAQ",
+    title: "Frequently asked questions",
+    subtitle: "Everything you need to know before booking a strategy session.",
+    items: [
+      {
+        question: "What services does Coreva Systems offer?",
+        answer:
+          "We build three things: AI systems (agents, assistants, and smart workflows), high-converting websites, and automation that connects your tools and eliminates repetitive tasks. Most clients combine two or three of these into one system.",
+      },
+      {
+        question: "Who do you work with?",
+        answer:
+          "We work with service businesses in the US and LATAM — from healthcare clinics to construction companies — who want to replace manual, disconnected processes with a system that scales.",
+      },
+      {
+        question: "What's your process for building a new system?",
+        answer:
+          "We follow a 3-step process: Analyze (map your current operations and find high-impact opportunities), Build (design and develop the website and automation systems specific to your business), and Scale (launch and support long-term, predictable growth).",
+      },
+      {
+        question: "Do you offer support after launch?",
+        answer:
+          "Yes. Our Full Automation System includes 30 days of implementation support after launch, and our Ongoing Optimization plan covers monthly system monitoring, updates, and strategy calls for clients who want continued support.",
+      },
+      {
+        question: "Do you work in English and Spanish?",
+        answer:
+          "Yes — Coreva Systems operates bilingually, and this site itself is available in both English and Spanish. Our team can run strategy sessions and project communication in either language.",
+      },
+      {
+        question: "How do I get started?",
+        answer:
+          "Book a free strategy session through the \"Schedule Strategy Session\" button. We'll talk through your current operations and figure out the highest-impact place to start.",
+      },
+    ],
   },
   toast: {
     loadingTitle: "Sending message...",

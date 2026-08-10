@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function FounderSection({ dict }) {
+export default function FounderSection({ dict, lang = "en" }) {
   const founder = dict?.founder || {
     badge: "MEET THE FOUNDER",
     name: "Carlos Cordova",
@@ -73,7 +73,7 @@ export default function FounderSection({ dict }) {
 
             <div className="flex flex-col gap-4">
               <Link
-                href="#contact"
+                href={`/${lang}#contact`}
                 className="group flex items-center gap-3 text-lg font-extrabold text-slate-900 transition-colors hover:text-primary"
               >
                 {founder.cta}
