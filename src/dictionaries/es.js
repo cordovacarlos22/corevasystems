@@ -228,6 +228,7 @@ const es = {
       blog: "Blog",
       emailUs: "Escríbenos",
       contactForm: "Formulario de contacto",
+      support: "Soporte",
       privacy: "Privacidad",
       terms: "Términos",
     },

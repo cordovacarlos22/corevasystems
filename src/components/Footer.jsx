@@ -22,6 +22,7 @@ export default function Footer({ dict, lang = "en" }) {
       blog: "Blog",
       emailUs: "Email Us",
       contactForm: "Contact Form",
+      support: "Support",
       privacy: "Privacy",
       terms: "Terms",
     },
@@ -159,6 +160,14 @@ export default function Footer({ dict, lang = "en" }) {
                     className="transition-colors hover:text-primary"
                   >
                     {footer.links.contactForm}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}/support`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.support}
                   </Link>
                 </li>
               </ul>

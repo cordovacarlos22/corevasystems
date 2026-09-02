@@ -221,6 +221,7 @@ const en = {
       blog: "Blog",
       emailUs: "Email Us",
       contactForm: "Contact Form",
+      support: "Support",
       privacy: "Privacy",
       terms: "Terms",
     },
