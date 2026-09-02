@@ -694,6 +694,15 @@ const es = {
         },
       ],
     },
+    support: {
+      seo: {
+        title: "Soporte al Cliente | Coreva Systems",
+        description: "Obtén ayuda con un proyecto activo, un pago o una pregunta general — contacta a Coreva Systems o revisa nuestras preguntas frecuentes.",
+      },
+      eyebrow: "SOPORTE",
+      h1: "Estamos aquí para ayudarte",
+      subtitle: "Preguntas sobre un proyecto activo, un pago o cualquier otra cosa — contáctanos directamente o revisa las preguntas frecuentes abajo.",
+    },
   },
   toast: {
     loadingTitle: "Enviando mensaje...",

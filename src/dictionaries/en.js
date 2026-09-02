@@ -687,6 +687,15 @@ const en = {
         },
       ],
     },
+    support: {
+      seo: {
+        title: "Customer Support | Coreva Systems",
+        description: "Get help with an active project, a payment, or a general question — contact Coreva Systems or check our FAQ.",
+      },
+      eyebrow: "SUPPORT",
+      h1: "We're here to help",
+      subtitle: "Questions about an active project, a payment, or anything else — reach us directly or check the FAQ below.",
+    },
   },
   toast: {
     loadingTitle: "Sending message...",
