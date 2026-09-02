@@ -9,6 +9,8 @@ const inter = Inter({
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+const TAWK_PROPERTY_ID = process.env.NEXT_PUBLIC_TAWK_PROPERTY_ID;
+const TAWK_WIDGET_ID = process.env.NEXT_PUBLIC_TAWK_WIDGET_ID;
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -100,6 +102,15 @@ export default function RootLayout({ children }) {
               `}
             </Script>
           </>
+        )}
+
+        {TAWK_PROPERTY_ID && TAWK_WIDGET_ID && (
+          <Script
+            id="tawk-to"
+            strategy="lazyOnload"
+            src={`https://embed.tawk.to/${TAWK_PROPERTY_ID}/${TAWK_WIDGET_ID}`}
+            crossOrigin="*"
+          />
         )}
       </body>
     </html>
