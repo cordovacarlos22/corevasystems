@@ -39,8 +39,8 @@ const en = {
         title: "Starter Package",
         subtitle: "FOR NEW OPERATIONS",
         bestFor: "Best if you don't have a site yet and need a fast, credible presence online.",
-        price: "$149",
-        priceLatam: "$45",
+        price: "$134",
+        priceLatam: "$40",
         features: [
           "Up to 3 custom pages, mobile-first",
           "Modern animated hero, no jQuery",
@@ -53,8 +53,8 @@ const en = {
         title: "Professional Package",
         subtitle: "THE COMPLETE SOLUTION",
         bestFor: "Best once you're ready for a content-rich site you can update yourself.",
-        price: "$699",
-        priceLatam: "$210",
+        price: "$629",
+        priceLatam: "$189",
         features: [
           "Up to 10 unique pages",
           "Headless CMS — edit it yourself",
@@ -68,8 +68,8 @@ const en = {
         title: "Enterprise Package",
         subtitle: "FOR FULL-SCALE OPERATIONS",
         bestFor: "Best if you want a custom, high-end build with a launch video included.",
-        price: "$3,299",
-        priceLatam: "$990",
+        price: "$2,969",
+        priceLatam: "$891",
         features: [
           "15–20 pages, high-end custom design",
           "AI-assisted brand/explainer video",

@@ -39,8 +39,8 @@ const es = {
         title: "Paquete Inicial",
         subtitle: "PARA NUEVAS OPERACIONES",
         bestFor: "Ideal si aún no tienes sitio web y necesitas una presencia rápida y creíble en línea.",
-        price: "$149",
-        priceLatam: "$45",
+        price: "$134",
+        priceLatam: "$40",
         features: [
           "Hasta 3 páginas personalizadas, mobile-first",
           "Hero animado moderno, sin jQuery",
@@ -53,8 +53,8 @@ const es = {
         title: "Paquete Profesional",
         subtitle: "LA SOLUCIÓN COMPLETA",
         bestFor: "Ideal cuando estás listo para un sitio rico en contenido que puedes actualizar tú mismo.",
-        price: "$699",
-        priceLatam: "$210",
+        price: "$629",
+        priceLatam: "$189",
         features: [
           "Hasta 10 páginas únicas",
           "CMS headless — edítalo tú mismo",
@@ -68,8 +68,8 @@ const es = {
         title: "Paquete Empresarial",
         subtitle: "PARA OPERACIONES A GRAN ESCALA",
         bestFor: "Ideal si quieres una construcción personalizada de alto nivel con video de lanzamiento incluido.",
-        price: "$3,299",
-        priceLatam: "$990",
+        price: "$2,969",
+        priceLatam: "$891",
         features: [
           "15–20 páginas, diseño personalizado de alto nivel",
           "Video de marca/explicativo con IA",
