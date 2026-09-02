@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated one-off assets (see scripts/generate-stripe-icon.mjs)
+/stripe-icon.png
