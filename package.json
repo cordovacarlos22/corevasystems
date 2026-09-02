@@ -17,6 +17,7 @@
     "react-dom": "19.2.3",
     "react-hook-form": "^7.71.2",
     "sileo": "^0.1.5",
+    "stripe": "^22.6.1",
     "yup": "^1.7.1"
   },
   "devDependencies": {

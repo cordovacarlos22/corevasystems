@@ -28,14 +28,14 @@ export default function HeroSection({ dict, lang }) {
 
         <div className="mb-24 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href={`/${lang}/book`}
+            href={`/${lang}/pricing`}
             className="gradient-soft w-full rounded-2xl px-10 py-5 text-center text-lg font-bold text-white shadow-2xl shadow-primary/20 transition-transform hover:scale-[1.02] sm:w-auto"
           >
             {hero.primaryCta}
           </Link>
 
           <Link
-            href={`/${lang}#process`}
+            href={`/${lang}/book`}
             className="w-full rounded-2xl border border-slate-200 bg-white px-10 py-5 text-center text-lg font-bold text-slate-900 transition-colors hover:bg-slate-50 sm:w-auto"
           >
             {hero.secondaryCta}

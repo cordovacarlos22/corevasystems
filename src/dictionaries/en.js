@@ -6,14 +6,14 @@ const en = {
   },
   hero: {
     badge: "NOW ACCEPTING NEW PROJECTS FOR Q4",
-    titleLine1: "AI Systems, Websites &",
-    titleHighlight: "Automation That Grow Your Business",
+    titleLine1: "Websites Built to Sell",
+    titleHighlight: "— Not Just Look Good",
     description:
-      "Websites, automation, and scalable systems designed to generate leads, save time, and turn manual chaos into digital precision.",
+      "Design, booking, and payments built in from day one. Automation and AI when you're ready to scale.",
     subtext:
-      "Helping companies automate and scale — Trusted by service businesses in the US & LATAM",
-    primaryCta: "Schedule Strategy Session",
-    secondaryCta: "See How It Works",
+      "Helping local businesses launch and grow — trusted by service businesses in the US & LATAM",
+    primaryCta: "See Pricing",
+    secondaryCta: "Book a Call",
     stats: {
       delivered: "Systems Delivered",
       success: "Project Success Rate",
@@ -29,42 +29,44 @@ const en = {
   },
   packages: {
     badge: "SERVICE TIERS",
-    title: "Choose your growth level",
-    subtitle: "High-ticket systems for businesses ready for the next level.",
+    title: "Choose your website tier",
+    subtitle:
+      "Every tier starts with a website built to convert — automation and AI layer on when you're ready.",
     items: [
       {
-        title: "Website Foundation",
+        title: "Essential Site",
         subtitle: "FOR NEW OPERATIONS",
         features: [
-          "Custom Landing Page",
-          "Lead Capture System",
-          "SEO & Performance Ready",
+          "Custom-designed website",
+          "Online booking built in",
+          "SEO & performance ready",
         ],
         buttonText: "Get Started",
         featured: false,
       },
       {
-        title: "Full Automation System",
+        title: "Professional Site",
         subtitle: "THE COMPLETE SOLUTION",
         features: [
-          "Advanced Conversion Website",
-          "CRM & Email Workflows",
-          "Custom Data Dashboards",
-          "30-Day Implementation Support",
+          "Everything in Essential",
+          "Stripe payments integrated",
+          "CRM & email workflows",
+          "15-day launch support",
         ],
-        buttonText: "Book a Call Now",
+        buttonText: "Get Started",
         featured: true,
-        badge: "MOST PROMINENT",
+        badge: "MOST POPULAR",
       },
       {
-        title: "Ongoing Optimization",
-        subtitle: "MONTHLY SUPPORT PLAN",
+        title: "Complete System",
+        subtitle: "FOR FULL-SCALE OPERATIONS",
         features: [
-          "System Monitoring & Updates",
-          "Strategy & Growth Calls",
-          "Conversion Rate A/B Testing",
+          "Everything in Professional",
+          "Custom automation workflows",
+          "AI-powered lead follow-up",
+          "30-day launch support",
         ],
-        buttonText: "Start Scaling",
+        buttonText: "Book a Call",
         featured: false,
       },
     ],
@@ -111,25 +113,28 @@ const en = {
     subtitle: "We combine AI, modern websites, and automation to help service businesses scale smarter.",
     items: [
       {
-        title: "AI Solutions",
-        description: "Deploy intelligent systems that help your business respond faster and work smarter.",
-        meta: "Agents • Assistants • Smart workflows",
-        image: "/images/coreva-ai.webp",
-        alt: "AI robot illustration"
-      },
-      {
         title: "Websites that convert",
         description: "Modern websites designed to build trust, capture leads, and grow your business.",
         meta: "Fast • Responsive • Conversion-focused",
         image: "/images/coreva-websites.webp",
-        alt: "Website monitor illustration"
+        alt: "Website monitor illustration",
+        tag: "Core service"
       },
       {
         title: "Automation that scales",
         description: "Streamline repetitive tasks, connect your tools, and save time every week.",
         meta: "Workflows • Integrations • Efficiency",
         image: "/images/coreva-automation.webp",
-        alt: "Automation flow illustration"
+        alt: "Automation flow illustration",
+        tag: "Upsell"
+      },
+      {
+        title: "AI Solutions",
+        description: "Deploy intelligent systems that help your business respond faster and work smarter.",
+        meta: "Agents • Assistants • Smart workflows",
+        image: "/images/coreva-ai.webp",
+        alt: "AI robot illustration",
+        tag: "Upsell"
       }
     ]
   },
@@ -344,56 +349,59 @@ const en = {
     },
     pricing: {
       seo: {
-        title: "How Much Does Business Automation Cost? FAQ | Coreva",
+        title: "Website Pricing — US & LatAm Rates | Coreva Systems",
         description:
-          "Answers to common questions about AI systems, website, and automation pricing, timelines, and process, straight from Coreva Systems. No sales pitch.",
+          "See Coreva Systems' website package pricing for the US and Latin America — Essential, Professional, and Complete System tiers, no sales pitch.",
       },
-      eyebrow: "PRICING & FAQ",
-      h1: "How Much Does Business Automation Cost?",
-      subtitle:
-        "Straight answers on pricing, timelines, and what a project with Coreva actually looks like — no sales pitch.",
-      whatIsIt: {
-        question: "What is a business automation system?",
-        answer:
-          "A business automation system connects the tools you already use — your CRM, calendar, invoicing, email — so information moves between them automatically instead of being copied by hand. In practice that means things like a new lead getting logged, tagged, and followed up with automatically, or an invoice getting generated the moment a job is marked complete.",
+      eyebrow: "PRICING",
+      h1: "Simple pricing, built for where you do business",
+      subtitle: "One website. Three levels of build. Priced for your market.",
+      regionLabels: {
+        us: "United States (USD)",
+        latam: "Latin America (USD)",
       },
-      pricingIntro:
-        "Every project we build is scoped to the business, so we don't publish a single price list — a landing page and a full automation system aren't the same investment. Here's how our three tiers break down by what's included:",
       tiers: [
         {
-          name: "Website Foundation",
+          name: "Essential Site",
           audience: "For new operations",
           includes: [
-            "Custom landing page",
-            "Lead capture system",
+            "Custom-designed website",
+            "Online booking widget built in",
+            "Mobile-optimized, fast-loading",
             "SEO & performance ready",
           ],
         },
         {
-          name: "Full Automation System",
+          name: "Professional Site",
           audience: "The complete solution",
           includes: [
-            "Advanced conversion website",
+            "Everything in Essential",
+            "Stripe payments integrated",
             "CRM & email workflows",
             "Custom data dashboards",
-            "30-day implementation support",
           ],
         },
         {
-          name: "Ongoing Optimization",
-          audience: "Monthly support plan",
+          name: "Complete System",
+          audience: "For full-scale operations",
           includes: [
-            "System monitoring & updates",
-            "Strategy & growth calls",
-            "Conversion rate A/B testing",
+            "Everything in Professional",
+            "Custom automation workflows",
+            "AI-powered lead follow-up",
+            "Priority support & monthly check-ins",
           ],
         },
       ],
+      supportLabel: "days of post-launch support",
+      oneTime: "one-time",
+      mostPopular: "Most Popular",
+      buttonGetStarted: "Get Started",
+      buttonBookCall: "Book a Call",
       pricingNote:
-        "Exact pricing depends on scope, integrations, and timeline — you'll get a clear number on your free strategy session, before any commitment.",
-      ctaTitle: "Want a real number for your project?",
+        "Complete System engagements are scoped on a free strategy call before booking.",
+      ctaTitle: "Not sure which tier fits?",
       ctaSubtitle:
-        "Book a free strategy session — we'll scope your project and give you a straight answer on cost and timeline.",
+        "Book a free strategy session and we'll scope your project and give you a straight recommendation.",
     },
     healthcare: {
       seo: {
@@ -446,6 +454,31 @@ const en = {
       ctaTitle: "Ready to get hours back every week?",
       ctaSubtitle:
         "Book a free strategy session and we'll map where automation would save your team the most admin time.",
+    },
+    restaurants: {
+      seo: {
+        title: "Automation & Websites for Restaurants | Coreva Systems",
+        description:
+          "Online reservations, automated reminders, and lead-generating websites built for restaurants and hospitality businesses. See Coreva's approach.",
+      },
+      eyebrow: "FOR RESTAURANTS & HOSPITALITY",
+      h1: "Automation & Websites for Restaurants",
+      subtitle:
+        "Online reservations, automated confirmations, and a website that makes it easy for guests to book a table — built for restaurants and hospitality businesses.",
+      useCases: [
+        "Online reservations connected to your host stand",
+        "Automated confirmation and reminder texts to cut no-shows",
+        "A website built to convert visitors into booked tables",
+      ],
+      caseStudyComingSoon: {
+        label: "CASE STUDY",
+        title: "Your restaurant could be the first",
+        description:
+          "We haven't published a restaurant case study yet — but the same pattern that got Clínica Arias a 40% increase in online bookings applies here: replace phone-only booking with a reservation system that's open when your host stand isn't.",
+      },
+      ctaTitle: "Ready to fill more tables online?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll map where reservation automation would save your team the most time.",
     },
     blog: {
       seo: {

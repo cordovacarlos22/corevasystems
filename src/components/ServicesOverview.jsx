@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Matches the fixed order of dict.services.items in both en.js and es.js:
-// [0] AI Solutions, [1] Websites that convert, [2] Automation that scales.
+// [0] Websites that convert, [1] Automation that scales, [2] AI Solutions.
 const SERVICE_SLUGS = [
-  "services/ai-solutions",
   "services/websites",
   "services/automation",
+  "services/ai-solutions",
 ];
 
 export default function ServicesOverview({ dict, lang = "en" }) {
@@ -17,20 +17,13 @@ export default function ServicesOverview({ dict, lang = "en" }) {
       "We combine AI, modern websites, and automation to help service businesses scale smarter.",
     items: [
       {
-        title: "AI Solutions",
-        description:
-          "Deploy intelligent systems that help your business respond faster and work smarter.",
-        meta: "Agents • Assistants • Smart workflows",
-        image: "/images/coreva-ai.webp",
-        alt: "AI robot illustration",
-      },
-      {
         title: "Websites that convert",
         description:
           "Modern websites designed to build trust, capture leads, and grow your business.",
         meta: "Fast • Responsive • Conversion-focused",
         image: "/images/coreva-websites.webp",
         alt: "Website monitor illustration",
+        tag: "Core service",
       },
       {
         title: "Automation that scales",
@@ -39,6 +32,16 @@ export default function ServicesOverview({ dict, lang = "en" }) {
         meta: "Workflows • Integrations • Efficiency",
         image: "/images/coreva-automation.webp",
         alt: "Automation flow illustration",
+        tag: "Upsell",
+      },
+      {
+        title: "AI Solutions",
+        description:
+          "Deploy intelligent systems that help your business respond faster and work smarter.",
+        meta: "Agents • Assistants • Smart workflows",
+        image: "/images/coreva-ai.webp",
+        alt: "AI robot illustration",
+        tag: "Upsell",
       },
     ],
   };
@@ -75,6 +78,18 @@ export default function ServicesOverview({ dict, lang = "en" }) {
               className="group relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]"
             >
               <div className="absolute inset-x-0 top-0 h-24 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(124,92,255,0.14),transparent_55%)]" />
+
+              {item.tag && (
+                <div
+                  className={`absolute right-6 top-6 z-10 inline-flex rounded-full px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide ${
+                    index === 0
+                      ? "bg-primary/5 text-primary"
+                      : "bg-slate-100 text-slate-600"
+                  }`}
+                >
+                  {item.tag}
+                </div>
+              )}
 
               <div className="relative mb-8 overflow-hidden rounded-[1.75rem] border border-slate-100 bg-gradient-to-br from-violet-50 via-white to-pink-50 p-6">
                 <div className="absolute inset-0 opacity-80 bg-[radial-gradient(circle_at_bottom_left,rgba(124,92,255,0.14),transparent_32%),radial-gradient(circle_at_top_right,rgba(236,72,153,0.12),transparent_30%)]" />

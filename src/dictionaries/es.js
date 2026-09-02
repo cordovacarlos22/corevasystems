@@ -6,14 +6,14 @@ const es = {
   },
   hero: {
     badge: "ACEPTANDO NUEVOS PROYECTOS PARA Q4",
-    titleLine1: "Sistemas de IA, sitios web y",
-    titleHighlight: "automatización que hacen crecer tu negocio",
+    titleLine1: "Sitios web hechos para vender",
+    titleHighlight: "— no solo para verse bien",
     description:
-      "Sitios web, automatización y sistemas escalables diseñados para generar clientes potenciales, ahorrar tiempo y convertir el caos manual en precisión digital.",
+      "Diseño, agendamiento y pagos integrados desde el día uno. Automatización e IA cuando estés listo para escalar.",
     subtext:
-      "Ayudando a empresas a automatizar y escalar — Con la confianza de negocios de servicios en EE. UU. y LATAM",
-    primaryCta: "Agendar sesión estratégica",
-    secondaryCta: "Ver cómo funciona",
+      "Ayudando a negocios locales a lanzar y crecer — con la confianza de negocios de servicios en EE. UU. y LATAM",
+    primaryCta: "Ver precios",
+    secondaryCta: "Agendar llamada",
     stats: {
       delivered: "Sistemas entregados",
       success: "Tasa de éxito",
@@ -29,42 +29,44 @@ const es = {
   },
   packages: {
     badge: "PLANES DE SERVICIO",
-    title: "Elige tu nivel de crecimiento",
-    subtitle: "Sistemas premium para negocios listos para el siguiente nivel.",
+    title: "Elige el nivel de tu sitio web",
+    subtitle:
+      "Cada nivel comienza con un sitio web hecho para convertir — la automatización y la IA se suman cuando estés listo.",
     items: [
       {
-        title: "Base Web",
+        title: "Sitio Esencial",
         subtitle: "PARA NUEVAS OPERACIONES",
         features: [
-          "Landing Page personalizada",
-          "Sistema de captación de leads",
+          "Sitio web personalizado",
+          "Agendamiento en línea incluido",
           "SEO y rendimiento optimizado",
         ],
         buttonText: "Comenzar",
         featured: false,
       },
       {
-        title: "Sistema Completo de Automatización",
+        title: "Sitio Profesional",
         subtitle: "LA SOLUCIÓN COMPLETA",
         features: [
-          "Website avanzado de conversión",
+          "Todo lo del Sitio Esencial",
+          "Pagos con Stripe integrados",
           "CRM y flujos de email",
-          "Dashboards personalizados",
-          "Soporte de implementación por 30 días",
+          "15 días de soporte de lanzamiento",
         ],
-        buttonText: "Agendar llamada",
+        buttonText: "Comenzar",
         featured: true,
-        badge: "MÁS DESTACADO",
+        badge: "MÁS POPULAR",
       },
       {
-        title: "Optimización Continua",
-        subtitle: "PLAN DE SOPORTE MENSUAL",
+        title: "Sistema Completo",
+        subtitle: "PARA OPERACIONES A GRAN ESCALA",
         features: [
-          "Monitoreo y actualizaciones del sistema",
-          "Llamadas de estrategia y crecimiento",
-          "Pruebas A/B de conversión",
+          "Todo lo del Sitio Profesional",
+          "Flujos de automatización personalizados",
+          "Seguimiento de leads con IA",
+          "30 días de soporte de lanzamiento",
         ],
-        buttonText: "Empezar a escalar",
+        buttonText: "Agendar llamada",
         featured: false,
       },
     ],
@@ -112,20 +114,13 @@ const es = {
       "Combinamos IA, sitios web modernos y automatización para ayudarte a escalar de forma inteligente.",
     items: [
       {
-        title: "Soluciones con IA",
-        description:
-          "Implementa sistemas inteligentes que te ayudan a responder más rápido y trabajar mejor.",
-        meta: "Agentes • Asistentes • IA",
-        image: "/images/coreva-ai.webp",
-        alt: "Ilustración de robot IA",
-      },
-      {
         title: "Páginas que convierten",
         description:
           "Sitios web modernos diseñados para generar confianza y convertir visitantes en clientes.",
         meta: "Rápido • Responsive • Conversión",
         image: "/images/coreva-websites.webp",
         alt: "Ilustración de sitio web",
+        tag: "Servicio principal",
       },
       {
         title: "Automatización escalable",
@@ -134,6 +129,16 @@ const es = {
         meta: "Workflows • Integraciones • Eficiencia",
         image: "/images/coreva-automation.webp",
         alt: "Ilustración de automatización",
+        tag: "Adicional",
+      },
+      {
+        title: "Soluciones con IA",
+        description:
+          "Implementa sistemas inteligentes que te ayudan a responder más rápido y trabajar mejor.",
+        meta: "Agentes • Asistentes • IA",
+        image: "/images/coreva-ai.webp",
+        alt: "Ilustración de robot IA",
+        tag: "Adicional",
       },
     ],
   },
@@ -351,56 +356,59 @@ const es = {
     },
     pricing: {
       seo: {
-        title: "¿Cuánto Cuesta Automatizar un Negocio? FAQ | Coreva",
+        title: "Precios de Sitios Web — Tarifas EE. UU. y LATAM | Coreva",
         description:
-          "Respuestas a preguntas frecuentes sobre precios, tiempos y proceso de sistemas de IA, sitios web y automatización, directo del equipo de Coreva Systems.",
+          "Consulta los precios de los paquetes web de Coreva Systems para EE. UU. y Latinoamérica — niveles Esencial, Profesional y Sistema Completo, sin discurso de ventas.",
       },
-      eyebrow: "PRECIOS Y PREGUNTAS FRECUENTES",
-      h1: "¿Cuánto Cuesta Automatizar un Negocio?",
-      subtitle:
-        "Respuestas claras sobre precios, tiempos y cómo es realmente un proyecto con Coreva — sin discurso de ventas.",
-      whatIsIt: {
-        question: "¿Qué es un sistema de automatización empresarial?",
-        answer:
-          "Un sistema de automatización empresarial conecta las herramientas que ya usas — tu CRM, calendario, facturación, correo — para que la información se mueva entre ellas automáticamente en lugar de copiarse a mano. En la práctica, eso significa cosas como que un nuevo lead se registre, etiquete y reciba seguimiento automáticamente, o que se genere una factura en el momento en que un trabajo se marca como completado.",
+      eyebrow: "PRECIOS",
+      h1: "Precios simples, según dónde opera tu negocio",
+      subtitle: "Un sitio web. Tres niveles de construcción. Con precio según tu mercado.",
+      regionLabels: {
+        us: "Estados Unidos (USD)",
+        latam: "Latinoamérica (USD)",
       },
-      pricingIntro:
-        "Cada proyecto que construimos se define según el negocio, así que no publicamos una lista de precios única — una landing page y un sistema completo de automatización no son la misma inversión. Así se dividen nuestros tres planes según lo que incluyen:",
       tiers: [
         {
-          name: "Base Web",
+          name: "Sitio Esencial",
           audience: "Para nuevas operaciones",
           includes: [
-            "Landing page personalizada",
-            "Sistema de captación de leads",
+            "Sitio web personalizado",
+            "Widget de agendamiento en línea incluido",
+            "Optimizado para móvil y velocidad",
             "SEO y rendimiento optimizado",
           ],
         },
         {
-          name: "Sistema Completo de Automatización",
+          name: "Sitio Profesional",
           audience: "La solución completa",
           includes: [
-            "Website avanzado de conversión",
+            "Todo lo del Sitio Esencial",
+            "Pagos con Stripe integrados",
             "CRM y flujos de email",
-            "Dashboards personalizados",
-            "Soporte de implementación por 30 días",
+            "Dashboards de datos personalizados",
           ],
         },
         {
-          name: "Optimización Continua",
-          audience: "Plan de soporte mensual",
+          name: "Sistema Completo",
+          audience: "Para operaciones a gran escala",
           includes: [
-            "Monitoreo y actualizaciones del sistema",
-            "Llamadas de estrategia y crecimiento",
-            "Pruebas A/B de conversión",
+            "Todo lo del Sitio Profesional",
+            "Flujos de automatización personalizados",
+            "Seguimiento de leads con IA",
+            "Soporte prioritario y llamadas mensuales",
           ],
         },
       ],
+      supportLabel: "días de soporte tras el lanzamiento",
+      oneTime: "pago único",
+      mostPopular: "Más popular",
+      buttonGetStarted: "Comenzar",
+      buttonBookCall: "Agendar llamada",
       pricingNote:
-        "El precio exacto depende del alcance, las integraciones y el tiempo del proyecto — recibirás un número claro en tu sesión estratégica gratuita, sin ningún compromiso.",
-      ctaTitle: "¿Quieres un número real para tu proyecto?",
+        "Los proyectos de Sistema Completo se definen en una llamada estratégica gratuita antes de agendarse.",
+      ctaTitle: "¿No sabes qué nivel te conviene?",
       ctaSubtitle:
-        "Agenda una sesión estratégica gratuita — definimos el alcance de tu proyecto y te damos una respuesta clara sobre costo y tiempo.",
+        "Agenda una sesión estratégica gratuita y definimos el alcance de tu proyecto con una recomendación clara.",
     },
     healthcare: {
       seo: {
@@ -453,6 +461,31 @@ const es = {
       ctaTitle: "¿Listo para recuperar horas cada semana?",
       ctaSubtitle:
         "Agenda una sesión estratégica gratuita y te mostramos dónde la automatización le ahorraría más tiempo administrativo a tu equipo.",
+    },
+    restaurants: {
+      seo: {
+        title: "Automatización y Sitios Web para Restaurantes | Coreva",
+        description:
+          "Reservas en línea, recordatorios automáticos y sitios web que generan clientes para restaurantes y negocios de hospitalidad. Conoce el enfoque de Coreva.",
+      },
+      eyebrow: "PARA RESTAURANTES Y HOSPITALIDAD",
+      h1: "Automatización y Sitios Web para Restaurantes",
+      subtitle:
+        "Reservas en línea, confirmaciones automáticas y un sitio web que facilita que los comensales reserven una mesa — diseñado para restaurantes y negocios de hospitalidad.",
+      useCases: [
+        "Reservas en línea conectadas a tu recepción",
+        "Mensajes automáticos de confirmación y recordatorio para reducir ausencias",
+        "Un sitio web diseñado para convertir visitantes en mesas reservadas",
+      ],
+      caseStudyComingSoon: {
+        label: "CASO DE ÉXITO",
+        title: "Tu restaurante podría ser el primero",
+        description:
+          "Todavía no hemos publicado un caso de éxito de restaurantes — pero el mismo patrón que le dio a Clínica Arias un aumento del 40% en reservas en línea aplica aquí: reemplazar las reservas solo por teléfono con un sistema abierto incluso cuando tu recepción no lo está.",
+      },
+      ctaTitle: "¿Listo para llenar más mesas en línea?",
+      ctaSubtitle:
+        "Agenda una sesión estratégica gratuita y te mostramos dónde la automatización de reservas le ahorraría más tiempo a tu equipo.",
     },
     blog: {
       seo: {
