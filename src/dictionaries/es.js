@@ -99,6 +99,21 @@ const es = {
       button: "Enviar mensaje",
     },
   },
+  leadPopup: {
+    title: "¿Tienes una pregunta antes de irte?",
+    subtitle: "Déjanos tu correo y te contactaremos — sin necesidad de una llamada de ventas.",
+    namePlaceholder: "Tu nombre",
+    emailPlaceholder: "Tu correo",
+    button: "Enviar",
+    sending: "Enviando...",
+    dismissLabel: "Cerrar",
+    toast: {
+      successTitle: "¡Recibido!",
+      successDescription: "Nos pondremos en contacto pronto.",
+      errorTitle: "Algo salió mal",
+      errorDescription: "Inténtalo de nuevo.",
+    },
+  },
   founder: {
     badge: "CONOCE AL FUNDADOR",
     name: "Carlos Cordova",

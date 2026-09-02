@@ -14,6 +14,7 @@ import FounderSection from "@/components/FounderSection";
 import ContactSection from "@/components/ContactSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import LeadCapturePopup from "@/components/LeadCapturePopup";
 
 const BASE_URL = "https://www.corevasystems.com";
 
@@ -95,6 +96,7 @@ export default async function Home({ params }) {
         <FinalCTA dict={dict} />
       </main>
       <Footer dict={dict} lang={lang} />
+      <LeadCapturePopup dict={dict} lang={lang} />
     </>
   );
 }
