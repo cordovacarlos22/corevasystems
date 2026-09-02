@@ -137,7 +137,7 @@ const en = {
   services: {
     badge: "What we do",
     title: "Systems designed to grow your business",
-    subtitle: "We combine AI, modern websites, and automation to help service businesses scale smarter.",
+    subtitle: "We build websites and online stores that convert — with automation and AI layered on when you're ready to scale.",
     items: [
       {
         title: "Websites that convert",
@@ -145,6 +145,14 @@ const en = {
         meta: "Fast • Responsive • Conversion-focused",
         image: "/images/coreva-websites.webp",
         alt: "Website monitor illustration",
+        tag: "Core service"
+      },
+      {
+        title: "E-Commerce that sells",
+        description: "Online stores built to convert browsers into buyers, from a first product catalog to full-scale operations.",
+        meta: "Storefronts • Payments • Inventory",
+        image: "/images/coreva-ecommerce.webp",
+        alt: "E-commerce shopping bag illustration",
         tag: "Core service"
       },
       {
@@ -228,6 +236,7 @@ const en = {
     },
     links: {
       aiSolutions: "AI Solutions",
+      ecommerce: "E-Commerce",
       websites: "Websites",
       automation: "Automation",
       seo: "SEO Systems",
@@ -344,6 +353,37 @@ const en = {
       ctaSubtitle:
         "Book a free strategy session and we'll walk through what a high-converting site would look like for your business.",
     },
+    ecommerce: {
+      seo: {
+        title: "E-Commerce Websites & Online Stores | Coreva Systems",
+        description:
+          "Online stores built to convert browsers into buyers — product catalogs, payments, and inventory built in. See Coreva's e-commerce approach.",
+      },
+      eyebrow: "E-COMMERCE THAT SELLS",
+      h1: "Online Stores Built to Convert",
+      subtitle:
+        "A product catalog alone doesn't sell anything. We build stores engineered around checkout — fast, trustworthy, and easy to buy from on any device.",
+      features: [
+        {
+          title: "Built to convert",
+          description:
+            "Product pages, cart, and checkout designed around the fewest possible steps between browsing and buying.",
+        },
+        {
+          title: "Payments built in",
+          description:
+            "Stripe-powered checkout from day one, with support for discount codes and multiple currencies as you grow.",
+        },
+        {
+          title: "Inventory that scales",
+          description:
+            "From a first small catalog to thousands of SKUs across multiple warehouses — the store grows with your business.",
+        },
+      ],
+      ctaTitle: "Ready to sell online?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll map out what an online store would look like for your products.",
+    },
     automation: {
       seo: {
         title: "Business Automation Systems & Workflows | Coreva Systems",
@@ -390,6 +430,7 @@ const en = {
       },
       categoryLabels: {
         websites: "Websites",
+        ecommerce: "E-Commerce",
         automation: "Automation",
         ai: "AI Solutions",
       },
@@ -425,6 +466,50 @@ const en = {
                 "AI-powered lead follow-up",
                 "Client login area for order/project status",
                 "Priority support & monthly check-ins",
+              ],
+            },
+          ],
+        },
+        ecommerce: {
+          tiers: [
+            {
+              name: "Starter Store",
+              audience: "For your first online store",
+              includes: [
+                "Up to 25 products",
+                "Stripe payments integrated",
+                "Basic inventory tracking",
+                "Mobile-optimized storefront",
+              ],
+            },
+            {
+              name: "Growth Store",
+              audience: "The complete storefront",
+              includes: [
+                "Up to 100 products",
+                "Discount codes & abandoned-cart recovery",
+                "Product reviews & ratings",
+                "Multi-currency support",
+              ],
+            },
+            {
+              name: "Scale Store",
+              audience: "For growing catalogs",
+              includes: [
+                "Unlimited products",
+                "Custom shipping & tax rules",
+                "CRM & email marketing integration",
+                "Advanced analytics dashboard",
+              ],
+            },
+            {
+              name: "Enterprise Store",
+              audience: "For full-scale operations",
+              includes: [
+                "Custom platform migrations",
+                "Multi-warehouse inventory",
+                "Dedicated e-commerce architect",
+                "Monthly optimization included",
               ],
             },
           ],

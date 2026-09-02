@@ -138,7 +138,7 @@ const es = {
     badge: "Qué hacemos",
     title: "Sistemas diseñados para hacer crecer tu negocio",
     subtitle:
-      "Combinamos IA, sitios web modernos y automatización para ayudarte a escalar de forma inteligente.",
+      "Construimos sitios web y tiendas en línea que convierten — con automatización e IA que se suman cuando estés listo para escalar.",
     items: [
       {
         title: "Páginas que convierten",
@@ -147,6 +147,15 @@ const es = {
         meta: "Rápido • Responsive • Conversión",
         image: "/images/coreva-websites.webp",
         alt: "Ilustración de sitio web",
+        tag: "Servicio principal",
+      },
+      {
+        title: "E-Commerce que vende",
+        description:
+          "Tiendas en línea diseñadas para convertir visitantes en compradores, desde tu primer catálogo hasta operaciones a gran escala.",
+        meta: "Tiendas • Pagos • Inventario",
+        image: "/images/coreva-ecommerce.webp",
+        alt: "Ilustración de bolsa de compras e-commerce",
         tag: "Servicio principal",
       },
       {
@@ -235,6 +244,7 @@ const es = {
     },
     links: {
       aiSolutions: "Soluciones con IA",
+      ecommerce: "E-Commerce",
       websites: "Sitios web",
       automation: "Automatización",
       seo: "Sistemas SEO",
@@ -351,6 +361,37 @@ const es = {
       ctaSubtitle:
         "Agenda una sesión estratégica gratuita y revisamos cómo sería un sitio de alta conversión para tu negocio.",
     },
+    ecommerce: {
+      seo: {
+        title: "Sitios Web de E-Commerce y Tiendas en Línea | Coreva",
+        description:
+          "Tiendas en línea diseñadas para convertir visitantes en compradores — catálogo de productos, pagos e inventario incluidos. Conoce el enfoque de e-commerce de Coreva.",
+      },
+      eyebrow: "E-COMMERCE QUE VENDE",
+      h1: "Tiendas en Línea Diseñadas para Convertir",
+      subtitle:
+        "Un catálogo de productos por sí solo no vende nada. Construimos tiendas diseñadas alrededor del checkout — rápidas, confiables y fáciles de comprar desde cualquier dispositivo.",
+      features: [
+        {
+          title: "Diseñada para convertir",
+          description:
+            "Páginas de producto, carrito y checkout diseñados con la menor cantidad de pasos posible entre explorar y comprar.",
+        },
+        {
+          title: "Pagos incluidos",
+          description:
+            "Checkout con Stripe desde el primer día, con soporte para códigos de descuento y múltiples monedas a medida que creces.",
+        },
+        {
+          title: "Inventario que escala",
+          description:
+            "Desde un primer catálogo pequeño hasta miles de productos en múltiples almacenes — la tienda crece con tu negocio.",
+        },
+      ],
+      ctaTitle: "¿Listo para vender en línea?",
+      ctaSubtitle:
+        "Agenda una sesión estratégica gratuita y mapeamos cómo sería una tienda en línea para tus productos.",
+    },
     automation: {
       seo: {
         title: "Sistemas de Automatización Empresarial | Coreva Systems",
@@ -397,6 +438,7 @@ const es = {
       },
       categoryLabels: {
         websites: "Sitios web",
+        ecommerce: "E-Commerce",
         automation: "Automatización",
         ai: "Soluciones de IA",
       },
@@ -432,6 +474,50 @@ const es = {
                 "Seguimiento de leads con IA",
                 "Área de acceso para clientes (estado de pedidos/proyecto)",
                 "Soporte prioritario y llamadas mensuales",
+              ],
+            },
+          ],
+        },
+        ecommerce: {
+          tiers: [
+            {
+              name: "Tienda Inicial",
+              audience: "Para tu primera tienda en línea",
+              includes: [
+                "Hasta 25 productos",
+                "Pagos con Stripe integrados",
+                "Seguimiento básico de inventario",
+                "Tienda optimizada para móvil",
+              ],
+            },
+            {
+              name: "Tienda de Crecimiento",
+              audience: "La tienda completa",
+              includes: [
+                "Hasta 100 productos",
+                "Códigos de descuento y recuperación de carritos abandonados",
+                "Reseñas y calificaciones de productos",
+                "Soporte multi-moneda",
+              ],
+            },
+            {
+              name: "Tienda a Escala",
+              audience: "Para catálogos en crecimiento",
+              includes: [
+                "Productos ilimitados",
+                "Reglas de envío e impuestos personalizadas",
+                "Integración con CRM y email marketing",
+                "Dashboard de analítica avanzado",
+              ],
+            },
+            {
+              name: "Tienda Empresarial",
+              audience: "Para operaciones a gran escala",
+              includes: [
+                "Migraciones de plataforma personalizadas",
+                "Inventario multi-almacén",
+                "Arquitecto de e-commerce dedicado",
+                "Optimización mensual incluida",
               ],
             },
           ],

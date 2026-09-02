@@ -13,6 +13,7 @@ export default function Footer({ dict, lang = "en" }) {
     },
     links: {
       aiSolutions: "AI Solutions",
+      ecommerce: "E-Commerce",
       websites: "Websites",
       automation: "Automation",
       seo: "SEO Systems",
@@ -68,18 +69,18 @@ export default function Footer({ dict, lang = "en" }) {
               <ul className="space-y-4 text-sm font-medium text-slate-400">
                 <li>
                   <Link
-                    href={`/${lang}/services/ai-solutions`}
-                    className="transition-colors hover:text-primary"
-                  >
-                    {footer.links.aiSolutions}
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href={`/${lang}/services/websites`}
                     className="transition-colors hover:text-primary"
                   >
                     {footer.links.websites}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${lang}/services/ecommerce`}
+                    className="transition-colors hover:text-primary"
+                  >
+                    {footer.links.ecommerce}
                   </Link>
                 </li>
                 <li>
@@ -92,10 +93,10 @@ export default function Footer({ dict, lang = "en" }) {
                 </li>
                 <li>
                   <Link
-                    href={`/${lang}#services`}
+                    href={`/${lang}/services/ai-solutions`}
                     className="transition-colors hover:text-primary"
                   >
-                    {footer.links.seo}
+                    {footer.links.aiSolutions}
                   </Link>
                 </li>
               </ul>

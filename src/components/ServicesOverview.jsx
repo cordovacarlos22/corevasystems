@@ -3,9 +3,10 @@ import Link from "next/link";
 import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
 
 // Matches the fixed order of dict.services.items in both en.js and es.js:
-// [0] Websites that convert, [1] Automation that scales, [2] AI Solutions.
+// [0] Websites, [1] E-Commerce, [2] Automation, [3] AI Solutions.
 const SERVICE_SLUGS = [
   "services/websites",
+  "services/ecommerce",
   "services/automation",
   "services/ai-solutions",
 ];
@@ -72,7 +73,7 @@ export default function ServicesOverview({ dict, lang = "en" }) {
           )}
         </Reveal>
 
-        <ScrollStagger className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <ScrollStagger className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
           {services.items.map((item, index) => (
             <StaggerItem key={item.title}>
             <article className="group relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]">
@@ -81,7 +82,7 @@ export default function ServicesOverview({ dict, lang = "en" }) {
               {item.tag && (
                 <div
                   className={`absolute right-6 top-6 z-10 inline-flex rounded-full px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide ${
-                    index === 0
+                    item.tag === "Core service" || item.tag === "Servicio principal"
                       ? "bg-primary/5 text-primary"
                       : "bg-slate-100 text-slate-600"
                   }`}

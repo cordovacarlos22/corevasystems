@@ -15,6 +15,10 @@ const TEST_PRICE_IDS = {
     us: { essential: "price_1UBGDKR6OzKMws4mf5dNltDZ", professional: "price_1UBGDLR6OzKMws4m4o5sopRR" },
     latam: { essential: "price_1UBGDLR6OzKMws4mWj7J0Kjw", professional: "price_1UBGDLR6OzKMws4mubZQzIT2" },
   },
+  ecommerce: {
+    us: { starter: "price_1UBNd4R6OzKMws4m41GfqiEw", growth: "price_1UBNd5R6OzKMws4mUVPEKNTi", scale: "price_1UBNd6R6OzKMws4mQRl30vP3" },
+    latam: { starter: "price_1UBNd5R6OzKMws4m1yehWf3S", growth: "price_1UBNd5R6OzKMws4m4Hj2xW46", scale: "price_1UBNd6R6OzKMws4mMRhqWCbz" },
+  },
   automation: {
     us: { starter: "price_1UBNOXR6OzKMws4mOvdoYjDp", growth: "price_1UBNOYR6OzKMws4mEA8MIMXu", business: "price_1UBNOYR6OzKMws4m6Zrov4X2" },
     latam: { starter: "price_1UBNOXR6OzKMws4mo83J2oil", growth: "price_1UBNOYR6OzKMws4md5x4IXc0", business: "price_1UBNOZR6OzKMws4ms1RZWBYd" },
@@ -29,6 +33,10 @@ const LIVE_PRICE_IDS = {
   websites: {
     us: { essential: "price_1UBGRdR6OzKMws4mEt2m1Lep", professional: "price_1UBGReR6OzKMws4muWsYZnOd" },
     latam: { essential: "price_1UBGRdR6OzKMws4myE1O1chT", professional: "price_1UBGReR6OzKMws4mbfkfj1jU" },
+  },
+  ecommerce: {
+    us: { starter: "price_1UBNdOR6OzKMws4mFmRQTiRL", growth: "price_1UBNdPR6OzKMws4m3M3dRmgX", scale: "price_1UBNdPR6OzKMws4mpPfQJdu9" },
+    latam: { starter: "price_1UBNdOR6OzKMws4mXA3g5wvV", growth: "price_1UBNdPR6OzKMws4mZyH7jM7p", scale: "price_1UBNdPR6OzKMws4mSx1WdeZq" },
   },
   automation: {
     us: { starter: "price_1UBNP8R6OzKMws4mR7wB7gTE", growth: "price_1UBNP9R6OzKMws4mTGkrXXlp", business: "price_1UBNP9R6OzKMws4mg6J08T4r" },
@@ -53,6 +61,20 @@ export const PRICING_CATEGORIES = {
       { price: "$450", priceId: ACTIVE.websites.latam.essential, supportDays: 7 },
       { price: "$1,200", priceId: ACTIVE.websites.latam.professional, supportDays: 15 },
       { price: "$2,500", priceId: null, supportDays: 30 },
+    ],
+  },
+  ecommerce: {
+    us: [
+      { price: "$1,999", priceId: ACTIVE.ecommerce.us.starter, supportDays: 15 },
+      { price: "$3,499", priceId: ACTIVE.ecommerce.us.growth, supportDays: 30 },
+      { price: "$5,999", priceId: ACTIVE.ecommerce.us.scale, supportDays: 45 },
+      { price: "$9,999", priceId: null, supportDays: 60 },
+    ],
+    latam: [
+      { price: "$600", priceId: ACTIVE.ecommerce.latam.starter, supportDays: 15 },
+      { price: "$1,050", priceId: ACTIVE.ecommerce.latam.growth, supportDays: 30 },
+      { price: "$1,800", priceId: ACTIVE.ecommerce.latam.scale, supportDays: 45 },
+      { price: "$3,000", priceId: null, supportDays: 60 },
     ],
   },
   automation: {
