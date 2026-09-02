@@ -5,19 +5,50 @@
 // must be kept in sync with whichever mode STRIPE_SECRET_KEY is in.
 //
 // Each category's tiers must line up 1:1, in order, with the matching
-// dict.pages.pricing.categories[key].tiers array in en.js/es.js. The last
-// tier in Automation and AI (Enterprise) has no priceId, same as Complete
-// System on Websites — its CTA routes to /book instead of checkout.
+// dict.pages.pricing.categories[key].tiers array in en.js/es.js.
+//
+// Websites and E-Commerce (2026 repricing, from Coreva_Systems_2026_Packages_1.pdf):
+// every tier has a real Stripe Price — no quote-only tier this round, the
+// source doc prices Enterprise/Prime directly too. supportDays isn't used
+// here; PricingTiers reads each tier's `turnaround` field from the dict instead.
+//
+// Automation and AI are untouched from the earlier build: their top
+// ("Enterprise") tier still has no priceId and routes to /book, and they
+// still use supportDays rather than a dict `turnaround` field.
 const IS_LIVE_KEY = process.env.NEXT_PUBLIC_STRIPE_MODE === "live";
 
 const TEST_PRICE_IDS = {
   websites: {
-    us: { essential: "price_1UBGDKR6OzKMws4mf5dNltDZ", professional: "price_1UBGDLR6OzKMws4m4o5sopRR" },
-    latam: { essential: "price_1UBGDLR6OzKMws4mWj7J0Kjw", professional: "price_1UBGDLR6OzKMws4mubZQzIT2" },
+    us: {
+      starter: "price_1UBNr5R6OzKMws4mWkIYfPk7",
+      growth: "price_1UBNr6R6OzKMws4mL2NQn560",
+      professional: "price_1UBNr6R6OzKMws4mqKLlUDik",
+      elite: "price_1UBNr7R6OzKMws4m9nAnlDqY",
+      corporate: "price_1UBNr8R6OzKMws4mLZ6yLZhU",
+      enterprise: "price_1UBNr8R6OzKMws4mO88bjcZr",
+    },
+    latam: {
+      starter: "price_1UBNr5R6OzKMws4mYTH5uRVh",
+      growth: "price_1UBNr6R6OzKMws4mRtVNMXof",
+      professional: "price_1UBNr6R6OzKMws4mSsT0oaR3",
+      elite: "price_1UBNr7R6OzKMws4muMA8A7V5",
+      corporate: "price_1UBNr8R6OzKMws4mAkaCAXRe",
+      enterprise: "price_1UBNr9R6OzKMws4mxkU3aNEh",
+    },
   },
   ecommerce: {
-    us: { starter: "price_1UBNd4R6OzKMws4m41GfqiEw", growth: "price_1UBNd5R6OzKMws4mUVPEKNTi", scale: "price_1UBNd6R6OzKMws4mQRl30vP3" },
-    latam: { starter: "price_1UBNd5R6OzKMws4m1yehWf3S", growth: "price_1UBNd5R6OzKMws4m4Hj2xW46", scale: "price_1UBNd6R6OzKMws4mMRhqWCbz" },
+    us: {
+      starter: "price_1UBNr9R6OzKMws4mgiNaxJ0J",
+      basic: "price_1UBNrAR6OzKMws4mr3Rrc9rK",
+      plus: "price_1UBNrBR6OzKMws4mwoH47jKt",
+      prime: "price_1UBNrBR6OzKMws4mFI19p35m",
+    },
+    latam: {
+      starter: "price_1UBNr9R6OzKMws4mM6qpHetl",
+      basic: "price_1UBNrAR6OzKMws4mu1Cmpy3A",
+      plus: "price_1UBNrBR6OzKMws4m5ujl4YiA",
+      prime: "price_1UBNrCR6OzKMws4m420AcCm3",
+    },
   },
   automation: {
     us: { starter: "price_1UBNOXR6OzKMws4mOvdoYjDp", growth: "price_1UBNOYR6OzKMws4mEA8MIMXu", business: "price_1UBNOYR6OzKMws4m6Zrov4X2" },
@@ -31,12 +62,36 @@ const TEST_PRICE_IDS = {
 
 const LIVE_PRICE_IDS = {
   websites: {
-    us: { essential: "price_1UBGRdR6OzKMws4mEt2m1Lep", professional: "price_1UBGReR6OzKMws4muWsYZnOd" },
-    latam: { essential: "price_1UBGRdR6OzKMws4myE1O1chT", professional: "price_1UBGReR6OzKMws4mbfkfj1jU" },
+    us: {
+      starter: "price_1UBNrXR6OzKMws4mHdQ2Sz4A",
+      growth: "price_1UBNrXR6OzKMws4m5eeqJtda",
+      professional: "price_1UBNrYR6OzKMws4msefGuhZr",
+      elite: "price_1UBNrYR6OzKMws4mrGiE8FC6",
+      corporate: "price_1UBNrZR6OzKMws4mrfN1ECug",
+      enterprise: "price_1UBNraR6OzKMws4mLO6nqJ3e",
+    },
+    latam: {
+      starter: "price_1UBNrXR6OzKMws4mcKYq456t",
+      growth: "price_1UBNrXR6OzKMws4mv3foSSUr",
+      professional: "price_1UBNrYR6OzKMws4m0rbUoyco",
+      elite: "price_1UBNrZR6OzKMws4m2obE2DKE",
+      corporate: "price_1UBNrZR6OzKMws4mVgxxOQ85",
+      enterprise: "price_1UBNraR6OzKMws4mW9Uh1i2a",
+    },
   },
   ecommerce: {
-    us: { starter: "price_1UBNdOR6OzKMws4mFmRQTiRL", growth: "price_1UBNdPR6OzKMws4m3M3dRmgX", scale: "price_1UBNdPR6OzKMws4mpPfQJdu9" },
-    latam: { starter: "price_1UBNdOR6OzKMws4mXA3g5wvV", growth: "price_1UBNdPR6OzKMws4mZyH7jM7p", scale: "price_1UBNdPR6OzKMws4mSx1WdeZq" },
+    us: {
+      starter: "price_1UBNraR6OzKMws4mcF3R1E8M",
+      basic: "price_1UBNrbR6OzKMws4me8w3vct7",
+      plus: "price_1UBNrbR6OzKMws4mHFJe2pqC",
+      prime: "price_1UBNrcR6OzKMws4mae9bYMuo",
+    },
+    latam: {
+      starter: "price_1UBNraR6OzKMws4mCZWS807Y",
+      basic: "price_1UBNrbR6OzKMws4mDQ7dwzk5",
+      plus: "price_1UBNrcR6OzKMws4m3fKSHBui",
+      prime: "price_1UBNrcR6OzKMws4m9Z9Rt0CL",
+    },
   },
   automation: {
     us: { starter: "price_1UBNP8R6OzKMws4mR7wB7gTE", growth: "price_1UBNP9R6OzKMws4mTGkrXXlp", business: "price_1UBNP9R6OzKMws4mg6J08T4r" },
@@ -53,28 +108,34 @@ const ACTIVE = IS_LIVE_KEY ? LIVE_PRICE_IDS : TEST_PRICE_IDS;
 export const PRICING_CATEGORIES = {
   websites: {
     us: [
-      { price: "$1,500", priceId: ACTIVE.websites.us.essential, supportDays: 7 },
-      { price: "$4,000", priceId: ACTIVE.websites.us.professional, supportDays: 15 },
-      { price: "$8,000", priceId: null, supportDays: 30 },
+      { price: "$149", priceId: ACTIVE.websites.us.starter },
+      { price: "$499", priceId: ACTIVE.websites.us.growth },
+      { price: "$699", priceId: ACTIVE.websites.us.professional },
+      { price: "$1,199", priceId: ACTIVE.websites.us.elite },
+      { price: "$2,599", priceId: ACTIVE.websites.us.corporate },
+      { price: "$3,299", priceId: ACTIVE.websites.us.enterprise },
     ],
     latam: [
-      { price: "$450", priceId: ACTIVE.websites.latam.essential, supportDays: 7 },
-      { price: "$1,200", priceId: ACTIVE.websites.latam.professional, supportDays: 15 },
-      { price: "$2,500", priceId: null, supportDays: 30 },
+      { price: "$45", priceId: ACTIVE.websites.latam.starter },
+      { price: "$150", priceId: ACTIVE.websites.latam.growth },
+      { price: "$210", priceId: ACTIVE.websites.latam.professional },
+      { price: "$360", priceId: ACTIVE.websites.latam.elite },
+      { price: "$780", priceId: ACTIVE.websites.latam.corporate },
+      { price: "$990", priceId: ACTIVE.websites.latam.enterprise },
     ],
   },
   ecommerce: {
     us: [
-      { price: "$1,999", priceId: ACTIVE.ecommerce.us.starter, supportDays: 15 },
-      { price: "$3,499", priceId: ACTIVE.ecommerce.us.growth, supportDays: 30 },
-      { price: "$5,999", priceId: ACTIVE.ecommerce.us.scale, supportDays: 45 },
-      { price: "$9,999", priceId: null, supportDays: 60 },
+      { price: "$699", priceId: ACTIVE.ecommerce.us.starter },
+      { price: "$1,249", priceId: ACTIVE.ecommerce.us.basic },
+      { price: "$1,599", priceId: ACTIVE.ecommerce.us.plus },
+      { price: "$2,399", priceId: ACTIVE.ecommerce.us.prime },
     ],
     latam: [
-      { price: "$600", priceId: ACTIVE.ecommerce.latam.starter, supportDays: 15 },
-      { price: "$1,050", priceId: ACTIVE.ecommerce.latam.growth, supportDays: 30 },
-      { price: "$1,800", priceId: ACTIVE.ecommerce.latam.scale, supportDays: 45 },
-      { price: "$3,000", priceId: null, supportDays: 60 },
+      { price: "$210", priceId: ACTIVE.ecommerce.latam.starter },
+      { price: "$375", priceId: ACTIVE.ecommerce.latam.basic },
+      { price: "$480", priceId: ACTIVE.ecommerce.latam.plus },
+      { price: "$720", priceId: ACTIVE.ecommerce.latam.prime },
     ],
   },
   automation: {

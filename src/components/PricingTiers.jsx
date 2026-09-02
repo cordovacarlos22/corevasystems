@@ -14,7 +14,13 @@ export default function PricingTiers({ page, lang = "en" }) {
 
   const tiers = page.categories[category].tiers;
   const regionTiers = PRICING_CATEGORIES[category][region];
-  const gridColsClass = tiers.length === 3 ? "md:grid-cols-3" : "sm:grid-cols-2 xl:grid-cols-4";
+  const gridColsClass =
+    tiers.length === 3
+      ? "md:grid-cols-3"
+      : tiers.length === 6
+        ? "sm:grid-cols-2 lg:grid-cols-3"
+        : "sm:grid-cols-2 xl:grid-cols-4";
+  const hasExplicitMostPopular = tiers.some((t) => t.mostPopular);
 
   async function handleCheckout(priceId, index) {
     setLoadingIndex(index);
@@ -94,8 +100,9 @@ export default function PricingTiers({ page, lang = "en" }) {
       <div className={`grid gap-8 ${gridColsClass}`}>
         {tiers.map((tier, index) => {
           const numbers = regionTiers[index];
-          const featured = index === 1;
+          const featured = hasExplicitMostPopular ? tier.mostPopular === true : index === 1;
           const dark = index === tiers.length - 1;
+          const noteText = tier.turnaround || (numbers.supportDays ? `${numbers.supportDays} ${page.supportLabel}` : null);
 
           return (
             <div
@@ -138,9 +145,11 @@ export default function PricingTiers({ page, lang = "en" }) {
                 </span>
                 <span className="text-[13px] text-slate-400">{page.oneTime}</span>
               </div>
-              <span className={`mb-6 text-[13px] ${dark ? "text-slate-400" : "text-slate-500"}`}>
-                {numbers.supportDays} {page.supportLabel}
-              </span>
+              {noteText && (
+                <span className={`mb-6 text-[13px] ${dark ? "text-slate-400" : "text-slate-500"}`}>
+                  {noteText}
+                </span>
+              )}
 
               <ul
                 className={`mb-8 flex flex-1 flex-col gap-3 border-t pt-5 text-sm font-medium ${

@@ -6,6 +6,7 @@ import HtmlLangSync from "@/components/HtmlLangSync";
 import Navbar from "@/components/Navbar";
 import PageHero from "@/components/PageHero";
 import PricingTiers from "@/components/PricingTiers";
+import TechFoundation from "@/components/TechFoundation";
 import PageCTA from "@/components/PageCTA";
 import Footer from "@/components/Footer";
 
@@ -39,6 +40,8 @@ export default async function PricingPage({ params }) {
       <Navbar dict={dict} lang={lang} />
       <main className="min-h-screen bg-white text-slate-900 antialiased selection:bg-primary/20">
         <PageHero eyebrow={page.eyebrow} title={page.h1} subtitle={page.subtitle} />
+
+        <TechFoundation data={page.techFoundation} />
 
         <section className="bg-white py-8 lg:py-16">
           <div className="mx-auto max-w-6xl px-8">
