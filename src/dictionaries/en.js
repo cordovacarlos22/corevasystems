@@ -492,6 +492,31 @@ const en = {
       ctaSubtitle:
         "Book a free strategy session and we'll map where reservation automation would save your team the most time.",
     },
+    beautyWellness: {
+      seo: {
+        title: "Automation & Websites for Salons & Barbershops | Coreva",
+        description:
+          "Online booking, no-show reminders, and lead-generating websites built for nail salons, barbershops, and personal care businesses. See Coreva's approach.",
+      },
+      eyebrow: "FOR SALONS, BARBERSHOPS & PERSONAL CARE",
+      h1: "Automation & Websites for Salons & Barbershops",
+      subtitle:
+        "Online booking, automated reminders, and a website that fills your chair — built for nail salons, barbershops, spas, and personal care businesses juggling walk-ins and appointments.",
+      useCases: [
+        "Online booking connected to your real schedule — no more double-booked chairs",
+        "Automated text reminders that cut no-shows before they happen",
+        "A website built to convert visitors into booked appointments, not just lookers",
+      ],
+      caseStudyComingSoon: {
+        label: "CASE STUDY",
+        title: "Your business could be the first",
+        description:
+          "We haven't published a salon or barbershop case study yet — but the same pattern that got Clínica Arias a 40% increase in online bookings applies here: replace phone-only booking with a system that's open when you're mid-appointment.",
+      },
+      ctaTitle: "Ready to stop losing walk-ins to a full calendar?",
+      ctaSubtitle:
+        "Book a free strategy session and we'll map where online booking would save you the most no-shows.",
+    },
     blog: {
       seo: {
         title: "AI & Automation Guides for Service Businesses | Coreva",

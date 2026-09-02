@@ -499,6 +499,31 @@ const es = {
       ctaSubtitle:
         "Agenda una sesión estratégica gratuita y te mostramos dónde la automatización de reservas le ahorraría más tiempo a tu equipo.",
     },
+    beautyWellness: {
+      seo: {
+        title: "Automatización y Sitios Web para Salones y Barberías | Coreva",
+        description:
+          "Reservas en línea, recordatorios automáticos y sitios web que generan clientes para salones de uñas, barberías y negocios de cuidado personal. Conoce el enfoque de Coreva.",
+      },
+      eyebrow: "PARA SALONES, BARBERÍAS Y CUIDADO PERSONAL",
+      h1: "Automatización y Sitios Web para Salones y Barberías",
+      subtitle:
+        "Reservas en línea, recordatorios automáticos y un sitio web que llena tu agenda — diseñado para salones de uñas, barberías, spas y negocios de cuidado personal que manejan citas y clientes sin cita previa.",
+      useCases: [
+        "Reservas en línea conectadas a tu agenda real — sin citas dobles",
+        "Mensajes automáticos de recordatorio que reducen ausencias antes de que ocurran",
+        "Un sitio web diseñado para convertir visitantes en citas reservadas, no solo visitas",
+      ],
+      caseStudyComingSoon: {
+        label: "CASO DE ÉXITO",
+        title: "Tu negocio podría ser el primero",
+        description:
+          "Todavía no hemos publicado un caso de éxito de salones o barberías — pero el mismo patrón que le dio a Clínica Arias un aumento del 40% en reservas en línea aplica aquí: reemplazar las reservas solo por teléfono con un sistema abierto incluso cuando estás a mitad de una cita.",
+      },
+      ctaTitle: "¿Listo para dejar de perder clientes por una agenda saturada?",
+      ctaSubtitle:
+        "Agenda una sesión estratégica gratuita y te mostramos dónde las reservas en línea te ahorrarían más ausencias.",
+    },
     blog: {
       seo: {
         title: "Guías de IA y Automatización para Negocios | Coreva",

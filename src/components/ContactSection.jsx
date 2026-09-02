@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { sileo } from "sileo";
 import * as yup from "yup";
+import { trackContactConversion } from "@/lib/gtag";
 
 export default function ContactSection({ dict, lang = "en" }) {
   const fallbackContact =
@@ -149,6 +150,8 @@ export default function ContactSection({ dict, lang = "en" }) {
 
       return body;
     });
+
+    request.then(() => trackContactConversion()).catch(() => {});
 
     sileo.promise(request, {
       loading: {

@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/lib/getDictionary";
 import { isValidLocale } from "@/lib/locales";
 import HtmlLangSync from "@/components/HtmlLangSync";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PurchaseConversionTracker from "@/components/PurchaseConversionTracker";
 import Link from "next/link";
 
 export async function generateMetadata({ params }) {
@@ -29,6 +31,10 @@ export default async function ThankYouPage({ params }) {
     <>
       <HtmlLangSync lang={lang} />
       <Navbar dict={dict} lang={lang} />
+
+      <Suspense fallback={null}>
+        <PurchaseConversionTracker />
+      </Suspense>
 
       <main className="flex min-h-screen flex-col items-center justify-center bg-white px-8 pt-32 pb-20 text-center">
         <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-slate-900 lg:text-5xl">

@@ -2,6 +2,7 @@
 
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import { trackBookCallConversion } from "@/lib/gtag";
 
 export default function BookEmbed({ lang }) {
   const isSpanish = lang === "es";
@@ -31,6 +32,8 @@ export default function BookEmbed({ lang }) {
     };
 
   useEffect(() => {
+    let cleanup;
+
     (async function () {
       const cal = await getCalApi({ namespace });
 
@@ -44,7 +47,13 @@ export default function BookEmbed({ lang }) {
           },
         },
       });
+
+      const onBookingSuccessful = () => trackBookCallConversion();
+      cal("on", { action: "bookingSuccessfulV2", callback: onBookingSuccessful });
+      cleanup = () => cal("off", { action: "bookingSuccessfulV2", callback: onBookingSuccessful });
     })();
+
+    return () => cleanup?.();
   }, [namespace]);
 
   return (
