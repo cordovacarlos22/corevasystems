@@ -75,6 +75,7 @@ const es = {
           "Todo lo del Sitio Profesional",
           "Flujos de automatización personalizados",
           "Seguimiento de leads con IA",
+          "Área de acceso para clientes (estado de pedidos/proyecto)",
           "30 días de soporte de lanzamiento",
         ],
         buttonText: "Agendar llamada",
@@ -383,56 +384,149 @@ const es = {
     },
     pricing: {
       seo: {
-        title: "Precios de Sitios Web — Tarifas EE. UU. y LATAM | Coreva",
+        title: "Precios de Sitios Web, Automatización e IA | Coreva",
         description:
-          "Consulta los precios de los paquetes web de Coreva Systems para EE. UU. y Latinoamérica — niveles Esencial, Profesional y Sistema Completo, sin discurso de ventas.",
+          "Consulta los precios de Coreva Systems para sitios web, automatización y soluciones de IA en EE. UU. y Latinoamérica — niveles transparentes, sin discurso de ventas.",
       },
       eyebrow: "PRECIOS",
       h1: "Precios simples, según dónde opera tu negocio",
-      subtitle: "Un sitio web. Tres niveles de construcción. Con precio según tu mercado.",
+      subtitle: "Sitios web, automatización e IA — con precio por nivel, según tu mercado.",
       regionLabels: {
         us: "Estados Unidos (USD)",
         latam: "Latinoamérica (USD)",
       },
-      tiers: [
-        {
-          name: "Sitio Esencial",
-          audience: "Para nuevas operaciones",
-          includes: [
-            "Sitio web personalizado",
-            "Widget de agendamiento en línea incluido",
-            "Optimizado para móvil y velocidad",
-            "SEO y rendimiento optimizado",
+      categoryLabels: {
+        websites: "Sitios web",
+        automation: "Automatización",
+        ai: "Soluciones de IA",
+      },
+      categories: {
+        websites: {
+          tiers: [
+            {
+              name: "Sitio Esencial",
+              audience: "Para nuevas operaciones",
+              includes: [
+                "Sitio web personalizado",
+                "Widget de agendamiento en línea incluido",
+                "Optimizado para móvil y velocidad",
+                "SEO y rendimiento optimizado",
+              ],
+            },
+            {
+              name: "Sitio Profesional",
+              audience: "La solución completa",
+              includes: [
+                "Todo lo del Sitio Esencial",
+                "Pagos con Stripe integrados",
+                "CRM y flujos de email",
+                "Dashboards de datos personalizados",
+              ],
+            },
+            {
+              name: "Sistema Completo",
+              audience: "Para operaciones a gran escala",
+              includes: [
+                "Todo lo del Sitio Profesional",
+                "Flujos de automatización personalizados",
+                "Seguimiento de leads con IA",
+                "Área de acceso para clientes (estado de pedidos/proyecto)",
+                "Soporte prioritario y llamadas mensuales",
+              ],
+            },
           ],
         },
-        {
-          name: "Sitio Profesional",
-          audience: "La solución completa",
-          includes: [
-            "Todo lo del Sitio Esencial",
-            "Pagos con Stripe integrados",
-            "CRM y flujos de email",
-            "Dashboards de datos personalizados",
+        automation: {
+          tiers: [
+            {
+              name: "Automatización Inicial",
+              audience: "Para un solo proceso manual",
+              includes: [
+                "1 flujo de trabajo automatizado",
+                "Conecta hasta 2 herramientas",
+                "Notificaciones por email/SMS",
+              ],
+            },
+            {
+              name: "Automatización de Crecimiento",
+              audience: "El flujo de trabajo completo",
+              includes: [
+                "Hasta 3 flujos de trabajo automatizados",
+                "Conecta hasta 5 herramientas",
+                "Integración con CRM",
+                "Disparadores y lógica condicional personalizados",
+              ],
+            },
+            {
+              name: "Automatización de Negocio",
+              audience: "Para operaciones multi-equipo",
+              includes: [
+                "Hasta 6 flujos de trabajo automatizados",
+                "Conexiones de herramientas ilimitadas",
+                "Dashboards y reportes personalizados",
+                "Soporte prioritario",
+              ],
+            },
+            {
+              name: "Automatización Empresarial",
+              audience: "Para operaciones a gran escala",
+              includes: [
+                "Flujos de trabajo personalizados ilimitados",
+                "Arquitecto de automatización dedicado",
+                "Mapeo de procesos multi-departamento",
+                "Optimización mensual incluida",
+              ],
+            },
           ],
         },
-        {
-          name: "Sistema Completo",
-          audience: "Para operaciones a gran escala",
-          includes: [
-            "Todo lo del Sitio Profesional",
-            "Flujos de automatización personalizados",
-            "Seguimiento de leads con IA",
-            "Soporte prioritario y llamadas mensuales",
+        ai: {
+          tiers: [
+            {
+              name: "Agente de IA Inicial",
+              audience: "Para tu primer agente de IA",
+              includes: [
+                "1 agente de IA entrenado en tu negocio",
+                "Integración con el chat de tu sitio web",
+              ],
+            },
+            {
+              name: "Agente de IA de Crecimiento",
+              audience: "La solución completa",
+              includes: [
+                "Hasta 2 agentes de IA (chat + calificación de leads)",
+                "Integración con CRM/calendario",
+                "Flujos de conversación personalizados",
+              ],
+            },
+            {
+              name: "Sistema de IA de Negocio",
+              audience: "Para IA multicanal",
+              includes: [
+                "Hasta 4 agentes de IA en web, SMS y email",
+                "Puntuación y enrutamiento de leads",
+                "Entrenamiento de base de conocimiento personalizada",
+              ],
+            },
+            {
+              name: "Sistema de IA Empresarial",
+              audience: "Para IA a gran escala",
+              includes: [
+                "Agentes de IA ilimitados",
+                "Orquestación multicanal",
+                "Arquitecto de sistemas de IA dedicado",
+                "Optimización mensual incluida",
+              ],
+            },
           ],
         },
-      ],
+      },
       supportLabel: "días de soporte tras el lanzamiento",
       oneTime: "pago único",
       mostPopular: "Más popular",
       buttonGetStarted: "Comenzar",
       buttonBookCall: "Agendar llamada",
       pricingNote:
-        "Los proyectos de Sistema Completo se definen en una llamada estratégica gratuita antes de agendarse.",
+        "Los proyectos del nivel superior de cada categoría se definen en una llamada estratégica gratuita antes de agendarse.",
       ctaTitle: "¿No sabes qué nivel te conviene?",
       ctaSubtitle:
         "Agenda una sesión estratégica gratuita y definimos el alcance de tu proyecto con una recomendación clara.",

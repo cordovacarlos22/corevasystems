@@ -3,13 +3,18 @@
 import { useState } from "react";
 import Link from "next/link";
 import { sileo } from "sileo";
-import { PRICING_TIERS, REGIONS } from "@/lib/pricing";
+import { PRICING_CATEGORIES, REGIONS } from "@/lib/pricing";
+
+const CATEGORY_KEYS = ["websites", "automation", "ai"];
 
 export default function PricingTiers({ page, lang = "en" }) {
+  const [category, setCategory] = useState("websites");
   const [region, setRegion] = useState("us");
   const [loadingIndex, setLoadingIndex] = useState(null);
 
-  const regionTiers = PRICING_TIERS[region];
+  const tiers = page.categories[category].tiers;
+  const regionTiers = PRICING_CATEGORIES[category][region];
+  const gridColsClass = tiers.length === 3 ? "md:grid-cols-3" : "sm:grid-cols-2 xl:grid-cols-4";
 
   async function handleCheckout(priceId, index) {
     setLoadingIndex(index);
@@ -50,6 +55,24 @@ export default function PricingTiers({ page, lang = "en" }) {
 
   return (
     <div>
+      <div className="mb-8 flex justify-center">
+        <div className="inline-flex flex-wrap justify-center gap-0.5 rounded-full border border-slate-200 p-1">
+          {CATEGORY_KEYS.map((key) => (
+            <button
+              key={key}
+              onClick={() => setCategory(key)}
+              className={`rounded-full px-5 py-2.5 text-[13px] font-bold uppercase tracking-wide transition ${
+                category === key
+                  ? "bg-dark-navy text-white shadow"
+                  : "text-slate-500 hover:text-primary"
+              }`}
+            >
+              {page.categoryLabels[key]}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="mb-16 flex justify-center">
         <div className="inline-flex gap-0.5 rounded-full border border-slate-200 p-1">
           {REGIONS.map((r) => (
@@ -68,11 +91,11 @@ export default function PricingTiers({ page, lang = "en" }) {
         </div>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-3">
-        {page.tiers.map((tier, index) => {
+      <div className={`grid gap-8 ${gridColsClass}`}>
+        {tiers.map((tier, index) => {
           const numbers = regionTiers[index];
           const featured = index === 1;
-          const dark = index === 2;
+          const dark = index === tiers.length - 1;
 
           return (
             <div

@@ -75,6 +75,7 @@ const en = {
           "Everything in Professional",
           "Custom automation workflows",
           "AI-powered lead follow-up",
+          "Client login area for order/project status",
           "30-day launch support",
         ],
         buttonText: "Book a call",
@@ -376,56 +377,149 @@ const en = {
     },
     pricing: {
       seo: {
-        title: "Website Pricing — US & LatAm Rates | Coreva Systems",
+        title: "Website, Automation & AI Pricing — US & LatAm Rates | Coreva Systems",
         description:
-          "See Coreva Systems' website package pricing for the US and Latin America — Essential, Professional, and Complete System tiers, no sales pitch.",
+          "See Coreva Systems' pricing for websites, automation, and AI solutions across the US and Latin America — transparent tiers, no sales pitch.",
       },
       eyebrow: "PRICING",
       h1: "Simple pricing, built for where you do business",
-      subtitle: "One website. Three levels of build. Priced for your market.",
+      subtitle: "Websites, automation, and AI — priced by tier, for your market.",
       regionLabels: {
         us: "United States (USD)",
         latam: "Latin America (USD)",
       },
-      tiers: [
-        {
-          name: "Essential Site",
-          audience: "For new operations",
-          includes: [
-            "Custom-designed website",
-            "Online booking widget built in",
-            "Mobile-optimized, fast-loading",
-            "SEO & performance ready",
+      categoryLabels: {
+        websites: "Websites",
+        automation: "Automation",
+        ai: "AI Solutions",
+      },
+      categories: {
+        websites: {
+          tiers: [
+            {
+              name: "Essential Site",
+              audience: "For new operations",
+              includes: [
+                "Custom-designed website",
+                "Online booking widget built in",
+                "Mobile-optimized, fast-loading",
+                "SEO & performance ready",
+              ],
+            },
+            {
+              name: "Professional Site",
+              audience: "The complete solution",
+              includes: [
+                "Everything in Essential",
+                "Stripe payments integrated",
+                "CRM & email workflows",
+                "Custom data dashboards",
+              ],
+            },
+            {
+              name: "Complete System",
+              audience: "For full-scale operations",
+              includes: [
+                "Everything in Professional",
+                "Custom automation workflows",
+                "AI-powered lead follow-up",
+                "Client login area for order/project status",
+                "Priority support & monthly check-ins",
+              ],
+            },
           ],
         },
-        {
-          name: "Professional Site",
-          audience: "The complete solution",
-          includes: [
-            "Everything in Essential",
-            "Stripe payments integrated",
-            "CRM & email workflows",
-            "Custom data dashboards",
+        automation: {
+          tiers: [
+            {
+              name: "Starter Automation",
+              audience: "For a single manual process",
+              includes: [
+                "1 automated workflow",
+                "Connects up to 2 tools",
+                "Email/SMS notifications",
+              ],
+            },
+            {
+              name: "Growth Automation",
+              audience: "The complete workflow",
+              includes: [
+                "Up to 3 automated workflows",
+                "Connects up to 5 tools",
+                "CRM integration",
+                "Custom triggers & conditional logic",
+              ],
+            },
+            {
+              name: "Business Automation",
+              audience: "For multi-team operations",
+              includes: [
+                "Up to 6 automated workflows",
+                "Unlimited tool connections",
+                "Custom dashboards & reporting",
+                "Priority support",
+              ],
+            },
+            {
+              name: "Enterprise Automation",
+              audience: "For full-scale operations",
+              includes: [
+                "Unlimited custom workflows",
+                "Dedicated automation architect",
+                "Multi-department process mapping",
+                "Monthly optimization included",
+              ],
+            },
           ],
         },
-        {
-          name: "Complete System",
-          audience: "For full-scale operations",
-          includes: [
-            "Everything in Professional",
-            "Custom automation workflows",
-            "AI-powered lead follow-up",
-            "Priority support & monthly check-ins",
+        ai: {
+          tiers: [
+            {
+              name: "Starter AI Agent",
+              audience: "For your first AI agent",
+              includes: [
+                "1 AI agent trained on your business",
+                "Website chat integration",
+              ],
+            },
+            {
+              name: "Growth AI Agent",
+              audience: "The complete solution",
+              includes: [
+                "Up to 2 AI agents (chat + lead qualification)",
+                "CRM/calendar integration",
+                "Custom conversation flows",
+              ],
+            },
+            {
+              name: "Business AI System",
+              audience: "For multi-channel AI",
+              includes: [
+                "Up to 4 AI agents across web, SMS & email",
+                "Lead scoring & routing",
+                "Custom knowledge base training",
+              ],
+            },
+            {
+              name: "Enterprise AI System",
+              audience: "For full-scale AI",
+              includes: [
+                "Unlimited AI agents",
+                "Multi-channel orchestration",
+                "Dedicated AI systems architect",
+                "Monthly optimization included",
+              ],
+            },
           ],
         },
-      ],
+      },
       supportLabel: "days of post-launch support",
       oneTime: "one-time",
       mostPopular: "Most Popular",
       buttonGetStarted: "Get Started",
       buttonBookCall: "Book a Call",
       pricingNote:
-        "Complete System engagements are scoped on a free strategy call before booking.",
+        "Top-tier engagements in each category are scoped on a free strategy call before booking.",
       ctaTitle: "Not sure which tier fits?",
       ctaSubtitle:
         "Book a free strategy session and we'll scope your project and give you a straight recommendation.",
