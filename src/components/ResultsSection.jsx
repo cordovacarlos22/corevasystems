@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
 
 // Matches the fixed order of dict.results.items in both en.js and es.js:
 // [0] Clínica Arias (healthcare), [1] Cali Construction, [2] internal stack (no page).
@@ -36,19 +37,19 @@ export default function ResultsSection({ dict, lang = "en" }) {
   return (
     <section className="bg-white py-32" id="results">
       <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-24 text-center">
+        <Reveal className="mb-24 text-center">
           <div className="mb-6 inline-block rounded-full bg-primary/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
             {results.badge}
           </div>
           <h2 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
             {results.title}
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="grid gap-8 lg:grid-cols-3">
+        <ScrollStagger className="grid gap-8 lg:grid-cols-3">
           {results.items.map((item, index) => (
+            <StaggerItem key={item.title}>
             <div
-              key={item.title}
               className="hover-lift rounded-[2.5rem] border border-slate-100 bg-slate-50/50 p-12"
             >
               <div className="text-gradient mb-4 text-5xl font-extrabold">
@@ -72,8 +73,9 @@ export default function ResultsSection({ dict, lang = "en" }) {
                 </Link>
               )}
             </div>
+            </StaggerItem>
           ))}
-        </div>
+        </ScrollStagger>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/motion/Reveal";
+
 export default function FinalCTA({ dict }) {
   const finalCta = dict?.finalCta || {
     title: "Ready to scale?",
@@ -10,7 +12,7 @@ export default function FinalCTA({ dict }) {
     <section className="relative overflow-hidden py-48">
       <div className="gradient-soft absolute inset-0 opacity-95"></div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8 text-center">
+      <Reveal className="relative z-10 mx-auto max-w-7xl px-8 text-center">
         <h2 className="mb-10 text-5xl font-black leading-none tracking-tight text-white lg:text-[6.5rem]">
           {finalCta.title}
         </h2>
@@ -22,7 +24,7 @@ export default function FinalCTA({ dict }) {
         <button className="rounded-2xl bg-white px-16 py-7 text-2xl font-black text-primary shadow-2xl transition-transform hover:scale-105">
           {finalCta.button}
         </button>
-      </div>
+      </Reveal>
     </section>
   );
 }

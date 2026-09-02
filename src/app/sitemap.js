@@ -12,7 +12,12 @@ const ROUTES = [
   "/pricing",
   "/industries/healthcare",
   "/industries/construction",
+  "/industries/restaurants",
+  "/industries/beauty-wellness",
   "/blog",
+  "/support",
+  "/terms",
+  "/privacy",
 ];
 
 function languageAlternates(path) {

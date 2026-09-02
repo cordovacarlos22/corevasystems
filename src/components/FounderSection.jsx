@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal } from "@/components/motion/Reveal";
 
 export default function FounderSection({ dict, lang = "en" }) {
   const founder = dict?.founder || {
@@ -19,7 +20,7 @@ export default function FounderSection({ dict, lang = "en" }) {
     <section className="bg-white py-40">
       <div className="mx-auto max-w-7xl px-8">
         <div className="grid items-center gap-24 lg:grid-cols-2">
-          <div className="group relative">
+          <Reveal className="group relative">
             <div className="gradient-soft absolute -inset-10 rounded-full opacity-15 blur-[100px]"></div>
             <Image
               src="/images/founder.webp"
@@ -28,9 +29,9 @@ export default function FounderSection({ dict, lang = "en" }) {
               height={600}
               className="rounded-[3rem] shadow-2xl"
             />
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col">
+          <Reveal className="flex flex-col" delay={0.15}>
             <div className="mb-8 inline-block w-fit rounded-full bg-primary/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
               {founder.badge}
             </div>
@@ -94,7 +95,7 @@ export default function FounderSection({ dict, lang = "en" }) {
                 </span>
               </Link>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

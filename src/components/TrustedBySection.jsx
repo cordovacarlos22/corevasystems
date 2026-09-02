@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/motion/Reveal";
+
 const brands = [
   "CLÍNICA ARIAS",
   "CALI CONSTRUCTION",
@@ -9,9 +11,11 @@ export default function TrustedBySection() {
   return (
     <section className="overflow-hidden border-y border-slate-50 bg-white py-24">
       <div className="mx-auto max-w-7xl px-8">
-        <p className="mb-16 text-center text-[10px] font-bold uppercase tracking-[0.4em] text-slate-400">
-          TRUSTED BY GROWTH-MINDED BUSINESSES
-        </p>
+        <Reveal y={12}>
+          <p className="mb-16 text-center text-[10px] font-bold uppercase tracking-[0.4em] text-slate-400">
+            TRUSTED BY GROWTH-MINDED BUSINESSES
+          </p>
+        </Reveal>
 
         <div className="relative">
           <div className="logo-scroll flex items-center gap-24 opacity-40 md:gap-40">

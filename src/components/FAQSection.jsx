@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/motion/Reveal";
+
 export default function FAQSection({ dict }) {
   const faq = dict?.faq;
 
@@ -6,7 +8,7 @@ export default function FAQSection({ dict }) {
   return (
     <section id="faq" className="bg-slate-50/40 py-32">
       <div className="mx-auto max-w-4xl px-8">
-        <div className="mb-16 text-center">
+        <Reveal className="mb-16 text-center">
           <div className="mb-6 inline-block rounded-full bg-primary/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
             {faq.badge}
           </div>
@@ -16,7 +18,7 @@ export default function FAQSection({ dict }) {
           {faq.subtitle && (
             <p className="text-lg leading-8 text-slate-500">{faq.subtitle}</p>
           )}
-        </div>
+        </Reveal>
 
         <div className="flex flex-col gap-4">
           {faq.items.map((item) => (

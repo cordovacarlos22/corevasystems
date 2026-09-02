@@ -1,3 +1,5 @@
+import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
+
 export default function ProcessSection({ dict }) {
   const process = dict?.process || {
     badge: "WORKFLOW",
@@ -27,18 +29,18 @@ export default function ProcessSection({ dict }) {
   return (
     <section className="bg-white py-32" id="process">
       <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-24 text-center">
+        <Reveal className="mb-24 text-center">
           <div className="mb-6 inline-block rounded-full bg-primary/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
             {process.badge}
           </div>
           <h2 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
             {process.title}
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="grid gap-16 lg:grid-cols-3">
+        <ScrollStagger className="grid gap-16 lg:grid-cols-3">
           {process.steps.map((step, index) => (
-            <div key={step.number} className="group relative">
+            <StaggerItem key={step.number} className="group relative">
               {index !== process.steps.length - 1 && <div className="step-line"></div>}
 
               <div className="relative z-10 flex flex-col">
@@ -50,9 +52,9 @@ export default function ProcessSection({ dict }) {
                   {step.description}
                 </p>
               </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </ScrollStagger>
       </div>
     </section>
   );

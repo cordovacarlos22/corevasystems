@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
 
 // Matches the fixed order of dict.services.items in both en.js and es.js:
 // [0] Websites that convert, [1] Automation that scales, [2] AI Solutions.
@@ -51,7 +52,7 @@ export default function ServicesOverview({ dict, lang = "en" }) {
       <div className="pointer-events-none absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_top_right,rgba(236,72,153,0.08),transparent_20%),radial-gradient(circle_at_top_left,rgba(124,92,255,0.08),transparent_24%)]" />
 
       <div className="relative mx-auto max-w-7xl px-8">
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+        <Reveal className="mx-auto mb-16 max-w-3xl text-center">
           {services.badge && (
             <div className="mb-4 inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.22em] text-slate-500">
               {services.badge}
@@ -69,14 +70,12 @@ export default function ServicesOverview({ dict, lang = "en" }) {
               {services.subtitle}
             </p>
           )}
-        </div>
+        </Reveal>
 
-        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <ScrollStagger className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
           {services.items.map((item, index) => (
-            <article
-              key={item.title}
-              className="group relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]"
-            >
+            <StaggerItem key={item.title}>
+            <article className="group relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]">
               <div className="absolute inset-x-0 top-0 h-24 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(124,92,255,0.14),transparent_55%)]" />
 
               {item.tag && (
@@ -127,8 +126,9 @@ export default function ServicesOverview({ dict, lang = "en" }) {
                 </Link>
               )}
             </article>
+            </StaggerItem>
           ))}
-        </div>
+        </ScrollStagger>
       </div>
     </section>
   );

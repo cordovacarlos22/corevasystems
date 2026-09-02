@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
 
 export default function PackagesSection({ dict, lang = "en" }) {
   const packagesData = dict?.packages;
@@ -7,7 +8,7 @@ export default function PackagesSection({ dict, lang = "en" }) {
   return (
     <section className="bg-slate-50/50 py-40" id="packages">
       <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-24 text-center">
+        <Reveal className="mb-24 text-center">
           <div className="mb-6 inline-block rounded-full bg-primary/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
             {packagesData?.badge}
           </div>
@@ -17,12 +18,12 @@ export default function PackagesSection({ dict, lang = "en" }) {
           <p className="mt-6 font-medium text-slate-500">
             {packagesData?.subtitle}
           </p>
-        </div>
+        </Reveal>
 
-        <div className="grid items-center gap-8 lg:grid-cols-3">
+        <ScrollStagger className="grid items-center gap-8 lg:grid-cols-3">
           {items.map((pkg, index) => (
+            <StaggerItem key={pkg.title}>
             <div
-              key={pkg.title}
               className={[
                 "flex h-full flex-col bg-white",
                 pkg.featured
@@ -114,8 +115,9 @@ export default function PackagesSection({ dict, lang = "en" }) {
                 {pkg.buttonText}
               </Link>
             </div>
+            </StaggerItem>
           ))}
-        </div>
+        </ScrollStagger>
       </div>
     </section>
   );
