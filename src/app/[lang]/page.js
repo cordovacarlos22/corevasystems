@@ -87,7 +87,7 @@ export default async function Home({ params }) {
         <TrustedBySection dict={dict} />
         <ServicesOverview dict={dict} lang={lang} />
         <ProcessSection dict={dict} />
-        <PackagesSection dict={dict} />
+        <PackagesSection dict={dict} lang={lang} />
         <ResultsSection dict={dict} lang={lang} />
         <FounderSection dict={dict} lang={lang} />
         <FAQSection dict={dict} lang={lang} />

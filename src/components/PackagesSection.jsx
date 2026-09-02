@@ -1,4 +1,6 @@
-export default function PackagesSection({ dict }) {
+import Link from "next/link";
+
+export default function PackagesSection({ dict, lang = "en" }) {
   const packagesData = dict?.packages;
   const items = packagesData?.items || [];
 
@@ -54,6 +56,33 @@ export default function PackagesSection({ dict }) {
                 </p>
               </div>
 
+              <div className={`mb-8 ${pkg.featured ? "text-center" : ""}`}>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                    {packagesData?.priceLabel}
+                  </span>
+                  <span
+                    className={
+                      pkg.featured
+                        ? "text-4xl font-extrabold text-slate-900"
+                        : "text-3xl font-extrabold text-slate-900"
+                    }
+                  >
+                    {pkg.price}
+                  </span>
+                </div>
+                {pkg.priceLatam && (
+                  <p className="mt-1 text-xs font-medium text-slate-400">
+                    {packagesData?.priceLatamLabel} {pkg.priceLatam} LatAm
+                  </p>
+                )}
+                {pkg.bestFor && (
+                  <p className="mt-4 text-sm font-medium leading-relaxed text-slate-500">
+                    {pkg.bestFor}
+                  </p>
+                )}
+              </div>
+
               <ul className="mb-16 flex-grow space-y-6">
                 {pkg.features.map((feature) => (
                   <li
@@ -74,15 +103,16 @@ export default function PackagesSection({ dict }) {
                 ))}
               </ul>
 
-              <button
+              <Link
+                href={`/${lang}/pricing`}
                 className={
                   pkg.featured
-                    ? "gradient-soft w-full rounded-2xl py-6 text-xl font-black text-white shadow-xl shadow-primary/30 transition-all hover:scale-[1.02]"
-                    : "w-full rounded-xl border-2 border-slate-100 py-4 font-bold text-slate-900 transition-all hover:border-slate-200 hover:bg-slate-50"
+                    ? "gradient-soft block w-full rounded-2xl py-6 text-center text-xl font-black text-white shadow-xl shadow-primary/30 transition-all hover:scale-[1.02]"
+                    : "block w-full rounded-xl border-2 border-slate-100 py-4 text-center font-bold text-slate-900 transition-all hover:border-slate-200 hover:bg-slate-50"
                 }
               >
                 {pkg.buttonText}
-              </button>
+              </Link>
             </div>
           ))}
         </div>

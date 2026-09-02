@@ -32,41 +32,52 @@ const en = {
     title: "Choose your website tier",
     subtitle:
       "Every tier starts with a website built to convert — automation and AI layer on when you're ready.",
+    priceLabel: "Starting at",
+    priceLatamLabel: "from",
     items: [
       {
         title: "Essential Site",
         subtitle: "FOR NEW OPERATIONS",
+        bestFor: "Best if you don't have a site yet and need a professional presence that can already take bookings.",
+        price: "$1,500",
+        priceLatam: "$450",
         features: [
           "Custom-designed website",
           "Online booking built in",
           "SEO & performance ready",
         ],
-        buttonText: "Get Started",
+        buttonText: "See pricing",
         featured: false,
       },
       {
         title: "Professional Site",
         subtitle: "THE COMPLETE SOLUTION",
+        bestFor: "Best once you're ready to accept payments online and automate follow-up, not just look good.",
+        price: "$4,000",
+        priceLatam: "$1,200",
         features: [
           "Everything in Essential",
           "Stripe payments integrated",
           "CRM & email workflows",
           "15-day launch support",
         ],
-        buttonText: "Get Started",
+        buttonText: "See pricing",
         featured: true,
         badge: "MOST POPULAR",
       },
       {
         title: "Complete System",
         subtitle: "FOR FULL-SCALE OPERATIONS",
+        bestFor: "Best if you want your website, automation, and AI working together as one connected system.",
+        price: "$8,000",
+        priceLatam: "$2,500",
         features: [
           "Everything in Professional",
           "Custom automation workflows",
           "AI-powered lead follow-up",
           "30-day launch support",
         ],
-        buttonText: "Book a Call",
+        buttonText: "Book a call",
         featured: false,
       },
     ],
@@ -501,6 +512,180 @@ const en = {
       ],
       ctaTitle: "Have a question the guides don't cover yet?",
       ctaSubtitle: "Book a free strategy session and ask us directly.",
+    },
+    terms: {
+      seo: {
+        title: "Terms of Service | Coreva Systems",
+        description: "The terms that govern use of the Coreva Systems website and our website, automation, and AI project engagements.",
+      },
+      eyebrow: "LEGAL",
+      h1: "Terms of Service",
+      subtitle: "The terms that apply when you use this site or hire Coreva Systems for a project.",
+      lastUpdatedLabel: "Last updated:",
+      lastUpdated: "September 2, 2026",
+      sections: [
+        {
+          heading: "1. Agreement to terms",
+          paragraphs: [
+            "These Terms of Service (\"Terms\") govern your use of corevasystems.com (the \"Site\") and any website, automation, or AI project you purchase or engage Coreva Systems (\"Coreva,\" \"we,\" \"us\") to build. By using the Site or purchasing a project, you agree to these Terms. If you don't agree, please don't use the Site or purchase a project.",
+          ],
+        },
+        {
+          heading: "2. Services",
+          paragraphs: [
+            "Coreva builds custom websites, business automation, and AI-driven systems for service businesses, delivered as one of the fixed-scope tiers described on our Pricing page (Essential Site, Professional Site, Complete System) or as a custom-scoped engagement agreed separately.",
+            "Each tier's included deliverables and post-launch support period are as described on the Pricing page at the time of purchase. Work outside that scope — additional pages, integrations, or revisions beyond what's included — is billed separately and agreed to in writing (including email) before we start it.",
+          ],
+        },
+        {
+          heading: "3. Ordering & payment",
+          paragraphs: [
+            "Essential Site and Professional Site are purchased directly through our Stripe-hosted checkout at the price shown for your region (United States or Latin America, both billed in USD). Payment is due in full at checkout before we begin work.",
+            "Complete System engagements are scoped on a strategy call first; we'll send an invoice for the agreed amount once scope is confirmed, payable by the due date on the invoice.",
+            "All payments are processed by Stripe. We never see or store your full card number — see our Privacy Policy for how payment and identity information is handled.",
+          ],
+        },
+        {
+          heading: "4. Refunds & cancellations",
+          paragraphs: [
+            "If you cancel before we've started work on your project, we'll refund your payment in full, less any payment processing fees already incurred.",
+            "Once we've begun work — including discovery calls, design, or development — payments are non-refundable, since that time and work has already been committed. If you believe there's an exceptional circumstance, contact us and we'll consider it in good faith on a case-by-case basis.",
+          ],
+        },
+        {
+          heading: "5. Client responsibilities",
+          paragraphs: [
+            "Timely delivery depends on you providing the content, feedback, access credentials, and approvals we request within a reasonable time. Delays on your end may delay your project's timeline and the post-launch support window, which runs from the agreed launch date regardless of your response time.",
+          ],
+        },
+        {
+          heading: "6. Identity verification",
+          paragraphs: [
+            "For Complete System engagements, we may ask you to complete an identity verification check (via Stripe Identity) before we finalize and send an invoice. This is a fraud-prevention step, not a general requirement for using the Site — see our Privacy Policy for details on what's collected and how it's handled.",
+          ],
+        },
+        {
+          heading: "7. Intellectual property",
+          paragraphs: [
+            "Once your project is paid in full, you own the final deliverables we build for you (the website, its content, and any custom automation we built specifically for your business), excluding any third-party tools, libraries, or platforms it relies on, which remain licensed under their own terms.",
+            "We retain the right to reference completed projects — including screenshots and summary results — in our own portfolio and marketing, unless you request otherwise in writing.",
+          ],
+        },
+        {
+          heading: "8. Limitation of liability",
+          paragraphs: [
+            "The Site and our services are provided \"as is.\" To the maximum extent permitted by law, Coreva Systems isn't liable for indirect, incidental, or consequential damages arising from your use of the Site or a project we deliver. Our total liability for any claim is limited to the amount you paid us for the project giving rise to the claim.",
+          ],
+        },
+        {
+          heading: "9. Governing law",
+          paragraphs: [
+            "These Terms are governed by the laws of [STATE/COUNTRY — to be confirmed], without regard to conflict-of-law principles.",
+          ],
+        },
+        {
+          heading: "10. Changes to these terms",
+          paragraphs: [
+            "We may update these Terms from time to time. Material changes will update the \"Last updated\" date above; continued use of the Site or an active project after a change means you accept the updated Terms.",
+          ],
+        },
+        {
+          heading: "11. Contact",
+          paragraphs: [
+            "Questions about these Terms? Email us at hello@corevasystems.com.",
+          ],
+        },
+      ],
+    },
+    privacy: {
+      seo: {
+        title: "Privacy Policy | Coreva Systems",
+        description: "How Coreva Systems collects, uses, and protects your information across the website, contact forms, and payment processing.",
+      },
+      eyebrow: "LEGAL",
+      h1: "Privacy Policy",
+      subtitle: "What we collect, why, and how it's handled when you use this site or work with us.",
+      lastUpdatedLabel: "Last updated:",
+      lastUpdated: "September 2, 2026",
+      sections: [
+        {
+          heading: "1. Overview",
+          paragraphs: [
+            "This Privacy Policy explains what personal information Coreva Systems (\"Coreva,\" \"we,\" \"us\") collects through corevasystems.com (the \"Site\"), why we collect it, and how it's handled. It applies to visitors, contact-form submissions, and clients who purchase a project.",
+          ],
+        },
+        {
+          heading: "2. Information we collect",
+          paragraphs: [
+            "We collect the following categories of information:",
+          ],
+          list: [
+            "Contact form: the name, email, company, and message you submit when you reach out to us.",
+            "Checkout & payment: handled entirely by Stripe. We receive your email, the amount paid, and payment status — we never see or store your full card number.",
+            "Identity verification (Complete System tier only): if we request identity verification before invoicing, Stripe Identity collects a government-issued ID document (and, depending on the check, a selfie) directly — this is processed and stored by Stripe, not by us. We only receive the verification result (verified, requires input, etc.) and your email.",
+            "Site analytics: we use Google Analytics, which collects standard usage data (pages visited, approximate location, device/browser type) via cookies.",
+          ],
+        },
+        {
+          heading: "3. How we use your information",
+          paragraphs: [
+            "We use this information to respond to inquiries, deliver and support projects you purchase, process payments, verify identity before large invoices (fraud prevention), and understand how visitors use the Site so we can improve it.",
+          ],
+        },
+        {
+          heading: "4. Who we share it with",
+          paragraphs: [
+            "We share information with the service providers who help us operate:",
+          ],
+          list: [
+            "Stripe — payment processing, invoicing, and identity verification.",
+            "Supabase — our database provider, where contact-form submissions and order records are stored.",
+            "Google Analytics — site usage analytics.",
+          ],
+        },
+        {
+          heading: "5. Data retention",
+          paragraphs: [
+            "We keep contact-form and order records for as long as needed to support you and meet our legal/accounting obligations. Identity documents are held and retained according to Stripe's own retention policy, not ours — you can request Stripe redact a completed identity verification by contacting us, and we'll pass that request along.",
+          ],
+        },
+        {
+          heading: "6. Your rights",
+          paragraphs: [
+            "You can ask us to access, correct, or delete the personal information we hold about you (contact-form and order records) by emailing hello@corevasystems.com. For information Stripe holds directly (payment and identity data), we'll help route your request to Stripe, or you can contact Stripe directly.",
+          ],
+        },
+        {
+          heading: "7. Cookies",
+          paragraphs: [
+            "The Site uses cookies set by Google Analytics to understand aggregate site usage. You can disable cookies in your browser settings, though this may affect some site functionality.",
+          ],
+        },
+        {
+          heading: "8. Data security",
+          paragraphs: [
+            "We rely on our service providers' security practices (Stripe is PCI-DSS certified; Supabase encrypts data at rest and in transit) and restrict access to personal information to what's needed to operate the Site and deliver projects. No method of transmission or storage is 100% secure, and we can't guarantee absolute security.",
+          ],
+        },
+        {
+          heading: "9. Children's privacy",
+          paragraphs: [
+            "The Site isn't directed at children, and we don't knowingly collect personal information from anyone under 16.",
+          ],
+        },
+        {
+          heading: "10. Changes to this policy",
+          paragraphs: [
+            "We may update this Privacy Policy from time to time. Material changes will update the \"Last updated\" date above.",
+          ],
+        },
+        {
+          heading: "11. Contact",
+          paragraphs: [
+            "Questions about this Privacy Policy or a request about your data? Email us at hello@corevasystems.com.",
+          ],
+        },
+      ],
     },
   },
   toast: {

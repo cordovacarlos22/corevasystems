@@ -32,34 +32,45 @@ const es = {
     title: "Elige el nivel de tu sitio web",
     subtitle:
       "Cada nivel comienza con un sitio web hecho para convertir — la automatización y la IA se suman cuando estés listo.",
+    priceLabel: "Desde",
+    priceLatamLabel: "desde",
     items: [
       {
         title: "Sitio Esencial",
         subtitle: "PARA NUEVAS OPERACIONES",
+        bestFor: "Ideal si aún no tienes sitio web y necesitas una presencia profesional que ya pueda recibir reservas.",
+        price: "$1,500",
+        priceLatam: "$450",
         features: [
           "Sitio web personalizado",
           "Agendamiento en línea incluido",
           "SEO y rendimiento optimizado",
         ],
-        buttonText: "Comenzar",
+        buttonText: "Ver precios",
         featured: false,
       },
       {
         title: "Sitio Profesional",
         subtitle: "LA SOLUCIÓN COMPLETA",
+        bestFor: "Ideal cuando estás listo para cobrar en línea y automatizar el seguimiento, no solo verte bien.",
+        price: "$4,000",
+        priceLatam: "$1,200",
         features: [
           "Todo lo del Sitio Esencial",
           "Pagos con Stripe integrados",
           "CRM y flujos de email",
           "15 días de soporte de lanzamiento",
         ],
-        buttonText: "Comenzar",
+        buttonText: "Ver precios",
         featured: true,
         badge: "MÁS POPULAR",
       },
       {
         title: "Sistema Completo",
         subtitle: "PARA OPERACIONES A GRAN ESCALA",
+        bestFor: "Ideal si quieres que tu sitio, la automatización y la IA trabajen juntos como un solo sistema.",
+        price: "$8,000",
+        priceLatam: "$2,500",
         features: [
           "Todo lo del Sitio Profesional",
           "Flujos de automatización personalizados",
@@ -508,6 +519,180 @@ const es = {
       ],
       ctaTitle: "¿Tienes una pregunta que las guías aún no cubren?",
       ctaSubtitle: "Agenda una sesión estratégica gratuita y pregúntanos directamente.",
+    },
+    terms: {
+      seo: {
+        title: "Términos de Servicio | Coreva Systems",
+        description: "Los términos que rigen el uso del sitio web de Coreva Systems y nuestros proyectos de sitios web, automatización e IA.",
+      },
+      eyebrow: "LEGAL",
+      h1: "Términos de Servicio",
+      subtitle: "Los términos que aplican cuando usas este sitio o contratas a Coreva Systems para un proyecto.",
+      lastUpdatedLabel: "Última actualización:",
+      lastUpdated: "2 de septiembre de 2026",
+      sections: [
+        {
+          heading: "1. Aceptación de los términos",
+          paragraphs: [
+            "Estos Términos de Servicio (\"Términos\") rigen tu uso de corevasystems.com (el \"Sitio\") y cualquier proyecto de sitio web, automatización o IA que compres o contrates con Coreva Systems (\"Coreva\", \"nosotros\"). Al usar el Sitio o comprar un proyecto, aceptas estos Términos. Si no estás de acuerdo, por favor no uses el Sitio ni compres un proyecto.",
+          ],
+        },
+        {
+          heading: "2. Servicios",
+          paragraphs: [
+            "Coreva construye sitios web personalizados, automatización de negocio y sistemas basados en IA para negocios de servicios, entregados en uno de los niveles de alcance fijo descritos en nuestra página de Precios (Sitio Esencial, Sitio Profesional, Sistema Completo) o como un proyecto de alcance personalizado acordado por separado.",
+            "Los entregables incluidos y el período de soporte post-lanzamiento de cada nivel son los descritos en la página de Precios al momento de la compra. El trabajo fuera de ese alcance — páginas adicionales, integraciones o revisiones más allá de lo incluido — se factura por separado y se acuerda por escrito (incluyendo por correo) antes de comenzarlo.",
+          ],
+        },
+        {
+          heading: "3. Pedidos y pago",
+          paragraphs: [
+            "El Sitio Esencial y el Sitio Profesional se compran directamente a través de nuestro checkout alojado en Stripe, al precio mostrado para tu región (Estados Unidos o Latinoamérica, ambos facturados en USD). El pago se realiza en su totalidad al momento del checkout, antes de comenzar el trabajo.",
+            "Los proyectos de Sistema Completo se definen primero en una llamada estratégica; enviaremos una factura por el monto acordado una vez confirmado el alcance, pagadera antes de la fecha de vencimiento indicada en la factura.",
+            "Todos los pagos son procesados por Stripe. Nunca vemos ni almacenamos tu número de tarjeta completo — consulta nuestra Política de Privacidad para saber cómo se maneja la información de pago e identidad.",
+          ],
+        },
+        {
+          heading: "4. Reembolsos y cancelaciones",
+          paragraphs: [
+            "Si cancelas antes de que hayamos comenzado a trabajar en tu proyecto, te reembolsaremos el pago en su totalidad, menos las comisiones de procesamiento de pago ya incurridas.",
+            "Una vez que hemos comenzado el trabajo — incluyendo llamadas de descubrimiento, diseño o desarrollo — los pagos no son reembolsables, ya que ese tiempo y trabajo ya se ha comprometido. Si consideras que existe una circunstancia excepcional, contáctanos y la evaluaremos de buena fe caso por caso.",
+          ],
+        },
+        {
+          heading: "5. Responsabilidades del cliente",
+          paragraphs: [
+            "La entrega a tiempo depende de que proporciones el contenido, la retroalimentación, los accesos y las aprobaciones que solicitemos dentro de un plazo razonable. Los retrasos de tu parte pueden retrasar el cronograma de tu proyecto y la ventana de soporte post-lanzamiento, la cual corre desde la fecha de lanzamiento acordada, independientemente de tu tiempo de respuesta.",
+          ],
+        },
+        {
+          heading: "6. Verificación de identidad",
+          paragraphs: [
+            "Para proyectos de Sistema Completo, podemos pedirte que completes una verificación de identidad (a través de Stripe Identity) antes de finalizar y enviar una factura. Este es un paso de prevención de fraude, no un requisito general para usar el Sitio — consulta nuestra Política de Privacidad para más detalles sobre qué se recopila y cómo se maneja.",
+          ],
+        },
+        {
+          heading: "7. Propiedad intelectual",
+          paragraphs: [
+            "Una vez que tu proyecto está pagado en su totalidad, eres dueño de los entregables finales que construimos para ti (el sitio web, su contenido y cualquier automatización personalizada construida específicamente para tu negocio), excluyendo cualquier herramienta, librería o plataforma de terceros de la que dependa, que permanece bajo sus propias licencias.",
+            "Nos reservamos el derecho de referenciar proyectos completados — incluyendo capturas de pantalla y resultados resumidos — en nuestro propio portafolio y marketing, salvo que solicites lo contrario por escrito.",
+          ],
+        },
+        {
+          heading: "8. Limitación de responsabilidad",
+          paragraphs: [
+            "El Sitio y nuestros servicios se proporcionan \"tal cual\". En la máxima medida permitida por la ley, Coreva Systems no es responsable por daños indirectos, incidentales o consecuentes derivados de tu uso del Sitio o de un proyecto que entreguemos. Nuestra responsabilidad total por cualquier reclamo está limitada al monto que nos pagaste por el proyecto que dio origen al reclamo.",
+          ],
+        },
+        {
+          heading: "9. Ley aplicable",
+          paragraphs: [
+            "Estos Términos se rigen por las leyes de [ESTADO/PAÍS — por confirmar], sin dar efecto a los principios de conflicto de leyes.",
+          ],
+        },
+        {
+          heading: "10. Cambios a estos términos",
+          paragraphs: [
+            "Podemos actualizar estos Términos de vez en cuando. Los cambios materiales actualizarán la fecha de \"Última actualización\" indicada arriba; el uso continuado del Sitio o de un proyecto activo después de un cambio significa que aceptas los Términos actualizados.",
+          ],
+        },
+        {
+          heading: "11. Contacto",
+          paragraphs: [
+            "¿Preguntas sobre estos Términos? Escríbenos a hello@corevasystems.com.",
+          ],
+        },
+      ],
+    },
+    privacy: {
+      seo: {
+        title: "Política de Privacidad | Coreva Systems",
+        description: "Cómo Coreva Systems recopila, usa y protege tu información en el sitio web, formularios de contacto y procesamiento de pagos.",
+      },
+      eyebrow: "LEGAL",
+      h1: "Política de Privacidad",
+      subtitle: "Qué recopilamos, por qué, y cómo se maneja cuando usas este sitio o trabajas con nosotros.",
+      lastUpdatedLabel: "Última actualización:",
+      lastUpdated: "2 de septiembre de 2026",
+      sections: [
+        {
+          heading: "1. Resumen",
+          paragraphs: [
+            "Esta Política de Privacidad explica qué información personal recopila Coreva Systems (\"Coreva\", \"nosotros\") a través de corevasystems.com (el \"Sitio\"), por qué la recopilamos y cómo se maneja. Aplica a visitantes, envíos del formulario de contacto y clientes que compran un proyecto.",
+          ],
+        },
+        {
+          heading: "2. Información que recopilamos",
+          paragraphs: [
+            "Recopilamos las siguientes categorías de información:",
+          ],
+          list: [
+            "Formulario de contacto: el nombre, correo, empresa y mensaje que envías al contactarnos.",
+            "Checkout y pago: manejado completamente por Stripe. Recibimos tu correo, el monto pagado y el estado del pago — nunca vemos ni almacenamos tu número de tarjeta completo.",
+            "Verificación de identidad (solo nivel Sistema Completo): si solicitamos una verificación de identidad antes de facturar, Stripe Identity recopila directamente un documento de identidad oficial (y, según la verificación, una selfie) — esto es procesado y almacenado por Stripe, no por nosotros. Solo recibimos el resultado de la verificación (verificado, requiere información, etc.) y tu correo.",
+            "Analítica del sitio: usamos Google Analytics, que recopila datos de uso estándar (páginas visitadas, ubicación aproximada, tipo de dispositivo/navegador) mediante cookies.",
+          ],
+        },
+        {
+          heading: "3. Cómo usamos tu información",
+          paragraphs: [
+            "Usamos esta información para responder consultas, entregar y dar soporte a los proyectos que compras, procesar pagos, verificar identidad antes de facturas grandes (prevención de fraude), y entender cómo los visitantes usan el Sitio para poder mejorarlo.",
+          ],
+        },
+        {
+          heading: "4. Con quién la compartimos",
+          paragraphs: [
+            "Compartimos información con los proveedores de servicios que nos ayudan a operar:",
+          ],
+          list: [
+            "Stripe — procesamiento de pagos, facturación y verificación de identidad.",
+            "Supabase — nuestro proveedor de base de datos, donde se almacenan los envíos del formulario de contacto y los registros de pedidos.",
+            "Google Analytics — analítica de uso del sitio.",
+          ],
+        },
+        {
+          heading: "5. Retención de datos",
+          paragraphs: [
+            "Conservamos los registros del formulario de contacto y de pedidos durante el tiempo necesario para brindarte soporte y cumplir con nuestras obligaciones legales/contables. Los documentos de identidad se conservan según la propia política de retención de Stripe, no la nuestra — puedes solicitar que Stripe redacte una verificación de identidad completada contactándonos, y trasladaremos esa solicitud.",
+          ],
+        },
+        {
+          heading: "6. Tus derechos",
+          paragraphs: [
+            "Puedes solicitarnos acceder, corregir o eliminar la información personal que tenemos sobre ti (registros del formulario de contacto y pedidos) escribiendo a hello@corevasystems.com. Para la información que Stripe tiene directamente (datos de pago e identidad), te ayudaremos a canalizar tu solicitud a Stripe, o puedes contactar a Stripe directamente.",
+          ],
+        },
+        {
+          heading: "7. Cookies",
+          paragraphs: [
+            "El Sitio usa cookies establecidas por Google Analytics para entender el uso agregado del sitio. Puedes desactivar las cookies en la configuración de tu navegador, aunque esto puede afectar algunas funciones del sitio.",
+          ],
+        },
+        {
+          heading: "8. Seguridad de los datos",
+          paragraphs: [
+            "Confiamos en las prácticas de seguridad de nuestros proveedores de servicios (Stripe cuenta con certificación PCI-DSS; Supabase cifra los datos en reposo y en tránsito) y restringimos el acceso a la información personal a lo necesario para operar el Sitio y entregar proyectos. Ningún método de transmisión o almacenamiento es 100% seguro, y no podemos garantizar seguridad absoluta.",
+          ],
+        },
+        {
+          heading: "9. Privacidad de menores",
+          paragraphs: [
+            "El Sitio no está dirigido a menores de edad, y no recopilamos a sabiendas información personal de personas menores de 16 años.",
+          ],
+        },
+        {
+          heading: "10. Cambios a esta política",
+          paragraphs: [
+            "Podemos actualizar esta Política de Privacidad de vez en cuando. Los cambios materiales actualizarán la fecha de \"Última actualización\" indicada arriba.",
+          ],
+        },
+        {
+          heading: "11. Contacto",
+          paragraphs: [
+            "¿Preguntas sobre esta Política de Privacidad o una solicitud sobre tus datos? Escríbenos a hello@corevasystems.com.",
+          ],
+        },
+      ],
     },
   },
   toast: {
