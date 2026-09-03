@@ -9,6 +9,7 @@ const inter = Inter({
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+const GADS_LABEL_PAGE_VIEW = process.env.NEXT_PUBLIC_GADS_LABEL_PAGE_VIEW;
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 const TAWK_PROPERTY_ID = process.env.NEXT_PUBLIC_TAWK_PROPERTY_ID;
 const TAWK_WIDGET_ID = process.env.NEXT_PUBLIC_TAWK_WIDGET_ID;
@@ -100,6 +101,7 @@ export default function RootLayout({ children }) {
                 gtag('js', new Date());
                 ${GA_ID ? `gtag('config', '${GA_ID}');` : ""}
                 ${GOOGLE_ADS_ID ? `gtag('config', '${GOOGLE_ADS_ID}');` : ""}
+                ${GOOGLE_ADS_ID && GADS_LABEL_PAGE_VIEW ? `gtag('event', 'conversion', {'send_to': '${GOOGLE_ADS_ID}/${GADS_LABEL_PAGE_VIEW}'});` : ""}
               `}
             </Script>
           </>
