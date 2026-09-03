@@ -8,6 +8,8 @@ const ROUTES = [
   "/book",
   "/services/websites",
   "/services/ecommerce",
+  "/services/automation",
+  "/services/ai-solutions",
   "/pricing",
   "/industries/healthcare",
   "/industries/construction",
