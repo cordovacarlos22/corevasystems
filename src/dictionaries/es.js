@@ -39,8 +39,8 @@ const es = {
         title: "Paquete Inicial",
         subtitle: "PARA NUEVAS OPERACIONES",
         bestFor: "Ideal si aún no tienes sitio web y necesitas una presencia rápida y creíble en línea.",
-        price: "$134",
-        priceLatam: "$40",
+        price: "$399",
+        priceLatam: "$150",
         features: [
           "Hasta 3 páginas personalizadas, mobile-first",
           "Hero animado moderno, sin jQuery",
@@ -53,8 +53,8 @@ const es = {
         title: "Paquete Profesional",
         subtitle: "LA SOLUCIÓN COMPLETA",
         bestFor: "Ideal cuando estás listo para un sitio rico en contenido que puedes actualizar tú mismo.",
-        price: "$629",
-        priceLatam: "$189",
+        price: "$1,899",
+        priceLatam: "$699",
         features: [
           "Hasta 10 páginas únicas",
           "CMS headless — edítalo tú mismo",
@@ -68,8 +68,8 @@ const es = {
         title: "Paquete Empresarial",
         subtitle: "PARA OPERACIONES A GRAN ESCALA",
         bestFor: "Ideal si quieres una construcción personalizada de alto nivel con video de lanzamiento incluido.",
-        price: "$2,969",
-        priceLatam: "$891",
+        price: "$8,999",
+        priceLatam: "$3,299",
         features: [
           "15–20 páginas, diseño personalizado de alto nivel",
           "Video de marca/explicativo con IA",
@@ -142,6 +142,7 @@ const es = {
         description:
           "Sitios web modernos diseñados para generar confianza y convertir visitantes en clientes.",
         meta: ["Rápido", "Responsive", "Enfocado en conversión"],
+        startingAt: "Desde $399",
         image: "/images/coreva-websites.webp",
         alt: "Ilustración de sitio web",
       },
@@ -150,6 +151,7 @@ const es = {
         description:
           "Tiendas en línea diseñadas para convertir visitantes en compradores, desde tu primer catálogo hasta operaciones a gran escala.",
         meta: ["Tiendas", "Pagos", "Inventario"],
+        startingAt: "Desde $1,899",
         image: "/images/coreva-ecommerce.webp",
         alt: "Ilustración de bolsa de compras e-commerce",
       },
@@ -158,6 +160,7 @@ const es = {
         description:
           "Optimiza procesos, conecta tus herramientas y ahorra tiempo cada semana.",
         meta: ["Workflows", "Integraciones", "Eficiencia"],
+        startingAt: "Desde $449",
         image: "/images/coreva-automation.webp",
         alt: "Ilustración de automatización",
       },
@@ -166,6 +169,7 @@ const es = {
         description:
           "Implementa sistemas inteligentes que te ayudan a responder más rápido y trabajar mejor.",
         meta: ["Agentes", "Asistentes", "IA"],
+        startingAt: "Desde $629",
         image: "/images/coreva-ai.webp",
         alt: "Ilustración de robot IA",
       },

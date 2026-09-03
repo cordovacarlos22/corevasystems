@@ -43,7 +43,7 @@ export default function ServicesOverview({ dict, lang = "en" }) {
     <section className="relative overflow-hidden bg-slate-50/40 py-28">
       <div className="pointer-events-none absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_top_right,rgba(236,72,153,0.08),transparent_20%),radial-gradient(circle_at_top_left,rgba(124,92,255,0.08),transparent_24%)]" />
 
-      <div className="relative mx-auto max-w-5xl px-8">
+      <div className="relative mx-auto max-w-7xl px-8">
         <Reveal className="mx-auto mb-16 max-w-3xl text-center">
           {services.badge && (
             <div className="mb-4 inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.22em] text-slate-500">
@@ -64,24 +64,24 @@ export default function ServicesOverview({ dict, lang = "en" }) {
           )}
         </Reveal>
 
-        <ScrollStagger className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
+        <ScrollStagger className="grid gap-8 sm:grid-cols-2">
           {services.items.map((item, index) => (
             <StaggerItem key={item.title} className="h-full">
-            <article className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]">
+            <article className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]">
               <div className="absolute inset-x-0 top-0 h-24 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(124,92,255,0.14),transparent_55%)]" />
 
-              <div className="relative mb-8 overflow-hidden rounded-[1.75rem] border border-slate-100 bg-slate-50/60 p-6">
+              <div className="relative mb-8 overflow-hidden rounded-[1.75rem] border border-slate-100 bg-slate-50/60 p-8">
                 <Image
                   src={item.image}
                   alt={item.alt || item.title}
-                  width={360}
-                  height={260}
-                  className="relative mx-auto h-44 w-auto object-contain"
-                  sizes="(max-width: 768px) 45vw, (max-width: 1280px) 30vw, 220px"
+                  width={420}
+                  height={300}
+                  className="relative mx-auto h-56 w-auto object-contain"
+                  sizes="(max-width: 640px) 80vw, (max-width: 1280px) 40vw, 460px"
                 />
               </div>
 
-              <h3 className="mb-4 text-2xl font-bold tracking-tight text-slate-900">
+              <h3 className="mb-4 text-3xl font-bold tracking-tight text-slate-900">
                 {item.title}
               </h3>
 
@@ -104,6 +104,12 @@ export default function ServicesOverview({ dict, lang = "en" }) {
               )}
 
               <div className="flex-1" />
+
+              {item.startingAt && (
+                <div className="mt-6 text-sm font-bold uppercase tracking-wide text-primary">
+                  {item.startingAt}
+                </div>
+              )}
 
               {SERVICE_SLUGS[index] && (
                 <Link

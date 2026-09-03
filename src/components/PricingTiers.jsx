@@ -171,7 +171,9 @@ export default function PricingTiers({ page, lang = "en" }) {
                   className={
                     featured
                       ? "gradient-soft w-full rounded-xl py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-opacity hover:opacity-90 disabled:opacity-60"
-                      : "w-full rounded-xl border-2 border-slate-100 py-3.5 text-sm font-bold text-slate-900 transition-colors hover:border-slate-200 hover:bg-slate-50 disabled:opacity-60"
+                      : dark
+                        ? "w-full rounded-xl border-2 border-white/25 py-3.5 text-sm font-bold text-white transition-colors hover:border-white/40 hover:bg-white/10 disabled:opacity-60"
+                        : "w-full rounded-xl border-2 border-slate-100 py-3.5 text-sm font-bold text-slate-900 transition-colors hover:border-slate-200 hover:bg-slate-50 disabled:opacity-60"
                   }
                 >
                   {page.buttonGetStarted}
