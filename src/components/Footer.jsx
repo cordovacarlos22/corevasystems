@@ -83,22 +83,6 @@ export default function Footer({ dict, lang = "en" }) {
                     {footer.links.ecommerce}
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href={`/${lang}/services/automation`}
-                    className="transition-colors hover:text-primary"
-                  >
-                    {footer.links.automation}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={`/${lang}/services/ai-solutions`}
-                    className="transition-colors hover:text-primary"
-                  >
-                    {footer.links.aiSolutions}
-                  </Link>
-                </li>
               </ul>
             </div>
 

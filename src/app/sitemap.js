@@ -6,10 +6,8 @@ const LOCALES = ["en", "es"];
 const ROUTES = [
   "",
   "/book",
-  "/services/ai-solutions",
   "/services/websites",
   "/services/ecommerce",
-  "/services/automation",
   "/pricing",
   "/industries/healthcare",
   "/industries/construction",

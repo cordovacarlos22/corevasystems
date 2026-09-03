@@ -1,15 +1,15 @@
 const en = {
   seo: {
-    title: "AI Automation & High-Converting Websites | Coreva Systems",
+    title: "Websites & E-Commerce Built to Convert | Coreva Systems",
     description:
-      "Coreva Systems builds AI systems, high-converting websites, and automation for US & LATAM service businesses. Book a free strategy session today.",
+      "Coreva Systems builds high-converting websites and online stores for US & LATAM service businesses. Book a free strategy session today.",
   },
   hero: {
     badge: "NOW ACCEPTING NEW PROJECTS FOR Q4",
     titleLine1: "Websites Built to Sell",
     titleHighlight: "— Not Just Look Good",
     description:
-      "Design, booking, and payments built in from day one. Automation and AI when you're ready to scale.",
+      "Design, booking, and payments built in from day one — for websites and online stores that actually convert.",
     subtext:
       "Helping local businesses launch and grow — trusted by service businesses in the US & LATAM",
     primaryCta: "See Pricing",
@@ -17,7 +17,7 @@ const en = {
     stats: {
       delivered: "Systems Delivered",
       success: "Project Success Rate",
-      support: "Web & Automation Support",
+      support: "Bilingual Web Support",
     },
   },
   nav: {
@@ -31,7 +31,7 @@ const en = {
     badge: "SERVICE TIERS",
     title: "Choose your website tier",
     subtitle:
-      "Every tier starts with a website built to convert — automation and AI layer on when you're ready.",
+      "Every tier is built to convert — from a first credible site to a full online store.",
     priceLabel: "Starting at",
     priceLatamLabel: "from",
     items: [
@@ -117,9 +117,9 @@ const en = {
     name: "Carlos Cordova",
     role: "Founder & Systems Architect",
     quote:
-      "We build systems that help businesses grow, automate operations, and scale efficiently. My goal is to free founders from the day-to-day grind so they can focus on their vision.",
+      "We build websites and online stores that actually bring in business. My goal is to free founders from the day-to-day grind so they can focus on their vision.",
     highlights: {
-      automation: "Enterprise Automation",
+      automation: "Conversion-Focused Builds",
       bilingual: "Bilingual Operations",
     },
     cta: "Work directly with Carlos",
@@ -134,40 +134,22 @@ const en = {
   services: {
     badge: "What we do",
     title: "Systems designed to grow your business",
-    subtitle: "We build websites and online stores that convert — with automation and AI layered on when you're ready to scale.",
+    subtitle: "We build websites and online stores that convert — fast, modern, and built to bring in business.",
     items: [
       {
         title: "Websites that convert",
         description: "Modern websites designed to build trust, capture leads, and grow your business.",
-        meta: "Fast • Responsive • Conversion-focused",
+        meta: ["Fast", "Responsive", "Conversion-focused"],
         image: "/images/coreva-websites.webp",
         alt: "Website monitor illustration",
-        tag: "Core service"
       },
       {
         title: "E-Commerce that sells",
         description: "Online stores built to convert browsers into buyers, from a first product catalog to full-scale operations.",
-        meta: "Storefronts • Payments • Inventory",
+        meta: ["Storefronts", "Payments", "Inventory"],
         image: "/images/coreva-ecommerce.webp",
         alt: "E-commerce shopping bag illustration",
-        tag: "Core service"
       },
-      {
-        title: "Automation that scales",
-        description: "Streamline repetitive tasks, connect your tools, and save time every week.",
-        meta: "Workflows • Integrations • Efficiency",
-        image: "/images/coreva-automation.webp",
-        alt: "Automation flow illustration",
-        tag: "Upsell"
-      },
-      {
-        title: "AI Solutions",
-        description: "Deploy intelligent systems that help your business respond faster and work smarter.",
-        meta: "Agents • Assistants • Smart workflows",
-        image: "/images/coreva-ai.webp",
-        alt: "AI robot illustration",
-        tag: "Upsell"
-      }
     ]
   },
   process: {
@@ -178,13 +160,13 @@ const en = {
         number: "1",
         title: "Analyze",
         description:
-          "We map your current operations to find friction points and high-impact automation opportunities.",
+          "We map how customers currently find and book you, and where they're falling off.",
       },
       {
         number: "2",
         title: "Build",
         description:
-          "Our team crafts custom web and automation systems specifically tailored to your business needs.",
+          "Our team designs and builds your website or store, tailored specifically to your business.",
       },
       {
         number: "3",
@@ -224,7 +206,7 @@ const en = {
   footer: {
     brand: "Coreva Systems",
     description:
-      "We build systems that generate predictable growth. Automation + websites designed to scale your business.",
+      "We build websites and online stores designed to convert and scale your business.",
     columns: {
       services: "Services",
       resources: "Resources",
@@ -258,22 +240,22 @@ const en = {
       {
         question: "What services does Coreva Systems offer?",
         answer:
-          "We build three things: AI systems (agents, assistants, and smart workflows), high-converting websites, and automation that connects your tools and eliminates repetitive tasks. Most clients combine two or three of these into one system.",
+          "We build two things: high-converting websites and full online stores. Every tier is built to turn visitors into booked appointments or paying customers.",
       },
       {
         question: "Who do you work with?",
         answer:
-          "We work with service businesses in the US and LATAM — from healthcare clinics to construction companies — who want to replace manual, disconnected processes with a system that scales.",
+          "We work with service businesses and online sellers in the US and LATAM — from healthcare clinics to construction companies to retailers — who want a website or store that actually converts.",
       },
       {
-        question: "What's your process for building a new system?",
+        question: "What's your process for building a new site?",
         answer:
-          "We follow a 3-step process: Analyze (map your current operations and find high-impact opportunities), Build (design and develop the website and automation systems specific to your business), and Scale (launch and support long-term, predictable growth).",
+          "We follow a 3-step process: Analyze (map how customers currently find and book you), Build (design and develop your website or store), and Scale (launch and support long-term growth).",
       },
       {
         question: "Do you offer support after launch?",
         answer:
-          "Yes. Our Full Automation System includes 30 days of implementation support after launch, and our Ongoing Optimization plan covers monthly system monitoring, updates, and strategy calls for clients who want continued support.",
+          "Yes. Every tier includes a post-launch support window — the exact length is listed per package on our pricing page, and higher tiers include a dedicated project manager for ongoing check-ins.",
       },
       {
         question: "Do you work in English and Spanish?",
@@ -414,13 +396,13 @@ const en = {
     },
     pricing: {
       seo: {
-        title: "Website, Automation & AI Pricing — US & LatAm Rates | Coreva Systems",
+        title: "Website & E-Commerce Pricing — US & LatAm Rates | Coreva Systems",
         description:
-          "See Coreva Systems' pricing for websites, automation, and AI solutions across the US and Latin America — transparent tiers, no sales pitch.",
+          "See Coreva Systems' pricing for websites and online stores across the US and Latin America — transparent tiers, no sales pitch.",
       },
       eyebrow: "PRICING",
       h1: "Simple pricing, built for where you do business",
-      subtitle: "Websites, automation, and AI — priced by tier, for your market.",
+      subtitle: "Websites and online stores — priced by tier, for your market.",
       regionLabels: {
         us: "United States (USD)",
         latam: "Latin America (USD)",
@@ -428,8 +410,6 @@ const en = {
       categoryLabels: {
         websites: "Websites",
         ecommerce: "E-Commerce",
-        automation: "Automation",
-        ai: "AI Solutions",
       },
       categories: {
         websites: {
@@ -514,17 +494,6 @@ const en = {
                 "Shopify or headless commerce, CMS-driven",
                 "Cart + Stripe/PayPal payment integration",
                 "Dedicated designer & developer, unlimited revisions",
-              ],
-            },
-            {
-              name: "E-Commerce Basic",
-              audience: "Ready to handle real order volume",
-              turnaround: "3–4 weeks",
-              includes: [
-                "Up to 100 products with custom detail pages",
-                "Multi-currency payments + automated tax calculation",
-                "Customer accounts + express checkout",
-                "Order & inventory management",
               ],
             },
             {
@@ -642,7 +611,7 @@ const en = {
       buttonGetStarted: "Get Started",
       buttonBookCall: "Book a Call",
       pricingNote:
-        "Automation and AI Solutions top-tier engagements are scoped on a free strategy call before booking. Timelines are estimates and begin once content, brand assets, and any required access are received.",
+        "Timelines are estimates and begin once content, brand assets, and any required access are received.",
       techFoundation: {
         title: "Our 2026 Tech Foundation — every package, every tier",
         items: [

@@ -128,13 +128,11 @@ export const PRICING_CATEGORIES = {
   ecommerce: {
     us: [
       { price: "$629", priceId: ACTIVE.ecommerce.us.starter },
-      { price: "$1,124", priceId: ACTIVE.ecommerce.us.basic },
       { price: "$1,439", priceId: ACTIVE.ecommerce.us.plus },
       { price: "$2,159", priceId: ACTIVE.ecommerce.us.prime },
     ],
     latam: [
       { price: "$189", priceId: ACTIVE.ecommerce.latam.starter },
-      { price: "$338", priceId: ACTIVE.ecommerce.latam.basic },
       { price: "$432", priceId: ACTIVE.ecommerce.latam.plus },
       { price: "$648", priceId: ACTIVE.ecommerce.latam.prime },
     ],

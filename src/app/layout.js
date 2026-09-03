@@ -20,7 +20,7 @@ const organizationJsonLd = {
   logo: "https://www.corevasystems.com/images/coreva-thumbnail.webp",
   image: "https://www.corevasystems.com/images/coreva-thumbnail.webp",
   description:
-    "Coreva Systems builds AI systems, high-converting websites, and automation solutions that help service businesses grow, save time, and scale efficiently.",
+    "Coreva Systems builds high-converting websites and online stores that help service businesses and sellers grow.",
   email: "hello@corevasystems.com",
   areaServed: ["US", "LATAM"],
   knowsLanguage: ["en", "es"],
@@ -36,17 +36,17 @@ export const metadata = {
   metadataBase: new URL("https://www.corevasystems.com"),
 
   title: {
-    default: "AI Automation & High-Converting Websites | Coreva Systems",
+    default: "Websites & E-Commerce Built to Convert | Coreva Systems",
     template: "%s | Coreva Systems",
   },
 
   description:
-    "Coreva Systems builds AI systems, high-converting websites, and automation for US & LATAM service businesses. Book a free strategy session today.",
+    "Coreva Systems builds high-converting websites and online stores for US & LATAM service businesses. Book a free strategy session today.",
 
   openGraph: {
-    title: "AI Automation & High-Converting Websites | Coreva Systems",
+    title: "Websites & E-Commerce Built to Convert | Coreva Systems",
     description:
-      "AI systems, modern websites, and automation designed to grow your business.",
+      "High-converting websites and online stores designed to grow your business.",
     url: "https://www.corevasystems.com",
     siteName: "Coreva Systems",
     images: [
@@ -62,9 +62,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation & High-Converting Websites | Coreva Systems",
+    title: "Websites & E-Commerce Built to Convert | Coreva Systems",
     description:
-      "We build systems that help businesses grow, automate, and scale.",
+      "We build websites and online stores that help businesses grow.",
     images: ["/images/coreva-thumbnail.webp"],
   },
 

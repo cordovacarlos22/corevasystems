@@ -1,15 +1,15 @@
 const es = {
   seo: {
-    title: "IA, Automatización y Sitios Web que Convierten | Coreva",
+    title: "Sitios Web y E-Commerce que Convierten | Coreva Systems",
     description:
-      "Construimos sistemas de IA, sitios web de alta conversión y automatización para negocios de servicios en EE. UU. y LATAM. Agenda tu llamada gratis.",
+      "Coreva Systems construye sitios web y tiendas en línea de alta conversión para negocios de servicios en EE. UU. y LATAM. Agenda tu llamada gratis.",
   },
   hero: {
     badge: "ACEPTANDO NUEVOS PROYECTOS PARA Q4",
     titleLine1: "Sitios web hechos para vender",
     titleHighlight: "— no solo para verse bien",
     description:
-      "Diseño, agendamiento y pagos integrados desde el día uno. Automatización e IA cuando estés listo para escalar.",
+      "Diseño, agendamiento y pagos integrados desde el día uno — para sitios web y tiendas en línea que realmente convierten.",
     subtext:
       "Ayudando a negocios locales a lanzar y crecer — con la confianza de negocios de servicios en EE. UU. y LATAM",
     primaryCta: "Ver precios",
@@ -17,7 +17,7 @@ const es = {
     stats: {
       delivered: "Sistemas entregados",
       success: "Tasa de éxito",
-      support: "Soporte web y automatización",
+      support: "Soporte web bilingüe",
     },
   },
   nav: {
@@ -31,7 +31,7 @@ const es = {
     badge: "PLANES DE SERVICIO",
     title: "Elige el nivel de tu sitio web",
     subtitle:
-      "Cada nivel comienza con un sitio web hecho para convertir — la automatización y la IA se suman cuando estés listo.",
+      "Cada nivel está hecho para convertir — desde un primer sitio creíble hasta una tienda en línea completa.",
     priceLabel: "Desde",
     priceLatamLabel: "desde",
     items: [
@@ -117,9 +117,9 @@ const es = {
     name: "Carlos Cordova",
     role: "Fundador y Arquitecto de Sistemas",
     quote:
-      "Construimos sistemas que ayudan a las empresas a crecer, automatizar operaciones y escalar eficientemente. Mi objetivo es liberar a los fundadores del trabajo diario para que puedan enfocarse en su visión.",
+      "Construimos sitios web y tiendas en línea que realmente generan negocio. Mi objetivo es liberar a los fundadores del trabajo diario para que puedan enfocarse en su visión.",
     highlights: {
-      automation: "Automatización Empresarial",
+      automation: "Diseño Enfocado en Conversión",
       bilingual: "Operaciones Bilingües",
     },
     cta: "Trabaja directamente con Carlos",
@@ -135,43 +135,23 @@ const es = {
     badge: "Qué hacemos",
     title: "Sistemas diseñados para hacer crecer tu negocio",
     subtitle:
-      "Construimos sitios web y tiendas en línea que convierten — con automatización e IA que se suman cuando estés listo para escalar.",
+      "Construimos sitios web y tiendas en línea que convierten — rápidos, modernos y hechos para generar negocio.",
     items: [
       {
         title: "Páginas que convierten",
         description:
           "Sitios web modernos diseñados para generar confianza y convertir visitantes en clientes.",
-        meta: "Rápido • Responsive • Conversión",
+        meta: ["Rápido", "Responsive", "Enfocado en conversión"],
         image: "/images/coreva-websites.webp",
         alt: "Ilustración de sitio web",
-        tag: "Servicio principal",
       },
       {
         title: "E-Commerce que vende",
         description:
           "Tiendas en línea diseñadas para convertir visitantes en compradores, desde tu primer catálogo hasta operaciones a gran escala.",
-        meta: "Tiendas • Pagos • Inventario",
+        meta: ["Tiendas", "Pagos", "Inventario"],
         image: "/images/coreva-ecommerce.webp",
         alt: "Ilustración de bolsa de compras e-commerce",
-        tag: "Servicio principal",
-      },
-      {
-        title: "Automatización escalable",
-        description:
-          "Optimiza procesos, conecta tus herramientas y ahorra tiempo cada semana.",
-        meta: "Workflows • Integraciones • Eficiencia",
-        image: "/images/coreva-automation.webp",
-        alt: "Ilustración de automatización",
-        tag: "Adicional",
-      },
-      {
-        title: "Soluciones con IA",
-        description:
-          "Implementa sistemas inteligentes que te ayudan a responder más rápido y trabajar mejor.",
-        meta: "Agentes • Asistentes • IA",
-        image: "/images/coreva-ai.webp",
-        alt: "Ilustración de robot IA",
-        tag: "Adicional",
       },
     ],
   },
@@ -185,13 +165,13 @@ const es = {
         number: "1",
         title: "Analizar",
         description:
-          "Mapeamos tus operaciones actuales para encontrar puntos de fricción y oportunidades de automatización de alto impacto.",
+          "Mapeamos cómo tus clientes te encuentran y agendan hoy, y dónde se están perdiendo.",
       },
       {
         number: "2",
         title: "Construir",
         description:
-          "Creamos sistemas web y de automatización personalizados específicamente para las necesidades de tu negocio.",
+          "Diseñamos y construimos tu sitio web o tienda, hecho a la medida de tu negocio.",
       },
       {
         number: "3",
@@ -232,7 +212,7 @@ const es = {
   footer: {
     brand: "Coreva Systems",
     description:
-      "Construimos sistemas que generan crecimiento predecible. Automatización + sitios web diseñados para escalar tu negocio.",
+      "Construimos sitios web y tiendas en línea diseñados para convertir y escalar tu negocio.",
     columns: {
       services: "Servicios",
       resources: "Recursos",
@@ -266,22 +246,22 @@ const es = {
       {
         question: "¿Qué servicios ofrece Coreva Systems?",
         answer:
-          "Construimos tres cosas: sistemas de IA (agentes, asistentes y flujos de trabajo inteligentes), sitios web de alta conversión y automatización que conecta tus herramientas y elimina tareas repetitivas. La mayoría de los clientes combinan dos o tres de estos en un solo sistema.",
+          "Construimos dos cosas: sitios web de alta conversión y tiendas en línea completas. Cada nivel está hecho para convertir visitantes en citas agendadas o clientes que compran.",
       },
       {
         question: "¿Con quién trabajan?",
         answer:
-          "Trabajamos con negocios de servicios en EE. UU. y LATAM — desde clínicas de salud hasta empresas de construcción — que quieren reemplazar procesos manuales y desconectados por un sistema que escala.",
+          "Trabajamos con negocios de servicios y vendedores en línea en EE. UU. y LATAM — desde clínicas de salud hasta empresas de construcción y comercios — que quieren un sitio web o tienda que realmente convierta.",
       },
       {
-        question: "¿Cuál es su proceso para construir un nuevo sistema?",
+        question: "¿Cuál es su proceso para construir un nuevo sitio?",
         answer:
-          "Seguimos un proceso de 3 pasos: Analizar (mapeamos tus operaciones actuales para encontrar oportunidades de alto impacto), Construir (diseñamos y desarrollamos el sitio web y los sistemas de automatización específicos para tu negocio) y Escalar (lanzamos y damos soporte continuo para un crecimiento predecible a largo plazo).",
+          "Seguimos un proceso de 3 pasos: Analizar (mapeamos cómo tus clientes te encuentran y agendan hoy), Construir (diseñamos y desarrollamos tu sitio web o tienda) y Escalar (lanzamos y damos soporte continuo para un crecimiento a largo plazo).",
       },
       {
         question: "¿Ofrecen soporte después del lanzamiento?",
         answer:
-          "Sí. Nuestro Sistema Completo de Automatización incluye 30 días de soporte de implementación después del lanzamiento, y nuestro plan de Optimización Continua cubre monitoreo mensual del sistema, actualizaciones y llamadas de estrategia para clientes que quieren soporte continuo.",
+          "Sí. Cada nivel incluye una ventana de soporte post-lanzamiento — la duración exacta está indicada en cada paquete en nuestra página de precios, y los niveles superiores incluyen un gerente de proyecto dedicado para seguimiento continuo.",
       },
       {
         question: "¿Trabajan en inglés y español?",
@@ -422,13 +402,13 @@ const es = {
     },
     pricing: {
       seo: {
-        title: "Precios de Sitios Web, Automatización e IA | Coreva",
+        title: "Precios de Sitios Web y E-Commerce | Coreva Systems",
         description:
-          "Consulta los precios de Coreva Systems para sitios web, automatización y soluciones de IA en EE. UU. y Latinoamérica — niveles transparentes, sin discurso de ventas.",
+          "Consulta los precios de Coreva Systems para sitios web y tiendas en línea en EE. UU. y Latinoamérica — niveles transparentes, sin discurso de ventas.",
       },
       eyebrow: "PRECIOS",
       h1: "Precios simples, según dónde opera tu negocio",
-      subtitle: "Sitios web, automatización e IA — con precio por nivel, según tu mercado.",
+      subtitle: "Sitios web y tiendas en línea — con precio por nivel, según tu mercado.",
       regionLabels: {
         us: "Estados Unidos (USD)",
         latam: "Latinoamérica (USD)",
@@ -436,8 +416,6 @@ const es = {
       categoryLabels: {
         websites: "Sitios web",
         ecommerce: "E-Commerce",
-        automation: "Automatización",
-        ai: "Soluciones de IA",
       },
       categories: {
         websites: {
@@ -522,17 +500,6 @@ const es = {
                 "Shopify o comercio headless, gestionado por CMS",
                 "Carrito + integración de pago Stripe/PayPal",
                 "Diseñador y desarrollador dedicados, revisiones ilimitadas",
-              ],
-            },
-            {
-              name: "E-Commerce Básico",
-              audience: "Listo para manejar volumen real de pedidos",
-              turnaround: "3–4 semanas",
-              includes: [
-                "Hasta 100 productos con páginas de detalle personalizadas",
-                "Pagos multi-moneda + cálculo automático de impuestos",
-                "Cuentas de cliente + checkout exprés",
-                "Gestión de pedidos e inventario",
               ],
             },
             {
@@ -650,7 +617,7 @@ const es = {
       buttonGetStarted: "Comenzar",
       buttonBookCall: "Agendar llamada",
       pricingNote:
-        "Los proyectos del nivel superior de Automatización y Soluciones de IA se definen en una llamada estratégica gratuita antes de agendarse. Los tiempos son estimados y comienzan una vez recibidos el contenido, los recursos de marca y cualquier acceso necesario.",
+        "Los tiempos son estimados y comienzan una vez recibidos el contenido, los recursos de marca y cualquier acceso necesario.",
       techFoundation: {
         title: "Nuestra base tecnológica 2026 — en cada paquete, cada nivel",
         items: [

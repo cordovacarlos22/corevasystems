@@ -20,14 +20,14 @@ export default function BookEmbed({ lang }) {
       badge: "RESERVA TU LLAMADA",
       title: "Elige el horario que mejor te funcione",
       subtitle:
-        "Agenda una llamada estratégica para hablar sobre tu negocio, automatización, AI y oportunidades de crecimiento.",
+        "Agenda una llamada estratégica para hablar sobre tu negocio, tu sitio web o tienda, y oportunidades de crecimiento.",
       note: "Las reuniones se confirman según disponibilidad.",
     }
     : {
       badge: "BOOK YOUR CALL",
       title: "Choose the time that works best for you",
       subtitle:
-        "Schedule a strategy call to talk about your business, automation, AI, and growth opportunities.",
+        "Schedule a strategy call to talk about your business, your website or store, and growth opportunities.",
       note: "Meetings are confirmed based on availability.",
     };
 
