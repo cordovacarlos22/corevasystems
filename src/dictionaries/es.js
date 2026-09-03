@@ -153,6 +153,22 @@ const es = {
         image: "/images/coreva-ecommerce.webp",
         alt: "Ilustración de bolsa de compras e-commerce",
       },
+      {
+        title: "Automatización escalable",
+        description:
+          "Optimiza procesos, conecta tus herramientas y ahorra tiempo cada semana.",
+        meta: ["Workflows", "Integraciones", "Eficiencia"],
+        image: "/images/coreva-automation.webp",
+        alt: "Ilustración de automatización",
+      },
+      {
+        title: "Soluciones con IA",
+        description:
+          "Implementa sistemas inteligentes que te ayudan a responder más rápido y trabajar mejor.",
+        meta: ["Agentes", "Asistentes", "IA"],
+        image: "/images/coreva-ai.webp",
+        alt: "Ilustración de robot IA",
+      },
     ],
   },
 

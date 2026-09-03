@@ -3,8 +3,16 @@ import Link from "next/link";
 import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
 
 // Matches the fixed order of dict.services.items in both en.js and es.js:
-// [0] Websites, [1] E-Commerce.
-const SERVICE_SLUGS = ["services/websites", "services/ecommerce"];
+// [0] Websites, [1] E-Commerce, [2] Automation, [3] AI Solutions.
+// Automation/AI are shown here for site fullness but intentionally not on
+// /pricing — not currently sellable, see the FAQ/CTA copy which routes them
+// to a strategy call rather than checkout.
+const SERVICE_SLUGS = [
+  "services/websites",
+  "services/ecommerce",
+  "services/automation",
+  "services/ai-solutions",
+];
 
 export default function ServicesOverview({ dict, lang = "en" }) {
   const services = dict?.services || {
@@ -56,7 +64,7 @@ export default function ServicesOverview({ dict, lang = "en" }) {
           )}
         </Reveal>
 
-        <ScrollStagger className="grid gap-10 md:grid-cols-2">
+        <ScrollStagger className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
           {services.items.map((item, index) => (
             <StaggerItem key={item.title} className="h-full">
             <article className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_10px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(124,92,255,0.12)]">

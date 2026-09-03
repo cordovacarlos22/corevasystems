@@ -150,6 +150,20 @@ const en = {
         image: "/images/coreva-ecommerce.webp",
         alt: "E-commerce shopping bag illustration",
       },
+      {
+        title: "Automation that scales",
+        description: "Streamline repetitive tasks, connect your tools, and save time every week.",
+        meta: ["Workflows", "Integrations", "Efficiency"],
+        image: "/images/coreva-automation.webp",
+        alt: "Automation flow illustration",
+      },
+      {
+        title: "AI Solutions",
+        description: "Deploy intelligent systems that help your business respond faster and work smarter.",
+        meta: ["Agents", "Assistants", "Smart workflows"],
+        image: "/images/coreva-ai.webp",
+        alt: "AI robot illustration",
+      },
     ]
   },
   process: {
