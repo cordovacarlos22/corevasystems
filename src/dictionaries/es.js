@@ -864,7 +864,7 @@ const es = {
             "Checkout y pago: manejado completamente por Stripe. Recibimos tu correo, el monto pagado y el estado del pago — nunca vemos ni almacenamos tu número de tarjeta completo.",
             "Verificación de identidad (solo nivel Sistema Completo): si solicitamos una verificación de identidad antes de facturar, Stripe Identity recopila directamente un documento de identidad oficial (y, según la verificación, una selfie) — esto es procesado y almacenado por Stripe, no por nosotros. Solo recibimos el resultado de la verificación (verificado, requiere información, etc.) y tu correo.",
             "Chat en vivo: si usas el widget de chat en vivo del Sitio, los mensajes que envías y datos técnicos estándar (dirección IP, tipo de dispositivo/navegador) son recopilados por nuestro proveedor de chat, Tawk.to, para habilitar y dar soporte a la conversación.",
-            "Analítica del sitio: usamos Google Analytics, que recopila datos de uso estándar (páginas visitadas, ubicación aproximada, tipo de dispositivo/navegador) mediante cookies.",
+            "Analítica y publicidad del sitio: usamos Google Analytics para datos de uso (páginas visitadas, ubicación aproximada, tipo de dispositivo/navegador), y Google Ads y el Pixel de Meta (Facebook/Instagram) para medir el rendimiento de anuncios y qué acciones en el sitio (una compra, agendar una llamada o enviar un formulario) siguieron a un clic en un anuncio — todo mediante cookies.",
           ],
         },
         {
@@ -882,6 +882,8 @@ const es = {
             "Stripe — procesamiento de pagos, facturación y verificación de identidad.",
             "Supabase — nuestro proveedor de base de datos, donde se almacenan los envíos del formulario de contacto y los registros de pedidos.",
             "Google Analytics — analítica de uso del sitio.",
+            "Google Ads — seguimiento de conversiones publicitarias.",
+            "Pixel de Meta (Facebook/Instagram) — seguimiento de conversiones publicitarias.",
             "Tawk.to — widget de chat en vivo, si eliges usarlo.",
           ],
         },
@@ -900,7 +902,7 @@ const es = {
         {
           heading: "7. Cookies",
           paragraphs: [
-            "El Sitio usa cookies establecidas por Google Analytics para entender el uso agregado del sitio, y por Tawk.to para dar soporte al widget de chat en vivo si lo usas. Puedes desactivar las cookies en la configuración de tu navegador, aunque esto puede afectar algunas funciones del sitio (incluido el chat en vivo).",
+            "El Sitio usa cookies establecidas por Google Analytics para entender el uso agregado del sitio, por Google Ads y el Pixel de Meta (Facebook/Instagram) para medir el rendimiento de anuncios, y por Tawk.to para dar soporte al widget de chat en vivo si lo usas. Puedes desactivar las cookies en la configuración de tu navegador, aunque esto puede afectar algunas funciones del sitio (incluido el chat en vivo).",
           ],
         },
         {

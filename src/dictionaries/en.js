@@ -856,7 +856,7 @@ const en = {
             "Checkout & payment: handled entirely by Stripe. We receive your email, the amount paid, and payment status — we never see or store your full card number.",
             "Identity verification (Complete System tier only): if we request identity verification before invoicing, Stripe Identity collects a government-issued ID document (and, depending on the check, a selfie) directly — this is processed and stored by Stripe, not by us. We only receive the verification result (verified, requires input, etc.) and your email.",
             "Live chat: if you use the live chat widget on the Site, the messages you send and standard technical data (IP address, browser/device type) are collected by our chat provider, Tawk.to, to enable and support the conversation.",
-            "Site analytics: we use Google Analytics, which collects standard usage data (pages visited, approximate location, device/browser type) via cookies.",
+            "Site analytics & advertising: we use Google Analytics for usage data (pages visited, approximate location, device/browser type), and Google Ads and the Meta (Facebook/Instagram) Pixel to measure ad performance and which page actions (a purchase, booking a call, or submitting a form) followed an ad click — all via cookies.",
           ],
         },
         {
@@ -874,6 +874,8 @@ const en = {
             "Stripe — payment processing, invoicing, and identity verification.",
             "Supabase — our database provider, where contact-form submissions and order records are stored.",
             "Google Analytics — site usage analytics.",
+            "Google Ads — ad conversion tracking.",
+            "Meta (Facebook/Instagram) Pixel — ad conversion tracking.",
             "Tawk.to — live chat widget, if you choose to use it.",
           ],
         },
@@ -892,7 +894,7 @@ const en = {
         {
           heading: "7. Cookies",
           paragraphs: [
-            "The Site uses cookies set by Google Analytics to understand aggregate site usage, and by Tawk.to to support the live chat widget if you use it. You can disable cookies in your browser settings, though this may affect some site functionality (including live chat).",
+            "The Site uses cookies set by Google Analytics to understand aggregate site usage, by Google Ads and the Meta (Facebook/Instagram) Pixel to measure ad performance, and by Tawk.to to support the live chat widget if you use it. You can disable cookies in your browser settings, though this may affect some site functionality (including live chat).",
           ],
         },
         {

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { sileo } from "sileo";
 import { trackContactConversion } from "@/lib/gtag";
+import { trackContactPixel } from "@/lib/metapixel";
 
 const DISMISS_KEY = "coreva_lead_popup_dismissed";
 const SHOW_AFTER_MS = 20000;
@@ -53,6 +54,7 @@ export default function LeadCapturePopup({ dict, lang = "en" }) {
     request
       .then(() => {
         trackContactConversion();
+        trackContactPixel();
         window.localStorage.setItem(DISMISS_KEY, "1");
         setTimeout(() => setVisible(false), 1200);
       })

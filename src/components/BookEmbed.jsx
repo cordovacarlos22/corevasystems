@@ -3,6 +3,7 @@
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 import { trackBookCallConversion } from "@/lib/gtag";
+import { trackBookCallPixel } from "@/lib/metapixel";
 
 export default function BookEmbed({ lang }) {
   const isSpanish = lang === "es";
@@ -48,7 +49,10 @@ export default function BookEmbed({ lang }) {
         },
       });
 
-      const onBookingSuccessful = () => trackBookCallConversion();
+      const onBookingSuccessful = () => {
+        trackBookCallConversion();
+        trackBookCallPixel();
+      };
       cal("on", { action: "bookingSuccessfulV2", callback: onBookingSuccessful });
       cleanup = () => cal("off", { action: "bookingSuccessfulV2", callback: onBookingSuccessful });
     })();
