@@ -13,21 +13,29 @@
 // change means a new Price + repointing here, not editing the old one. The
 // prior (lower) Prices are still live in Stripe but no longer referenced.
 //
-// Websites was simplified from 6 tiers down to 3 (Starter/Professional/
-// Enterprise) to match the homepage teaser and reduce choice overload —
-// the dropped Growth/Elite/Corporate Prices are still live in Stripe but
-// no longer referenced.
+// Websites is 4 tiers: Starter/Growth/Professional/Enterprise. It was
+// briefly cut to 3 (dropping Growth entirely), but the $399 → $1,899 jump
+// from Starter to Professional felt too big, so Growth was reinstated as
+// a new ~$799/$299 tier (a new Stripe Product — the original 6-tier
+// Growth/Elite/Corporate Prices are still live in Stripe but no longer
+// referenced).
 //
-// Automation and AI now have a full /pricing tab with real checkout on
-// every tier, including the top ("Enterprise") tier — it previously had
-// no Stripe Price and routed straight to /book.
+// Automation and AI have a full /pricing tab with real checkout on every
+// tier, including the top ("Enterprise") tier — it previously had no
+// Stripe Price and routed straight to /book.
+//
+// Homepage teaser (PackagesSection) and the service-overview "Starting
+// at" cards both read prices from PRICING_CATEGORIES directly (see
+// tierIndex usage there) instead of hardcoding their own price strings,
+// so this file is the single source of truth for every price shown on
+// the site.
 const IS_LIVE_KEY = process.env.NEXT_PUBLIC_STRIPE_MODE === "live";
 
 const TEST_PRICE_IDS = {
   websites: {
     us: {
       starter: "price_1UBOPXR6OzKMws4mXlZAEcye",
-      growth: "price_1UBOPYR6OzKMws4mNwSHsZtO",
+      growth: "price_1UBOjgR6OzKMws4mW5UCaH3I",
       professional: "price_1UBOPYR6OzKMws4mYVzQXe0N",
       elite: "price_1UBOPYR6OzKMws4mkdwujnWo",
       corporate: "price_1UBOPZR6OzKMws4m9JBEXK4D",
@@ -35,7 +43,7 @@ const TEST_PRICE_IDS = {
     },
     latam: {
       starter: "price_1UBOPXR6OzKMws4m3reJxTr3",
-      growth: "price_1UBOPYR6OzKMws4mXChvwi7n",
+      growth: "price_1UBOjgR6OzKMws4ml1YJwkhP",
       professional: "price_1UBOPYR6OzKMws4mKtHxYgcx",
       elite: "price_1UBOPZR6OzKMws4mbfrmbFTY",
       corporate: "price_1UBOPZR6OzKMws4mGWbDCPKJ",
@@ -68,7 +76,7 @@ const LIVE_PRICE_IDS = {
   websites: {
     us: {
       starter: "price_1UBOQXR6OzKMws4ms5kQk9Cd",
-      growth: "price_1UBOQXR6OzKMws4mIpBJA8wC",
+      growth: "price_1UBOjtR6OzKMws4m20hypPQ2",
       professional: "price_1UBOQYR6OzKMws4mfaNGpnF6",
       elite: "price_1UBOQYR6OzKMws4m7mA1WDk1",
       corporate: "price_1UBOQYR6OzKMws4ma5oQXyhx",
@@ -76,7 +84,7 @@ const LIVE_PRICE_IDS = {
     },
     latam: {
       starter: "price_1UBOQXR6OzKMws4mKMiFdqvk",
-      growth: "price_1UBOQXR6OzKMws4mdwIOacmR",
+      growth: "price_1UBOjtR6OzKMws4m3sqKdkT1",
       professional: "price_1UBOQYR6OzKMws4mROUuZeuJ",
       elite: "price_1UBOQYR6OzKMws4m1b0xmErC",
       corporate: "price_1UBOQZR6OzKMws4mDkTN9G0y",
@@ -111,11 +119,13 @@ export const PRICING_CATEGORIES = {
   websites: {
     us: [
       { price: "$399", priceId: ACTIVE.websites.us.starter },
+      { price: "$799", priceId: ACTIVE.websites.us.growth },
       { price: "$1,899", priceId: ACTIVE.websites.us.professional },
       { price: "$8,999", priceId: ACTIVE.websites.us.enterprise },
     ],
     latam: [
       { price: "$150", priceId: ACTIVE.websites.latam.starter },
+      { price: "$299", priceId: ACTIVE.websites.latam.growth },
       { price: "$699", priceId: ACTIVE.websites.latam.professional },
       { price: "$3,299", priceId: ACTIVE.websites.latam.enterprise },
     ],

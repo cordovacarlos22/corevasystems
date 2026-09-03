@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
+import { PRICING_CATEGORIES } from "@/lib/pricing";
 
 export default function PackagesSection({ dict, lang = "en" }) {
   const packagesData = dict?.packages;
@@ -21,7 +22,10 @@ export default function PackagesSection({ dict, lang = "en" }) {
         </Reveal>
 
         <ScrollStagger className="grid items-center gap-8 lg:grid-cols-3">
-          {items.map((pkg, index) => (
+          {items.map((pkg, index) => {
+            const usPrice = PRICING_CATEGORIES.websites.us[pkg.tierIndex]?.price;
+            const latamPrice = PRICING_CATEGORIES.websites.latam[pkg.tierIndex]?.price;
+            return (
             <StaggerItem key={pkg.title}>
             <div
               className={[
@@ -69,12 +73,12 @@ export default function PackagesSection({ dict, lang = "en" }) {
                         : "text-3xl font-extrabold text-slate-900"
                     }
                   >
-                    {pkg.price}
+                    {usPrice}
                   </span>
                 </div>
-                {pkg.priceLatam && (
+                {latamPrice && (
                   <p className="mt-1 text-xs font-medium text-slate-400">
-                    {packagesData?.priceLatamLabel} {pkg.priceLatam} LatAm
+                    {packagesData?.priceLatamLabel} {latamPrice} LatAm
                   </p>
                 )}
                 {pkg.bestFor && (
@@ -116,7 +120,8 @@ export default function PackagesSection({ dict, lang = "en" }) {
               </Link>
             </div>
             </StaggerItem>
-          ))}
+            );
+          })}
         </ScrollStagger>
       </div>
     </section>

@@ -1,18 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal, ScrollStagger, StaggerItem } from "@/components/motion/Reveal";
+import { PRICING_CATEGORIES } from "@/lib/pricing";
 
 // Matches the fixed order of dict.services.items in both en.js and es.js:
 // [0] Websites, [1] E-Commerce, [2] Automation, [3] AI Solutions.
-// Automation/AI are shown here for site fullness but intentionally not on
-// /pricing — not currently sellable, see the FAQ/CTA copy which routes them
-// to a strategy call rather than checkout.
 const SERVICE_SLUGS = [
   "services/websites",
   "services/ecommerce",
   "services/automation",
   "services/ai-solutions",
 ];
+
+// Same order — the "Starting at" price on each card is the category's
+// cheapest (index 0) tier, read live from pricing.js instead of a
+// hardcoded string, so it can't drift out of sync with /pricing.
+const PRICING_KEYS = ["websites", "ecommerce", "automation", "ai"];
 
 export default function ServicesOverview({ dict, lang = "en" }) {
   const services = dict?.services || {
@@ -105,9 +108,10 @@ export default function ServicesOverview({ dict, lang = "en" }) {
 
               <div className="flex-1" />
 
-              {item.startingAt && (
+              {PRICING_KEYS[index] && (
                 <div className="mt-6 text-sm font-bold uppercase tracking-wide text-primary">
-                  {item.startingAt}
+                  {lang === "es" ? "Desde " : "Starting at "}
+                  {PRICING_CATEGORIES[PRICING_KEYS[index]][lang === "es" ? "latam" : "us"][0].price}
                 </div>
               )}
 

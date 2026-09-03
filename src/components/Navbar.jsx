@@ -10,6 +10,7 @@ export default function Navbar({ dict, lang }) {
     process: "Process",
     services: "Services",
     results: "Results",
+    pricing: "Pricing",
     contact: "Contact",
     cta: "Book a Free Call",
   };
@@ -42,6 +43,9 @@ export default function Navbar({ dict, lang }) {
           </Link>
           <Link href={`/${lang}#results`} className="hover:text-primary transition-colors">
             {nav.results}
+          </Link>
+          <Link href={`/${lang}/pricing`} className="hover:text-primary transition-colors">
+            {nav.pricing}
           </Link>
           <Link href={`/${lang}#contact`} className="hover:text-primary transition-colors">
             {nav.contact}

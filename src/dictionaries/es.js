@@ -24,6 +24,7 @@ const es = {
     process: "Proceso",
     services: "Servicios",
     results: "Resultados",
+    pricing: "Precios",
     contact: "Contacto",
     cta: "Agendar llamada",
   },
@@ -39,8 +40,7 @@ const es = {
         title: "Paquete Inicial",
         subtitle: "PARA NUEVAS OPERACIONES",
         bestFor: "Ideal si aún no tienes sitio web y necesitas una presencia rápida y creíble en línea.",
-        price: "$399",
-        priceLatam: "$150",
+        tierIndex: 0,
         features: [
           "Hasta 3 páginas personalizadas, mobile-first",
           "Hero animado moderno, sin jQuery",
@@ -53,8 +53,7 @@ const es = {
         title: "Paquete Profesional",
         subtitle: "LA SOLUCIÓN COMPLETA",
         bestFor: "Ideal cuando estás listo para un sitio rico en contenido que puedes actualizar tú mismo.",
-        price: "$1,899",
-        priceLatam: "$699",
+        tierIndex: 2,
         features: [
           "Hasta 10 páginas únicas",
           "CMS headless — edítalo tú mismo",
@@ -68,8 +67,7 @@ const es = {
         title: "Paquete Empresarial",
         subtitle: "PARA OPERACIONES A GRAN ESCALA",
         bestFor: "Ideal si quieres una construcción personalizada de alto nivel con video de lanzamiento incluido.",
-        price: "$8,999",
-        priceLatam: "$3,299",
+        tierIndex: 3,
         features: [
           "15–20 páginas, diseño personalizado de alto nivel",
           "Video de marca/explicativo con IA",
@@ -142,7 +140,6 @@ const es = {
         description:
           "Sitios web modernos diseñados para generar confianza y convertir visitantes en clientes.",
         meta: ["Rápido", "Responsive", "Enfocado en conversión"],
-        startingAt: "Desde $399",
         image: "/images/coreva-websites.webp",
         alt: "Ilustración de sitio web",
       },
@@ -151,7 +148,6 @@ const es = {
         description:
           "Tiendas en línea diseñadas para convertir visitantes en compradores, desde tu primer catálogo hasta operaciones a gran escala.",
         meta: ["Tiendas", "Pagos", "Inventario"],
-        startingAt: "Desde $1,899",
         image: "/images/coreva-ecommerce.webp",
         alt: "Ilustración de bolsa de compras e-commerce",
       },
@@ -160,7 +156,6 @@ const es = {
         description:
           "Optimiza procesos, conecta tus herramientas y ahorra tiempo cada semana.",
         meta: ["Workflows", "Integraciones", "Eficiencia"],
-        startingAt: "Desde $449",
         image: "/images/coreva-automation.webp",
         alt: "Ilustración de automatización",
       },
@@ -169,7 +164,6 @@ const es = {
         description:
           "Implementa sistemas inteligentes que te ayudan a responder más rápido y trabajar mejor.",
         meta: ["Agentes", "Asistentes", "IA"],
-        startingAt: "Desde $629",
         image: "/images/coreva-ai.webp",
         alt: "Ilustración de robot IA",
       },
@@ -451,6 +445,17 @@ const es = {
                 "Sección hero animada moderna (ligera, sin jQuery)",
                 "Formulario de contacto con protección anti-spam",
                 "Build optimizado para Core Web Vitals + SEO básico",
+              ],
+            },
+            {
+              name: "Paquete de Crecimiento",
+              audience: "Para verte como una marca establecida",
+              turnaround: "1–2 semanas",
+              includes: [
+                "Hasta 5 páginas personalizadas",
+                "Banner hero con movimiento sutil",
+                "3 gráficos personalizados + 5 imágenes seleccionadas",
+                "Sitemap + configuración de Google Search Console",
               ],
             },
             {
