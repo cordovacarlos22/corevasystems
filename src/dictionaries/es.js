@@ -436,6 +436,8 @@ const es = {
       categoryLabels: {
         websites: "Sitios web",
         ecommerce: "E-Commerce",
+        automation: "Automatización",
+        ai: "Soluciones con IA",
       },
       categories: {
         websites: {
@@ -452,17 +454,6 @@ const es = {
               ],
             },
             {
-              name: "Paquete de Crecimiento",
-              audience: "Para verte como una marca establecida",
-              turnaround: "1–2 semanas",
-              includes: [
-                "Hasta 5 páginas personalizadas",
-                "Banner hero con movimiento sutil",
-                "3 gráficos personalizados + 5 imágenes seleccionadas",
-                "Sitemap + configuración de Google Search Console",
-              ],
-            },
-            {
               name: "Paquete Profesional",
               audience: "Un sitio que puedes actualizar tú mismo",
               turnaround: "2–3 semanas",
@@ -475,36 +466,14 @@ const es = {
               ],
             },
             {
-              name: "Paquete Elite",
-              audience: "Dinámico y enfocado en conversión, con reservas",
-              turnaround: "3–4 semanas",
-              includes: [
-                "Hasta 15 páginas, diseño dinámico (Next.js/React)",
-                "Reservas en línea + pagos con Stripe/PayPal (opcional)",
-                "Formularios de captación con webhook a CRM",
-                "Animaciones de scroll y microinteracciones",
-              ],
-            },
-            {
-              name: "Paquete Corporativo",
-              audience: "Una presencia de marca personalizada y de alto nivel",
-              turnaround: "5–8 semanas",
-              includes: [
-                "15–20 páginas, diseño interactivo de alto nivel",
-                "CMS headless, revisiones ilimitadas",
-                "Nombre de dominio gratis (primer año incluido)",
-                "Gerente de proyecto y equipo senior dedicados",
-              ],
-            },
-            {
               name: "Paquete Empresarial",
-              audience: "Todo lo del Corporativo, más un video de lanzamiento",
+              audience: "Una presencia de marca personalizada y de alto nivel, con video de lanzamiento",
               turnaround: "6–10 semanas",
               includes: [
-                "Todo lo del Paquete Corporativo",
-                "Video de marca/explicativo de 15–20 segundos con IA",
-                "Guion, storyboard, locución y sonido",
-                "Gerente de cuenta dedicado durante todo el proyecto",
+                "15–20 páginas, diseño personalizado de alto nivel",
+                "CMS headless, revisiones ilimitadas",
+                "Gerente de proyecto y equipo senior dedicados",
+                "Video de marca/explicativo con IA incluido",
               ],
             },
           ],

@@ -428,6 +428,8 @@ const en = {
       categoryLabels: {
         websites: "Websites",
         ecommerce: "E-Commerce",
+        automation: "Automation",
+        ai: "AI Solutions",
       },
       categories: {
         websites: {
@@ -444,17 +446,6 @@ const en = {
               ],
             },
             {
-              name: "Growth Package",
-              audience: "To look like a real, established brand",
-              turnaround: "1–2 weeks",
-              includes: [
-                "Up to 5 custom pages",
-                "Hero banner with subtle motion",
-                "3 custom graphics + 5 curated images",
-                "Sitemap + Google Search Console setup",
-              ],
-            },
-            {
               name: "Professional Package",
               audience: "A content-rich site you can update yourself",
               turnaround: "2–3 weeks",
@@ -467,36 +458,14 @@ const en = {
               ],
             },
             {
-              name: "Elite Package",
-              audience: "Dynamic, conversion-focused, with booking built in",
-              turnaround: "3–4 weeks",
-              includes: [
-                "Up to 15 pages, custom dynamic design (Next.js/React)",
-                "Online booking + Stripe/PayPal payments (optional)",
-                "Custom lead-capture forms with CRM webhook",
-                "Scroll animations & micro-interactions",
-              ],
-            },
-            {
-              name: "Corporate Package",
-              audience: "A custom, high-end brand presence",
-              turnaround: "5–8 weeks",
-              includes: [
-                "15–20 pages, high-end interactive design",
-                "Headless CMS, unlimited revisions",
-                "Free domain name (1st year included)",
-                "Dedicated project manager & senior team",
-              ],
-            },
-            {
               name: "Enterprise Package",
-              audience: "Everything in Corporate, plus a launch video",
+              audience: "A custom, high-end brand presence, with a launch video",
               turnaround: "6–10 weeks",
               includes: [
-                "Everything in Corporate",
-                "15–20 second AI-assisted brand/explainer video",
-                "Script, storyboard, voice-over & sound",
-                "Dedicated account manager throughout",
+                "15–20 pages, high-end custom design",
+                "Headless CMS, unlimited revisions",
+                "Dedicated project manager & senior team",
+                "AI-assisted brand/explainer video included",
               ],
             },
           ],

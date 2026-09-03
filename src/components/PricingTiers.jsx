@@ -5,7 +5,7 @@ import Link from "next/link";
 import { sileo } from "sileo";
 import { PRICING_CATEGORIES, REGIONS } from "@/lib/pricing";
 
-const CATEGORY_KEYS = ["websites", "ecommerce"];
+const CATEGORY_KEYS = ["websites", "ecommerce", "automation", "ai"];
 
 export default function PricingTiers({ page, lang = "en" }) {
   const [category, setCategory] = useState("websites");
